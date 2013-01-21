@@ -66,9 +66,8 @@ Creates a new document query, a progressively filterable collection of documents
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		``
-	</dt>
+	<dt>
+			</dt>
 	<dd>
 		
 	</dd>
@@ -82,9 +81,8 @@ Allows the document query to be counted
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`int`
-	</dt>
+	<dt>
+		int	</dt>
 	<dd>
 		The count of the internal documents collection
 	</dd>
@@ -98,9 +96,8 @@ Gets the current value
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`mixed`
-	</dt>
+	<dt>
+		mixed	</dt>
 	<dd>
 		The currently pointed to value of the internal documents collection
 	</dd>
@@ -114,9 +111,8 @@ Get the current key
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`mixed`
-	</dt>
+	<dt>
+		mixed	</dt>
 	<dd>
 		The currently pointed to key of the internal documents collection
 	</dd>
@@ -130,9 +126,8 @@ Moves the current element of the internal documents collection forward one
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		``
-	</dt>
+	<dt>
+			</dt>
 	<dd>
 		
 	</dd>
@@ -171,9 +166,8 @@ Creates a new document query from the existing internal document collection
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`DocumentCollection`
-	</dt>
+	<dt>
+		DocumentCollection	</dt>
 	<dd>
 		The new traversable document query
 	</dd>
@@ -187,9 +181,8 @@ Moved the current element of the internal documents collection back to the begin
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		``
-	</dt>
+	<dt>
+			</dt>
 	<dd>
 		
 	</dd>
@@ -203,9 +196,8 @@ Determine if the current key of an array is Valid
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`boolean`
-	</dt>
+	<dt>
+		boolean	</dt>
 	<dd>
 		TRUE if the current key is valid, FALSE otherwise
 	</dd>

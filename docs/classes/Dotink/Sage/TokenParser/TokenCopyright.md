@@ -70,9 +70,8 @@ Validates that the copyright value looks OK
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`boolean`
-	</dt>
+	<dt>
+		boolean	</dt>
 	<dd>
 		TRUE if the value validates, FALSE otherwise
 	</dd>
@@ -111,9 +110,8 @@ Parses the value into an information array
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`array`
-	</dt>
+	<dt>
+		array	</dt>
 	<dd>
 		The information array
 	</dd>

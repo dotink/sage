@@ -76,9 +76,8 @@ Validates that the value for the token looks OK
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`boolean`
-	</dt>
+	<dt>
+		boolean	</dt>
 	<dd>
 		TRUE if the value validates, FALSE otherwise
 	</dd>
@@ -117,9 +116,8 @@ Parses the value into usable information
 ###### Returns
 
 <dl>
-	<dt markdown="1">
-		`array`
-	</dt>
+	<dt>
+		array	</dt>
 	<dd>
 		An list of parsed information, keyed by information type
 	</dd>
