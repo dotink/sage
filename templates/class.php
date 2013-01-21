@@ -3,13 +3,13 @@
 
 
 <?php if ($document->hasInfo('copyright')) { ?>
-_<?= $document->getInfo('copyright') ?>_
+_<?= $document->getInfo('copyright') ?>_.
 <?php } ?>
 <?php if ($license = $document->getInfo('license')) { ?>
 <?php if (preg_match('#^http([s])?://(.*)#', $license)) { ?>
-[<?= $license ?>](<?= $license ?>)
+  [<?= $license ?>](<?= $license ?>)
 <?php } else { ?>
-_<?= $license ?>_
+  _<?= $license ?>_
 <?php } ?>
 <?php } ?>
 
