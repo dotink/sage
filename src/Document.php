@@ -212,7 +212,7 @@
 					$description[] = $line;
 
 					if (!isset($lines[$i + 1]) || !ltrim($lines[$i + 1], "/* \t")) {
-						$description = trim(implode("\n", $description), "\n");
+						$description = trim(implode("\n", $description));
 					}
 
 				} else {
@@ -220,7 +220,7 @@
 				}
 			}
 
-			$details = trim(implode("\n", $details), "\n");
+			$details = trim(implode("\n", $details));
 
 			for ($x = $i; $x < count($lines); $x ++) {
 				$parts = preg_split('/[\s]+/', ltrim($lines[$x], "/@ *\t"), 2);

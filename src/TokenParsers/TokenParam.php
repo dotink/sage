@@ -23,7 +23,7 @@
 	 *
 	 * @package Sage
 	 */
-	class Param
+	class TokenParam
 	{
 		const REGEX_VALID = '/
 			(.*)\s+\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s+(.*) |

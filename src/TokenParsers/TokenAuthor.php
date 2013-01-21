@@ -18,7 +18,7 @@
 	 *
 	 * @package Sage
 	 */
-	class Author
+	class TokenAuthor
 	{
 		const REGEX_VALID = '/
 			([\w(?:\.|\s+|\.\s+)?]+(?:\s+|$)?)?  # Name followed by optional space or end of line

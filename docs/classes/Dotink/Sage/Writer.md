@@ -13,11 +13,10 @@
 
 ### Instance Methods
 
-
 #### <span style="color:#3e6a6e;">__construct()</span>
-	
+
 Creates a new writer
-			
+
 ###### Parameters
 
 <table>
@@ -55,11 +54,22 @@ Creates a new writer
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		``
+	</dt>
+	<dd>
+		
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">buildDocumentation()</span>
-	
+
 Builds documentation from an array of documents
-			
+
 ###### Parameters
 
 <table>
@@ -85,11 +95,22 @@ Builds documentation from an array of documents
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		``
+	</dt>
+	<dd>
+		
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">buildDocumentationInFile()</span>
-	
+
 Builds our documentation for a single document in a particular file
-			
+
 ###### Parameters
 
 <table>
@@ -127,11 +148,22 @@ Builds our documentation for a single document in a particular file
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		`int|FALSE`
+	</dt>
+	<dd>
+		Number of bytes written or FALSE on failure
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">buildDocumentationInPath()</span>
-	
+
 Builds our documentation in a particular directory
-			
+
 ###### Parameters
 
 <table>
@@ -169,11 +201,22 @@ Builds our documentation in a particular directory
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		``
+	</dt>
+	<dd>
+		
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">setOutputPath()</span>
-	
+
 Sets the output path with validation
-			
+
 ###### Parameters
 
 <table>
@@ -199,11 +242,22 @@ Sets the output path with validation
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		`string`
+	</dt>
+	<dd>
+		The absolute real path for output
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">setTemplateDirectory()</span>
-	
+
 Sets the template directory with validation
-			
+
 ###### Parameters
 
 <table>
@@ -229,5 +283,16 @@ Sets the template directory with validation
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		``
+	</dt>
+	<dd>
+		
+	</dd>
+</dl>
+
+
 

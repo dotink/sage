@@ -38,11 +38,10 @@ Options and values for the generator
 
 ### Instance Methods
 
-
 #### <span style="color:#3e6a6e;">__construct()</span>
-	
+
 Creates a new generator
-			
+
 ###### Parameters
 
 <table>
@@ -68,11 +67,22 @@ Creates a new generator
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		``
+	</dt>
+	<dd>
+		
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">getTokenParser()</span>
-	
+
 Gets the token parser class for a given token
-			
+
 ###### Parameters
 
 <table>
@@ -98,11 +108,22 @@ Gets the token parser class for a given token
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		`string|NULL`
+	</dt>
+	<dd>
+		The class for parsing the token, or NULL if not available
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">run()</span>
-	
+
 Runs the documentation generator
-			
+
 ###### Parameters
 
 <table>
@@ -140,11 +161,22 @@ Runs the documentation generator
 	</tbody>
 </table>
 
-	
-#### <span style="color:#3e6a6e;">makeDocumentCollection()</span>
-	
-Makes a document collection
+###### Returns
+
+<dl>
+	<dt>
+		``
+	</dt>
+	<dd>
 		
+	</dd>
+</dl>
+
+
+#### <span style="color:#3e6a6e;">makeDocumentCollection()</span>
+
+Makes a document collection
+
 ##### Details
 
 If the document collection is sorted by type then then the various documents will still
@@ -156,7 +188,7 @@ type of structure.  So, for example:
 Which without sorting by type would normally be in:
 
 `/Dotink/Sage/Generator.md`
-		
+
 ###### Parameters
 
 <table>
@@ -194,11 +226,22 @@ Which without sorting by type would normally be in:
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		``
+	</dt>
+	<dd>
+		
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">configTokenParsers()</span>
-	
+
 Configures token parsers from an array, filtering out bad ones
-			
+
 ###### Parameters
 
 <table>
@@ -224,11 +267,22 @@ Configures token parsers from an array, filtering out bad ones
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		``
+	</dt>
+	<dd>
+		
+	</dd>
+</dl>
+
+
 #### <span style="color:#3e6a6e;">setInputPath()</span>
-	
+
 Sets the input path with validation
-			
+
 ###### Parameters
 
 <table>
@@ -254,5 +308,16 @@ Sets the input path with validation
 	</tbody>
 </table>
 
-	
+###### Returns
+
+<dl>
+	<dt>
+		`string`
+	</dt>
+	<dd>
+		The absolute real path for input
+	</dd>
+</dl>
+
+
 

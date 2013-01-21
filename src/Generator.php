@@ -74,7 +74,7 @@
 		 */
 		public function getTokenParser($token)
 		{
-			$default = __NAMESPACE__ . '\\TokenParser\\' . ucwords($token);
+			$default = __NAMESPACE__ . '\\TokenParser\\Token' . ucwords($token);
 
 			if (isset($this->tokenParsers[$token])) {
 				return $this->tokenParsers[$token];

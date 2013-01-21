@@ -43,13 +43,11 @@ _<?= $document->getInfo('copyright') ?>_.
 
 <?php if (count($methods = $class_methods->query('static'))) { ?>
 ### Static Methods
-
 <?php include 'class_methods.php'; ?>
 <?php } ?>
 
 <?php if (count($methods = $class_methods->query('instance'))) { ?>
 ### Instance Methods
-
 <?php include 'class_methods.php'; ?>
 <?php } ?>
 <?php } ?>

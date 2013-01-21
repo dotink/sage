@@ -42,10 +42,10 @@
 
 
 		/**
-		 * Gets the current value of the internal documents collection
+		 * Gets the current value
 		 *
 		 * @access public
-		 * @return mixed
+		 * @return mixed The currently pointed to value of the internal documents collection
 		 */
 		public function current()
 		{
@@ -54,10 +54,10 @@
 
 
 		/**
-		 * Gets the current key of the internal documents collection
+		 * Get the current key
 		 *
 		 * @access public
-		 * @return mixed
+		 * @return mixed The currently pointed to key of the internal documents collection
 		 */
 		public function key()
 		{
