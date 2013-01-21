@@ -211,5 +211,6 @@ Determine if the current key of an array is Valid
 	</dd>
 </dl>
 
+<hr />
 
 

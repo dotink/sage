@@ -119,6 +119,7 @@ Parses the value into usable information
 	</dd>
 </dl>
 
+<hr />
 
 
 
