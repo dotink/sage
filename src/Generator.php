@@ -170,7 +170,15 @@
 		/**
 		 * Makes a document collection
 		 *
-		 * If the document collection is sorted by type then.
+		 * If the document collection is sorted by type then then the various documents will still
+		 * be in separate directories per namespace, however, they will be rooted based on the
+		 * type of structure.  So, for example:
+		 *
+		 * `/classes/Dotink/Sage/Generator.md`
+		 *
+		 * Which without sorting by type would normally be in:
+		 *
+		 * `/Dotink/Sage/Generator.md`
 		 *
 		 * @access private
 		 * @param array $reflection A list of token reflections
