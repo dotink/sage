@@ -72,13 +72,13 @@ Validates that the value for the token looks OK
 ###### Returns
 
 <dl>
-	<dt>
-		boolean
-	</dt>
-	<dd>
-		TRUE if the value validates, FALSE otherwise
-	</dd>
-</dl>
+			<dt>
+			boolean
+		</dt>
+		<dd>
+			TRUE if the value validates, FALSE otherwise
+		</dd>
+	</dl>
 
 <hr />
 
@@ -114,13 +114,13 @@ Parses the value into usable information
 ###### Returns
 
 <dl>
-	<dt>
-		string
-	</dt>
-	<dd>
-		The value for the token
-	</dd>
-</dl>
+			<dt>
+			string
+		</dt>
+		<dd>
+			The value for the token
+		</dd>
+	</dl>
 
 
 

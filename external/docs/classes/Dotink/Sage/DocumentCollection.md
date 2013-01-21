@@ -67,13 +67,13 @@ Creates a new document query, a progressively filterable collection of documents
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -84,13 +84,13 @@ Allows the document query to be counted
 ###### Returns
 
 <dl>
-	<dt>
-		int
-	</dt>
-	<dd>
-		The count of the internal documents collection
-	</dd>
-</dl>
+			<dt>
+			int
+		</dt>
+		<dd>
+			The count of the internal documents collection
+		</dd>
+	</dl>
 
 <hr />
 
@@ -101,13 +101,13 @@ Gets the current value
 ###### Returns
 
 <dl>
-	<dt>
-		mixed
-	</dt>
-	<dd>
-		The currently pointed to value of the internal documents collection
-	</dd>
-</dl>
+			<dt>
+			mixed
+		</dt>
+		<dd>
+			The currently pointed to value of the internal documents collection
+		</dd>
+	</dl>
 
 <hr />
 
@@ -118,13 +118,13 @@ Get the current key
 ###### Returns
 
 <dl>
-	<dt>
-		mixed
-	</dt>
-	<dd>
-		The currently pointed to key of the internal documents collection
-	</dd>
-</dl>
+			<dt>
+			mixed
+		</dt>
+		<dd>
+			The currently pointed to key of the internal documents collection
+		</dd>
+	</dl>
 
 <hr />
 
@@ -135,13 +135,13 @@ Moves the current element of the internal documents collection forward one
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -177,13 +177,13 @@ Creates a new document query from the existing internal document collection
 ###### Returns
 
 <dl>
-	<dt>
-		DocumentCollection
-	</dt>
-	<dd>
-		The new traversable document query
-	</dd>
-</dl>
+			<dt>
+			DocumentCollection
+		</dt>
+		<dd>
+			The new traversable document query
+		</dd>
+	</dl>
 
 <hr />
 
@@ -194,13 +194,13 @@ Moved the current element of the internal documents collection back to the begin
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -211,13 +211,13 @@ Determine if the current key of an array is Valid
 ###### Returns
 
 <dl>
-	<dt>
-		boolean
-	</dt>
-	<dd>
-		TRUE if the current key is valid, FALSE otherwise
-	</dd>
-</dl>
+			<dt>
+			boolean
+		</dt>
+		<dd>
+			TRUE if the current key is valid, FALSE otherwise
+		</dd>
+	</dl>
 
 
 

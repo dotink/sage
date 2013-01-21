@@ -71,13 +71,13 @@ Creates a new generator
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -113,13 +113,13 @@ Gets the token parser class for a given token
 ###### Returns
 
 <dl>
-	<dt>
-		string|NULL
-	</dt>
-	<dd>
-		The class for parsing the token, or NULL if not available
-	</dd>
-</dl>
+			<dt>
+			string|NULL
+		</dt>
+		<dd>
+			The class for parsing the token, or NULL if not available
+		</dd>
+	</dl>
 
 <hr />
 
@@ -167,13 +167,13 @@ Runs the documentation generator
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -233,13 +233,13 @@ Which without sorting by type would normally be in:
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -275,13 +275,13 @@ Configures token parsers from an array, filtering out bad ones
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -328,13 +328,13 @@ Sets the input path with validation
 ###### Returns
 
 <dl>
-	<dt>
-		string
-	</dt>
-	<dd>
-		The absolute real path for input
-	</dd>
-</dl>
+			<dt>
+			string
+		</dt>
+		<dd>
+			The absolute real path for input
+		</dd>
+	</dl>
 
 
 

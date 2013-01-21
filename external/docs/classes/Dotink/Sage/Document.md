@@ -79,13 +79,13 @@ Creates a new document
 ###### Returns
 
 <dl>
-	<dt>
-		Document
-	</dt>
-	<dd>
-		The document for method chaining
-	</dd>
-</dl>
+			<dt>
+			Document
+		</dt>
+		<dd>
+			The document for method chaining
+		</dd>
+	</dl>
 
 <hr />
 
@@ -108,13 +108,13 @@ Allows for getting the reflection for basic information
 ###### Returns
 
 <dl>
-	<dt>
-		TokenReflection\IReflection
-	</dt>
-	<dd>
-		The reflection that the document represents
-	</dd>
-</dl>
+			<dt>
+			TokenReflection\IReflection
+		</dt>
+		<dd>
+			The reflection that the document represents
+		</dd>
+	</dl>
 
 <hr />
 
@@ -125,13 +125,13 @@ Allows for getting the keys of the document
 ###### Returns
 
 <dl>
-	<dt>
-		array
-	</dt>
-	<dd>
-		The keys assigned to the document
-	</dd>
-</dl>
+			<dt>
+			array
+		</dt>
+		<dd>
+			The keys assigned to the document
+		</dd>
+	</dl>
 
 <hr />
 
@@ -142,13 +142,13 @@ Allows for getting the type of document
 ###### Returns
 
 <dl>
-	<dt>
-		string
-	</dt>
-	<dd>
-		The type of the document
-	</dd>
-</dl>
+			<dt>
+			string
+		</dt>
+		<dd>
+			The type of the document
+		</dd>
+	</dl>
 
 <hr />
 
@@ -173,13 +173,13 @@ Allows the document query to be counted
 ###### Returns
 
 <dl>
-	<dt>
-		int
-	</dt>
-	<dd>
-		The count of the internal documents collection
-	</dd>
-</dl>
+			<dt>
+			int
+		</dt>
+		<dd>
+			The count of the internal documents collection
+		</dd>
+	</dl>
 
 <hr />
 
@@ -190,13 +190,13 @@ Gets the current value
 ###### Returns
 
 <dl>
-	<dt>
-		mixed
-	</dt>
-	<dd>
-		The currently pointed to value of the internal documents collection
-	</dd>
-</dl>
+			<dt>
+			mixed
+		</dt>
+		<dd>
+			The currently pointed to value of the internal documents collection
+		</dd>
+	</dl>
 
 <hr />
 
@@ -207,13 +207,13 @@ Get the current key
 ###### Returns
 
 <dl>
-	<dt>
-		mixed
-	</dt>
-	<dd>
-		The currently pointed to key of the internal documents collection
-	</dd>
-</dl>
+			<dt>
+			mixed
+		</dt>
+		<dd>
+			The currently pointed to key of the internal documents collection
+		</dd>
+	</dl>
 
 <hr />
 
@@ -224,13 +224,13 @@ Moves the current element of the internal documents collection forward one
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -266,13 +266,13 @@ Creates a new document query from the existing internal document collection
 ###### Returns
 
 <dl>
-	<dt>
-		DocumentCollection
-	</dt>
-	<dd>
-		The new traversable document query
-	</dd>
-</dl>
+			<dt>
+			DocumentCollection
+		</dt>
+		<dd>
+			The new traversable document query
+		</dd>
+	</dl>
 
 <hr />
 
@@ -283,13 +283,13 @@ Moved the current element of the internal documents collection back to the begin
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -300,13 +300,13 @@ Determine if the current key of an array is Valid
 ###### Returns
 
 <dl>
-	<dt>
-		boolean
-	</dt>
-	<dd>
-		TRUE if the current key is valid, FALSE otherwise
-	</dd>
-</dl>
+			<dt>
+			boolean
+		</dt>
+		<dd>
+			TRUE if the current key is valid, FALSE otherwise
+		</dd>
+	</dl>
 
 
 

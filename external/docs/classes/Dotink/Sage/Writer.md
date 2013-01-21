@@ -58,13 +58,13 @@ Creates a new writer
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -100,13 +100,13 @@ Builds documentation from an array of documents
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -154,13 +154,13 @@ Builds our documentation for a single document in a particular file
 ###### Returns
 
 <dl>
-	<dt>
-		int|FALSE
-	</dt>
-	<dd>
-		Number of bytes written or FALSE on failure
-	</dd>
-</dl>
+			<dt>
+			int|FALSE
+		</dt>
+		<dd>
+			Number of bytes written or FALSE on failure
+		</dd>
+	</dl>
 
 <hr />
 
@@ -208,13 +208,13 @@ Builds our documentation in a particular directory
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 <hr />
 
@@ -261,13 +261,13 @@ Sets the output path with validation
 ###### Returns
 
 <dl>
-	<dt>
-		string
-	</dt>
-	<dd>
-		The absolute real path for output
-	</dd>
-</dl>
+			<dt>
+			string
+		</dt>
+		<dd>
+			The absolute real path for output
+		</dd>
+	</dl>
 
 <hr />
 
@@ -314,13 +314,13 @@ Sets the template directory with validation
 ###### Returns
 
 <dl>
-	<dt>
-		
-	</dt>
-	<dd>
-		
-	</dd>
-</dl>
+			<dt>
+			void
+		</td>
+		<dd>
+			Provides no return value.
+		</dd>
+	</dl>
 
 
 
