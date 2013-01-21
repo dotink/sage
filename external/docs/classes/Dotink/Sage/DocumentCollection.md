@@ -67,7 +67,8 @@ Creates a new document query, a progressively filterable collection of documents
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			void
 		</dt>
 		<dd>
@@ -84,7 +85,8 @@ Allows the document query to be counted
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			int
 		</dt>
 		<dd>
@@ -101,7 +103,8 @@ Gets the current value
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			mixed
 		</dt>
 		<dd>
@@ -118,7 +121,8 @@ Get the current key
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			mixed
 		</dt>
 		<dd>
@@ -135,7 +139,8 @@ Moves the current element of the internal documents collection forward one
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			void
 		</dt>
 		<dd>
@@ -177,7 +182,8 @@ Creates a new document query from the existing internal document collection
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			DocumentCollection
 		</dt>
 		<dd>
@@ -194,7 +200,8 @@ Moved the current element of the internal documents collection back to the begin
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			void
 		</dt>
 		<dd>
@@ -211,7 +218,8 @@ Determine if the current key of an array is Valid
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			boolean
 		</dt>
 		<dd>

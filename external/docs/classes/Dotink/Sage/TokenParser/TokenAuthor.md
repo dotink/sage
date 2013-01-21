@@ -85,7 +85,8 @@ Validates that the value for the token looks OK
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			boolean
 		</dt>
 		<dd>
@@ -127,7 +128,8 @@ Parses the value into usable information
 ###### Returns
 
 <dl>
-			<dt>
+	
+		<dt>
 			array
 		</dt>
 		<dd>

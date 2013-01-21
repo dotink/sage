@@ -3,6 +3,7 @@
 <dl>
 <?php while ($return = $method->getInfo('return')) { ?>
 	<?php if ($return['type']) { ?>
+
 		<dt>
 			<?= $return['type'] ?>
 
@@ -12,6 +13,7 @@
 
 		</dd>
 	<?php } else { ?>
+
 		<dt>
 			void
 		</dt>
