@@ -3,7 +3,14 @@
 	use TokenReflection;
 
 	/**
+	 * Provides documentation generation service by reading a particular source directory
 	 *
+	 * @copyright Copyright (c) 2013, Matthew J. Sahagian
+	 * @author Matthew J. Sahagian [mjs] <msahagian@dotink.org>
+	 *
+	 * @license Please reference the LICENSE.txt file at the root of this distribution
+	 *
+	 * @package Sage
 	 */
 	class Generator
 	{

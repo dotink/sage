@@ -1,6 +1,35 @@
 # `DocumentCollection`
+##A collection of documents which can be progressively filtered via simple queries
 
+_Copyright (c) 2013, Matthew J. Sahagian_.
+  _Please reference the LICENSE.txt file at the root of this distribution_
 
+### Details
+
+This class is countable as well as traversable so that it can be used in templating.
+#### Authors
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Handle</th>
+		<th>Email</th>
+	</thead>
+	<tbody>
+			<tr>
+			<td>
+				Matthew J. Sahagian 
+			</td>
+			<td>
+				mjs
+			</td>
+			<td>
+				msahagian@dotink.org
+			</td>
+		</tr>
+	
+	</tbody>
+</table>
 
 ## Properties
 
@@ -9,6 +38,11 @@
 #### <span style="color:#6a6e3d;">$documents</span>
 
 The internal documents collection
+
+##### Details
+
+This will be passed to any subqueries we might do which provides a progressive filtering
+of any parent document collection
 
 
 

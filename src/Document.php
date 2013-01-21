@@ -2,6 +2,20 @@
 
 	use TokenReflection;
 
+	/**
+	 * A representation of a single document in the documentation.
+	 *
+	 * Although these are generally thought of as single pages, it is possible for them to be
+	 * nested in one another.  That is to say, because a `Document` is also a `DocumentCollection`
+	 * it may contain additional sub-documents.  Classes for example will contain Methods.
+	 *
+	 * @copyright Copyright (c) 2013, Matthew J. Sahagian
+	 * @author Matthew J. Sahagian [mjs] <msahagian@dotink.org>
+	 *
+	 * @license Please reference the LICENSE.txt file at the root of this distribution
+	 *
+	 * @package Sage
+	 */
 	class Document extends DocumentCollection
 	{
 		const TYPE_CONSTANT  = 'constant';
@@ -16,37 +30,55 @@
 
 
 		/**
+		 * The description of the document as parsed from the docblock
 		 *
+		 * @access private
+		 * @var string
 		 */
 		private $description = NULL;
 
 
 		/**
+		 * The details of the document as parsed from the docblock
 		 *
+		 * @access private
+		 * @var string
 		 */
 		private $details = NULL;
 
 
 		/**
+		 * The information array which contains tokens and their parsed values
 		 *
+		 * @access private
+		 * @var array
 		 */
 		private $info = array();
 
 
 		/**
+		 * The keys associated with this document (static, final, abstract, public, etc)
 		 *
+		 * @access private
+		 * @var array
 		 */
 		private $keys = array();
 
 
 		/**
+		 * The token reflection for the document
 		 *
+		 * @access private
+		 * @var TokenReflection\IReflection
 		 */
 		private $reflection = NULL;
 
 
 		/**
+		 * The type of this document (class, method, property, trait, etc)
 		 *
+		 * @access private
+		 * @var string
 		 */
 		private $type = NULL;
 
@@ -116,7 +148,10 @@
 
 
 		/**
+		 * Gets the description of the document
 		 *
+		 * @access public
+		 * @return string The description of the document
 		 */
 		public function getDescription()
 		{
@@ -125,7 +160,10 @@
 
 
 		/**
+		 * Gets the details of the document
 		 *
+		 * @access public
+		 * @return string The details of the document
 		 */
 		public function getDetails()
 		{
@@ -134,7 +172,14 @@
 
 
 		/**
+		 * Gets the information for a particular token
 		 *
+		 * When a token is retrieved using this method it is removed from the information stack.
+		 * This allows you to iterate with this method to extract all values in templating.
+		 *
+		 * @access public
+		 * @param string $token The token to get information for
+		 * @return mixed An array or string containing the parsed information
 		 */
 		public function getInfo($token)
 		{
@@ -147,7 +192,7 @@
 
 
 		/**
-		 * Allows for getting the reflection for basic information
+		 * Allows for getting the reflection for additional information about the `Document`
 		 *
 		 * @access public
 		 * @return TokenReflection\IReflection The reflection that the document represents
@@ -183,7 +228,10 @@
 
 
 		/**
+		 * Determines if token information is available in the information array
 		 *
+		 * @access public
+		 * @return boolean TRUE if there is information for that token, FALSE otherwise
 		 */
 		public function hasInfo($token)
 		{
@@ -192,7 +240,14 @@
 
 
 		/**
+		 * Parses a doc comment (intelligently)
 		 *
+		 * Unlike other docblock parsers, we do not require the "short description" to be a single
+		 * line.  Instead we look for the first line break to split the "description" vs. the
+		 * details which is every line that follows until the first `@`.
+		 *
+		 * @access private
+		 * @return void
 		 */
 		private function parseDocComment()
 		{
@@ -243,7 +298,14 @@
 		/**
 		 * Parses a token and adds it's value to the info array
 		 *
+		 * This method looks to the generator to get a token parser and then attempts to parse
+		 * a value using that token parser.
 		 *
+		 * @access private
+		 * @param string $token The token (type) we're parding
+		 * @param string $value The value (all content after the token itself)
+		 * @return void
+		 * @throws Exception In the event the parser does not validate the value
 		 */
 		private function parseToken($token, $value)
 		{

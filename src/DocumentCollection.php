@@ -1,9 +1,24 @@
 <?php namespace Dotink\Sage {
 
+	/**
+	 * A collection of documents which can be progressively filtered via simple queries
+	 *
+	 * This class is countable as well as traversable so that it can be used in templating.
+	 *
+	 * @copyright Copyright (c) 2013, Matthew J. Sahagian
+	 * @author Matthew J. Sahagian [mjs] <msahagian@dotink.org>
+	 *
+	 * @license Please reference the LICENSE.txt file at the root of this distribution
+	 *
+	 * @package Sage
+	 */
 	class DocumentCollection implements \Iterator, \Countable
 	{
 		/**
 		 * The internal documents collection
+		 *
+		 * This will be passed to any subqueries we might do which provides a progressive filtering
+		 * of any parent document collection
 		 *
 		 * @access protected
 		 * @var array
