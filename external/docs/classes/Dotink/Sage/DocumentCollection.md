@@ -69,7 +69,7 @@ Creates a new document query, a progressively filterable collection of documents
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
@@ -137,7 +137,7 @@ Moves the current element of the internal documents collection forward one
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
@@ -196,7 +196,7 @@ Moved the current element of the internal documents collection back to the begin
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>

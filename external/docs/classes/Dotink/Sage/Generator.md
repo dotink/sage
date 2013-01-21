@@ -73,7 +73,7 @@ Creates a new generator
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
@@ -169,7 +169,7 @@ Runs the documentation generator
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
@@ -235,7 +235,7 @@ Which without sorting by type would normally be in:
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
@@ -277,7 +277,7 @@ Configures token parsers from an array, filtering out bad ones
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>

@@ -60,7 +60,7 @@ Creates a new writer
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
@@ -102,7 +102,7 @@ Builds documentation from an array of documents
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
@@ -210,7 +210,7 @@ Builds our documentation in a particular directory
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
@@ -316,7 +316,7 @@ Sets the template directory with validation
 <dl>
 			<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>

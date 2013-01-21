@@ -14,7 +14,7 @@
 	<?php } else { ?>
 		<dt>
 			void
-		</td>
+		</dt>
 		<dd>
 			Provides no return value.
 		</dd>
