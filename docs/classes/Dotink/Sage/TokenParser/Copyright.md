@@ -1,14 +1,15 @@
-# `Copyright` (The `Copyright` class is responsible for parsing copyright tokens in a docblock.)
-
+# `Copyright`
+##Responsible for parsing copyright tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_
+_Please reference the LICENSE.txt file at the root of this distribution_
 
-## Details
+### Details
 
 No additional parsing of the string which follows the copyright is done, so it will not
 independently parse the year or names or anything like that.
 
-### Authors
+#### Authors
 
 <table>
 	<thead>

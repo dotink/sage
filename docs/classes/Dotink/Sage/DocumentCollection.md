@@ -1,7 +1,8 @@
-# `DocumentCollection` (_No Description_)
+# `DocumentCollection`
 
 
-## Details
+
+### Details
 
 
 

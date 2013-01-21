@@ -1,18 +1,14 @@
-# `Author`
-##Responsible for parsing author tokens in a docblock.
+# `License`
+##Responsible for parsing license tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_
 _Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Details
 
-The parser will attempt to parse out `name`, `handle`, and `email` keys from strings which
-look like the following:
-
-`Matthew J. Sahagian [mjs] <msahagian@dotink.org>
-
-If any one of these pieces is missing it should still get all the information that is
-available with missing pieces represented as an empty string.
+No additional parsing of the license string is done, however, in some documentation
+templates it may be the case that if the string begins with 'http://' it could auto-link
+assuming it's a URL to the license.
 
 #### Authors
 
@@ -38,14 +34,6 @@ available with missing pieces represented as an empty string.
 	</tbody>
 </table>
 
-## Properties
-
-### Static Properties
-
-#### $matches
-Matches of our validation test which we can use for actual parsing
-
-
 
 ## Methods
 
@@ -54,7 +42,7 @@ Matches of our validation test which we can use for actual parsing
 
 #### validate()
 	
-Validates that the value looks like a proper param
+Validates that the copyright value looks OK
 			
 ###### Parameters
 

@@ -1,7 +1,8 @@
-# `Exception` (_No Description_)
+# `Exception`
 
 
-## Details
+
+### Details
 
 
 

@@ -1,9 +1,10 @@
-# `Param` (Responsible for parsing parameter tokens in a docblock.)
-
+# `Param`
+##Responsible for parsing parameter tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_
+_Please reference the LICENSE.txt file at the root of this distribution_
 
-## Details
+### Details
 
 Each parameter token will be parsed into an array containing a `name`, `types`, and
 `details` key.  The `type` key will be an array as well in the event the parameter can
@@ -18,7 +19,7 @@ Examples of what is parseable:
 If the param token is followed by a simple '...' it will automatically represent a ad
 infinitum number of repetitions of the preceding param.
 
-### Authors
+#### Authors
 
 <table>
 	<thead>

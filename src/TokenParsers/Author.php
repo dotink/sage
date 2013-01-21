@@ -1,7 +1,7 @@
 <?php namespace Dotink\Sage\TokenParser {
 
 	/**
-	 * The `Author` class is responsible for parsing author tokens in a docblock.
+	 * Responsible for parsing author tokens in a docblock.
 	 *
 	 * The parser will attempt to parse out `name`, `handle`, and `email` keys from strings which
 	 * look like the following:
