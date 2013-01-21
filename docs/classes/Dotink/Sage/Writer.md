@@ -57,7 +57,7 @@ Creates a new writer
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -98,7 +98,7 @@ Builds documentation from an array of documents
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -151,7 +151,7 @@ Builds our documentation for a single document in a particular file
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`int|FALSE`
 	</dt>
 	<dd>
@@ -204,7 +204,7 @@ Builds our documentation in a particular directory
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -245,7 +245,7 @@ Sets the output path with validation
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`string`
 	</dt>
 	<dd>
@@ -286,7 +286,7 @@ Sets the template directory with validation
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>

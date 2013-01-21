@@ -89,7 +89,7 @@ Validates that the value looks like a proper param
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`boolean`
 	</dt>
 	<dd>
@@ -130,7 +130,7 @@ Parses the value into an information array
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`array`
 	</dt>
 	<dd>

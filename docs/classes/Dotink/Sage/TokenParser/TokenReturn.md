@@ -26,7 +26,7 @@ multiple returns, for which the template will decide how to display that.
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian
+				Matthew J. Sahagian 
 			</td>
 			<td>
 				mjs
@@ -35,7 +35,7 @@ multiple returns, for which the template will decide how to display that.
 				msahagian@dotink.org
 			</td>
 		</tr>
-
+	
 	</tbody>
 </table>
 
@@ -57,7 +57,7 @@ Validates that the value for the token looks OK
 		<th>Description</th>
 	</thead>
 	<tbody>
-
+			
 		<tr>
 			<td>
 				$value
@@ -69,14 +69,14 @@ Validates that the value for the token looks OK
 				The value for the token
 			</td>
 		</tr>
-
+			
 	</tbody>
 </table>
 
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`boolean`
 	</dt>
 	<dd>
@@ -98,7 +98,7 @@ Parses the value into usable information
 		<th>Description</th>
 	</thead>
 	<tbody>
-
+			
 		<tr>
 			<td>
 				$value
@@ -110,14 +110,14 @@ Parses the value into usable information
 				The value for the token
 			</td>
 		</tr>
-
+			
 	</tbody>
 </table>
 
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`array`
 	</dt>
 	<dd>

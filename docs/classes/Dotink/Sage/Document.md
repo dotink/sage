@@ -78,7 +78,7 @@ Creates a new document
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`Document`
 	</dt>
 	<dd>
@@ -103,7 +103,7 @@ Allows for getting the reflection for basic information
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`TokenReflection\IReflection`
 	</dt>
 	<dd>
@@ -119,7 +119,7 @@ Allows for getting the keys of the document
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`array`
 	</dt>
 	<dd>
@@ -135,7 +135,7 @@ Allows for getting the type of document
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`string`
 	</dt>
 	<dd>
@@ -162,7 +162,7 @@ Allows the document query to be counted
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`int`
 	</dt>
 	<dd>
@@ -178,7 +178,7 @@ Gets the current value
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`mixed`
 	</dt>
 	<dd>
@@ -194,7 +194,7 @@ Get the current key
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`mixed`
 	</dt>
 	<dd>
@@ -210,7 +210,7 @@ Moves the current element of the internal documents collection forward one
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -251,7 +251,7 @@ Creates a new document query from the existing internal document collection
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`DocumentCollection`
 	</dt>
 	<dd>
@@ -267,7 +267,7 @@ Moved the current element of the internal documents collection back to the begin
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -283,7 +283,7 @@ Determine if the current key of an array is Valid
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`boolean`
 	</dt>
 	<dd>

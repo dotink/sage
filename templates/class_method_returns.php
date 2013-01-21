@@ -2,7 +2,7 @@
 
 <dl>
 <?php while ($return = $method->getInfo('return')) { ?>
-	<dt>
+	<dt markdown="1">
 		`<?= $return['type'] ?>`
 	</dt>
 	<dd>

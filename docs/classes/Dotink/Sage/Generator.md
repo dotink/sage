@@ -70,7 +70,7 @@ Creates a new generator
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -111,7 +111,7 @@ Gets the token parser class for a given token
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`string|NULL`
 	</dt>
 	<dd>
@@ -164,7 +164,7 @@ Runs the documentation generator
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -229,7 +229,7 @@ Which without sorting by type would normally be in:
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -270,7 +270,7 @@ Configures token parsers from an array, filtering out bad ones
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		``
 	</dt>
 	<dd>
@@ -311,7 +311,7 @@ Sets the input path with validation
 ###### Returns
 
 <dl>
-	<dt>
+	<dt markdown="1">
 		`string`
 	</dt>
 	<dd>
