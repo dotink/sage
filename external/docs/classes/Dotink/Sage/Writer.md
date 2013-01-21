@@ -12,6 +12,7 @@
 
 
 ### Instance Methods
+<hr />
 
 #### <span style="color:#3e6a6e;">__construct()</span>
 
@@ -65,6 +66,7 @@ Creates a new writer
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">buildDocumentation()</span>
 
@@ -106,6 +108,7 @@ Builds documentation from an array of documents
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">buildDocumentationInFile()</span>
 
@@ -159,6 +162,7 @@ Builds our documentation for a single document in a particular file
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">buildDocumentationInPath()</span>
 
@@ -212,6 +216,7 @@ Builds our documentation in a particular directory
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">setOutputPath()</span>
 
@@ -264,6 +269,7 @@ Sets the output path with validation
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">setTemplateDirectory()</span>
 
@@ -316,6 +322,5 @@ Sets the template directory with validation
 	</dd>
 </dl>
 
-<hr />
 
 

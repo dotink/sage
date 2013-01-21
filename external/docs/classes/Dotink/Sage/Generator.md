@@ -37,6 +37,7 @@ Options and values for the generator
 
 
 ### Instance Methods
+<hr />
 
 #### <span style="color:#3e6a6e;">__construct()</span>
 
@@ -78,6 +79,7 @@ Creates a new generator
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getTokenParser()</span>
 
@@ -119,6 +121,7 @@ Gets the token parser class for a given token
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">run()</span>
 
@@ -172,6 +175,7 @@ Runs the documentation generator
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">makeDocumentCollection()</span>
 
@@ -237,6 +241,7 @@ Which without sorting by type would normally be in:
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">configTokenParsers()</span>
 
@@ -278,6 +283,7 @@ Configures token parsers from an array, filtering out bad ones
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">setInputPath()</span>
 
@@ -330,6 +336,5 @@ Sets the input path with validation
 	</dd>
 </dl>
 
-<hr />
 
 

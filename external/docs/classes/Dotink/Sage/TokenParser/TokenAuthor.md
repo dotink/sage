@@ -51,6 +51,7 @@ Matches of our validation test which we can use for actual parsing
 ## Methods
 
 ### Static Methods
+<hr />
 
 #### <span style="color:#3e6a6e;">validate()</span>
 
@@ -92,6 +93,7 @@ Validates that the value for the token looks OK
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">parse()</span>
 
@@ -133,7 +135,6 @@ Parses the value into usable information
 	</dd>
 </dl>
 
-<hr />
 
 
 

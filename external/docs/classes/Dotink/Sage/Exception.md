@@ -31,36 +31,45 @@
 
 
 ### Instance Methods
+<hr />
 
 #### <span style="color:#3e6a6e;">__construct()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">__clone()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getMessage()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getCode()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getFile()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getLine()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getTrace()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getPrevious()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getTraceAsString()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">__toString()</span>
 
-<hr />
 
 

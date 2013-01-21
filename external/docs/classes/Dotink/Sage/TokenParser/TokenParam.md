@@ -56,6 +56,7 @@ The previous definition used for reference in the event of `...`
 ## Methods
 
 ### Static Methods
+<hr />
 
 #### <span style="color:#3e6a6e;">validate()</span>
 
@@ -97,6 +98,7 @@ Validates that the value for the token looks OK
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">parse()</span>
 
@@ -138,7 +140,6 @@ Parses the value into usable information
 	</dd>
 </dl>
 
-<hr />
 
 
 

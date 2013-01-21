@@ -33,6 +33,7 @@ The internal documents collection
 
 
 ### Instance Methods
+<hr />
 
 #### <span style="color:#3e6a6e;">__construct()</span>
 
@@ -86,15 +87,19 @@ Creates a new document
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getDescription()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getDetails()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getInfo()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getReflection()</span>
 
@@ -111,6 +116,7 @@ Allows for getting the reflection for basic information
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getKeys()</span>
 
@@ -127,6 +133,7 @@ Allows for getting the keys of the document
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">getType()</span>
 
@@ -143,17 +150,21 @@ Allows for getting the type of document
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">hasInfo()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">parseDocComment()</span>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">parseToken()</span>
 
 Parses a token and adds it's value to the info array
 
+<hr />
 
 #### <span style="color:#3e6a6e;">count()</span>
 
@@ -170,6 +181,7 @@ Allows the document query to be counted
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">current()</span>
 
@@ -186,6 +198,7 @@ Gets the current value
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">key()</span>
 
@@ -202,6 +215,7 @@ Get the current key
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">next()</span>
 
@@ -218,6 +232,7 @@ Moves the current element of the internal documents collection forward one
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">query()</span>
 
@@ -259,6 +274,7 @@ Creates a new document query from the existing internal document collection
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">rewind()</span>
 
@@ -275,6 +291,7 @@ Moved the current element of the internal documents collection back to the begin
 	</dd>
 </dl>
 
+<hr />
 
 #### <span style="color:#3e6a6e;">valid()</span>
 
@@ -291,6 +308,5 @@ Determine if the current key of an array is Valid
 	</dd>
 </dl>
 
-<hr />
 
 

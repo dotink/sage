@@ -1,4 +1,5 @@
 <?php foreach ($methods as $method) { ?>
+<hr />
 
 #### <span style="color:#3e6a6e;"><?= $method->getReflection()->getName() ?>()</span>
 
@@ -27,4 +28,3 @@
 
 <?php } ?>
 <?php } ?>
-<hr />
