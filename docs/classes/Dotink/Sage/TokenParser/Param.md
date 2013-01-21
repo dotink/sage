@@ -1,4 +1,5 @@
-# Param - The `Param` class is responsible for parsing parameter tokens in a docblock.
+# `Param` (Responsible for parsing parameter tokens in a docblock.)
+
 
 _Copyright (c) 2013, Matthew J. Sahagian_
 

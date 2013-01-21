@@ -1,4 +1,5 @@
-# Author - The `Author` class is responsible for parsing author tokens in a docblock.
+# `Author` (The `Author` class is responsible for parsing author tokens in a docblock.)
+
 
 _Copyright (c) 2013, Matthew J. Sahagian_
 

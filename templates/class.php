@@ -1,4 +1,4 @@
-# <?= $document->getReflection()->getShortName() ?> - <?= $document->getDescription() ?>
+# `<?= $document->getReflection()->getShortName() ?>` (<?= $document->getDescription() ?: '_No Description_' ?>)
 
 
 <?php if ($document->hasInfo('copyright')) { ?>

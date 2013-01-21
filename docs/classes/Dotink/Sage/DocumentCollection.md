@@ -1,4 +1,5 @@
-# DocumentCollection - 
+# `DocumentCollection` (_No Description_)
+
 
 ## Details
 

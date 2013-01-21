@@ -1,4 +1,5 @@
-# Copyright - The `Copyright` class is responsible for parsing copyright tokens in a docblock.
+# `Copyright` (The `Copyright` class is responsible for parsing copyright tokens in a docblock.)
+
 
 _Copyright (c) 2013, Matthew J. Sahagian_
 

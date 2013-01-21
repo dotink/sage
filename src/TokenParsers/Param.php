@@ -1,7 +1,7 @@
 <?php namespace Dotink\Sage\TokenParser {
 
 	/**
-	 * The `Param` class is responsible for parsing parameter tokens in a docblock.
+	 * Responsible for parsing parameter tokens in a docblock.
 	 *
 	 * Each parameter token will be parsed into an array containing a `name`, `types`, and
 	 * `details` key.  The `type` key will be an array as well in the event the parameter can
