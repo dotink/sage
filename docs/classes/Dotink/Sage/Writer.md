@@ -1,25 +1,24 @@
 # Writer
 
 
-
 ## Methods
 		
 ### Instance Methods
-		
+
 #### __construct()
-			
+	
 Creates a new writer
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$output_path
@@ -31,7 +30,7 @@ Creates a new writer
 				The output path where we will be writing documentation to
 			</td>
 		</tr>
-														
+					
 		<tr>
 			<td>
 				$template_directory
@@ -43,25 +42,25 @@ Creates a new writer
 				The directory containing our templates
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### buildDocumentation()
-			
+	
 Builds documentation from an array of documents
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$documents
@@ -73,25 +72,25 @@ Builds documentation from an array of documents
 				A document collection keyed by directory structure
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### buildDocumentationInFile()
-			
+	
 Builds our documentation for a single document in a particular file
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$document
@@ -103,7 +102,7 @@ Builds our documentation for a single document in a particular file
 				A document to build documentation for
 			</td>
 		</tr>
-														
+					
 		<tr>
 			<td>
 				$file
@@ -115,25 +114,25 @@ Builds our documentation for a single document in a particular file
 				The file to build the documentation in
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### buildDocumentationInPath()
-			
+	
 Builds our documentation in a particular directory
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$documents
@@ -145,7 +144,7 @@ Builds our documentation in a particular directory
 				A document collection keyed by directory structure
 			</td>
 		</tr>
-														
+					
 		<tr>
 			<td>
 				$output_path
@@ -157,25 +156,25 @@ Builds our documentation in a particular directory
 				The output path for the document collection
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### setOutputPath()
-			
+	
 Sets the output path with validation
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$output_path
@@ -187,25 +186,25 @@ Sets the output path with validation
 				A relative or absolute directory to hold output
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### setTemplateDirectory()
-			
+	
 Sets the template directory with validation
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$template_directory
@@ -217,10 +216,10 @@ Sets the template directory with validation
 				The directory containing templates to set
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-						
-
+	
+	
 

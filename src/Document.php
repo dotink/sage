@@ -87,10 +87,11 @@
 					$this->documents[] = $document;
 					$document->keys[]  = 'property';
 
-					if ($property->isStatic())    { $document->keys[] = 'static';    }
 					if ($property->isPublic())    { $document->keys[] = 'public';    }
 					if ($property->isPrivate())   { $document->keys[] = 'private';   }
 					if ($property->isProtected()) { $document->keys[] = 'protected'; }
+					if ($property->isStatic())    { $document->keys[] = 'static';    }
+					else                          { $document->keys[] = 'instance';  }
 				}
 
 				foreach ($reflection->getMethods() as $method) {

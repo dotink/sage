@@ -1,28 +1,49 @@
 # Generator
 
 ## Properties
+		
+### Instance Properties
 
+#### $broker
 	
-
+The token reflection broker of the generator
+		
+#### $documents
+	
+A collection of documents
+		
+#### $reflections
+	
+The reflections we will be generating documentation for
+		
+#### $inputPath
+	
+The input path we will be scanning for source code
+		
+#### $options
+	
+Options and values for the generator
+		
+	
 
 ## Methods
 		
 ### Instance Methods
-		
+
 #### __construct()
-			
+	
 Creates a new generator
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$broker
@@ -34,25 +55,25 @@ Creates a new generator
 				The token reflection broker to use for reflection
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### getTokenParser()
-			
+	
 Gets the token parser class for a given token
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$token
@@ -64,25 +85,25 @@ Gets the token parser class for a given token
 				The token to get a parser for
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### run()
-			
+	
 Runs the documentation generator
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$input_path
@@ -94,7 +115,7 @@ Runs the documentation generator
 				A relative or absolute directory to scan
 			</td>
 		</tr>
-														
+					
 		<tr>
 			<td>
 				$options
@@ -106,29 +127,29 @@ Runs the documentation generator
 				An array of options and their values
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### makeDocumentCollection()
-			
+	
 Makes a document collection
-						
+		
 ##### Details
 
 If the document collection is sorted by type then.
-						
+		
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$reflection
@@ -140,7 +161,7 @@ If the document collection is sorted by type then.
 				A list of token reflections
 			</td>
 		</tr>
-														
+					
 		<tr>
 			<td>
 				$sort_by_type
@@ -152,25 +173,25 @@ If the document collection is sorted by type then.
 				Whether or not we should sort by type
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### configTokenParsers()
-			
+	
 Configures token parsers from an array, filtering out bad ones
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$token_parsers
@@ -182,25 +203,25 @@ Configures token parsers from an array, filtering out bad ones
 				A list of classes for parsing tokens, keyed by the token
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-					
+	
 #### setInputPath()
-			
+	
 Sets the input path with validation
-									
+			
 ###### Parameters
 
 <table>
 	<thead>
-		<th>Type</th>
-		<th>Param</th>
+		<th>Name</th>
+		<th>Type(s)</th>
 		<th>Description</th>
 	</thead>
 	<tbody>
-									
+			
 		<tr>
 			<td>
 				$input_path
@@ -212,10 +233,10 @@ Sets the input path with validation
 				A relative or absolute directory to scan
 			</td>
 		</tr>
-									
+			
 	</tbody>
 </table>
 
-						
-
+	
+	
 
