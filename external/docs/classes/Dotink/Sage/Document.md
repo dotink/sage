@@ -86,7 +86,8 @@ Creates a new document
 		<dd>
 			The document for method chaining
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -116,7 +117,8 @@ Allows for getting the reflection for basic information
 		<dd>
 			The reflection that the document represents
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -134,7 +136,8 @@ Allows for getting the keys of the document
 		<dd>
 			The keys assigned to the document
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -152,7 +155,8 @@ Allows for getting the type of document
 		<dd>
 			The type of the document
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -184,7 +188,8 @@ Allows the document query to be counted
 		<dd>
 			The count of the internal documents collection
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -202,7 +207,8 @@ Gets the current value
 		<dd>
 			The currently pointed to value of the internal documents collection
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -220,7 +226,8 @@ Get the current key
 		<dd>
 			The currently pointed to key of the internal documents collection
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -238,7 +245,8 @@ Moves the current element of the internal documents collection forward one
 		<dd>
 			Provides no return value.
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -281,7 +289,8 @@ Creates a new document query from the existing internal document collection
 		<dd>
 			The new traversable document query
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -299,7 +308,8 @@ Moved the current element of the internal documents collection back to the begin
 		<dd>
 			Provides no return value.
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -317,7 +327,8 @@ Determine if the current key of an array is Valid
 		<dd>
 			TRUE if the current key is valid, FALSE otherwise
 		</dd>
-	</dl>
+	
+</dl>
 
 
 

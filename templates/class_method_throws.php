@@ -2,6 +2,7 @@
 
 <dl>
 <?php while ($return = $method->getInfo('throws')) { ?>
+
 	<dt>
 		<?php if (strpos($return['type'], '\\') === FALSE) { ?>
 			<?= $method->getReflection()->getDeclaringClass()->getNamespaceName() . '\\' . $return['type'] ?>
@@ -15,4 +16,5 @@
 
 	</dd>
 <?php } ?>
+
 </dl>

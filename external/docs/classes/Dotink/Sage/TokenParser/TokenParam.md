@@ -97,7 +97,8 @@ Validates that the value for the token looks OK
 		<dd>
 			TRUE if the value validates, FALSE otherwise
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -140,7 +141,8 @@ Parses the value into usable information
 		<dd>
 			A list of parsed information, keyed by information type
 		</dd>
-	</dl>
+	
+</dl>
 
 
 

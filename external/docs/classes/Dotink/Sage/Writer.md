@@ -65,7 +65,8 @@ Creates a new writer
 		<dd>
 			Provides no return value.
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -108,7 +109,8 @@ Builds documentation from an array of documents
 		<dd>
 			Provides no return value.
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -163,7 +165,8 @@ Builds our documentation for a single document in a particular file
 		<dd>
 			Number of bytes written or FALSE on failure
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -218,7 +221,8 @@ Builds our documentation in a particular directory
 		<dd>
 			Provides no return value.
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -254,12 +258,14 @@ Sets the output path with validation
 ###### Throws
 
 <dl>
+
 	<dt>
 					Dotink\Sage\Exception		
 	</dt>
 	<dd>
 		If the path cannot be used for various reasons
 	</dd>
+
 </dl>
 
 ###### Returns
@@ -272,7 +278,8 @@ Sets the output path with validation
 		<dd>
 			The absolute real path for output
 		</dd>
-	</dl>
+	
+</dl>
 
 <hr />
 
@@ -308,12 +315,14 @@ Sets the template directory with validation
 ###### Throws
 
 <dl>
+
 	<dt>
 					Dotink\Sage\Exception		
 	</dt>
 	<dd>
 		If the directory cannot be found or is not readable
 	</dd>
+
 </dl>
 
 ###### Returns
@@ -326,7 +335,8 @@ Sets the template directory with validation
 		<dd>
 			Provides no return value.
 		</dd>
-	</dl>
+	
+</dl>
 
 
 
