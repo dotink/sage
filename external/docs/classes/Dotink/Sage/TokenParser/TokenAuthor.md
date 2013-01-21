@@ -13,7 +13,6 @@ look like the following:
 
 If any one of these pieces is missing it should still get all the information that is
 available with missing pieces represented as an empty string.
-
 #### Authors
 
 <table>

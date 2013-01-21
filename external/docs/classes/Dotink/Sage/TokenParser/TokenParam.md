@@ -18,7 +18,6 @@ Examples of what is parseable:
 
 If the param token is followed by a simple '...' it will automatically represent a ad
 infinitum number of repetitions of the preceding param.
-
 #### Authors
 
 <table>

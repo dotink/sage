@@ -9,7 +9,6 @@ _Copyright (c) 2013, Matthew J. Sahagian_.
 No additional parsing of the license string is done, however, in some documentation
 templates it may be the case that if the string begins with 'http://' it could auto-link
 assuming it's a URL to the license.
-
 #### Authors
 
 <table>

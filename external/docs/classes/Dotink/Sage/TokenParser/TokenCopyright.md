@@ -8,7 +8,6 @@ _Copyright (c) 2013, Matthew J. Sahagian_.
 
 No additional parsing of the string which follows the copyright is done, so it will not
 independently parse the year or names or anything like that.
-
 #### Authors
 
 <table>

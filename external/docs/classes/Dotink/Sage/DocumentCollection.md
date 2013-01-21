@@ -2,11 +2,6 @@
 
 
 
-### Details
-
-
-
-
 ## Properties
 
 

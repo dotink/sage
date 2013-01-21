@@ -14,7 +14,6 @@ The validation and parsing will work against standard return formats, such as:
 It will **not** accept an empty return value as equivalent to `void` and it will not accept
 returns with multiple types.  If your function returns multiple types you can specify
 multiple returns, for which the template will decide how to display that.
-
 #### Authors
 
 <table>

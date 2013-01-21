@@ -12,12 +12,13 @@ _<?= $document->getInfo('copyright') ?>_.
   _<?= $license ?>_
 <?php } ?>
 <?php } ?>
+<?php if ($document->getDetails()) { ?>
 
 ### Details
 
 <?= $document->getDetails() ?>
 
-
+<?php } ?>
 <?php if ($document->hasInfo('author')) { ?>
 <?php include 'authors.php'; ?>
 <?php } ?>

@@ -10,7 +10,6 @@ The validation and parsing will work against standard formats.  Each token shoul
 a single exception type thrown and the conditions under which it is thrown, such as:
 
 - `@throws Exception In the event that the configuration is ill-formatted`
-
 #### Authors
 
 <table>
