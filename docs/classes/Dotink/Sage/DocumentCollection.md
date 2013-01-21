@@ -11,7 +11,8 @@
 
 
 ### Instance Properties
-#### $documents
+#### <span style="color:#6a6e3d;">$documents</span>
+
 The internal documents collection
 
 
@@ -22,7 +23,7 @@ The internal documents collection
 ### Instance Methods
 
 
-#### __construct()
+#### <span style="color:#3e6a6e;">__construct()</span>
 	
 Creates a new document query, a progressively filterable collection of documents
 			
@@ -64,23 +65,23 @@ Creates a new document query, a progressively filterable collection of documents
 </table>
 
 	
-#### count()
+#### <span style="color:#3e6a6e;">count()</span>
 	
 Allows the document query to be counted
 			
-#### current()
+#### <span style="color:#3e6a6e;">current()</span>
 	
 Gets the current value of the internal documents collection
 			
-#### key()
+#### <span style="color:#3e6a6e;">key()</span>
 	
 Gets the current key of the internal documents collection
 			
-#### next()
+#### <span style="color:#3e6a6e;">next()</span>
 	
 Moves the current element of the internal documents collection forward one
 			
-#### query()
+#### <span style="color:#3e6a6e;">query()</span>
 	
 Creates a new document query from the existing internal document collection
 			
@@ -110,11 +111,11 @@ Creates a new document query from the existing internal document collection
 </table>
 
 	
-#### rewind()
+#### <span style="color:#3e6a6e;">rewind()</span>
 	
 Moved the current element of the internal documents collection back to the beginning
 			
-#### valid()
+#### <span style="color:#3e6a6e;">valid()</span>
 	
 Determine if the current key of an array is Valid
 			

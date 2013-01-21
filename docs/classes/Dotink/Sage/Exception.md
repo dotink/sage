@@ -11,13 +11,20 @@
 
 
 ### Instance Properties
-#### $message
-#### $string
-#### $code
-#### $file
-#### $line
-#### $trace
-#### $previous
+#### <span style="color:#6a6e3d;">$message</span>
+
+#### <span style="color:#6a6e3d;">$string</span>
+
+#### <span style="color:#6a6e3d;">$code</span>
+
+#### <span style="color:#6a6e3d;">$file</span>
+
+#### <span style="color:#6a6e3d;">$line</span>
+
+#### <span style="color:#6a6e3d;">$trace</span>
+
+#### <span style="color:#6a6e3d;">$previous</span>
+
 
 
 ## Methods
@@ -26,24 +33,24 @@
 ### Instance Methods
 
 
-#### __construct()
+#### <span style="color:#3e6a6e;">__construct()</span>
 			
-#### __clone()
+#### <span style="color:#3e6a6e;">__clone()</span>
 			
-#### getMessage()
+#### <span style="color:#3e6a6e;">getMessage()</span>
 			
-#### getCode()
+#### <span style="color:#3e6a6e;">getCode()</span>
 			
-#### getFile()
+#### <span style="color:#3e6a6e;">getFile()</span>
 			
-#### getLine()
+#### <span style="color:#3e6a6e;">getLine()</span>
 			
-#### getTrace()
+#### <span style="color:#3e6a6e;">getTrace()</span>
 			
-#### getPrevious()
+#### <span style="color:#3e6a6e;">getPrevious()</span>
 			
-#### getTraceAsString()
+#### <span style="color:#3e6a6e;">getTraceAsString()</span>
 			
-#### __toString()
+#### <span style="color:#3e6a6e;">__toString()</span>
 			
 

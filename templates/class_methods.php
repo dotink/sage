@@ -1,6 +1,6 @@
 <?php foreach ($methods as $method) { ?>
 
-#### <?= $method->getReflection()->getName() ?>()
+#### <span style="color:#3e6a6e;"><?= $method->getReflection()->getName() ?>()</span>
 	<?php if ($method->getDescription()) { ?>
 
 <?= $method->getDescription() ?>

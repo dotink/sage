@@ -1,8 +1,8 @@
 # `Copyright`
 ##Responsible for parsing copyright tokens in a docblock.
 
-_Copyright (c) 2013, Matthew J. Sahagian_
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Copyright (c) 2013, Matthew J. Sahagian_.
+  _Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Details
 
@@ -39,7 +39,7 @@ independently parse the year or names or anything like that.
 ### Static Methods
 
 
-#### validate()
+#### <span style="color:#3e6a6e;">validate()</span>
 	
 Validates that the copyright value looks OK
 			
@@ -69,7 +69,7 @@ Validates that the copyright value looks OK
 </table>
 
 	
-#### parse()
+#### <span style="color:#3e6a6e;">parse()</span>
 	
 Parses the value into an information array
 			

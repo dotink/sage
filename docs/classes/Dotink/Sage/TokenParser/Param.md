@@ -1,8 +1,8 @@
 # `Param`
 ##Responsible for parsing parameter tokens in a docblock.
 
-_Copyright (c) 2013, Matthew J. Sahagian_
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Copyright (c) 2013, Matthew J. Sahagian_.
+  _Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Details
 
@@ -47,7 +47,8 @@ infinitum number of repetitions of the preceding param.
 
 ### Static Properties
 
-#### $previousDefinition
+#### <span style="color:#6a6e3d;">$previousDefinition</span>
+
 The previous definition used for reference in the event of `...`
 
 
@@ -57,7 +58,7 @@ The previous definition used for reference in the event of `...`
 ### Static Methods
 
 
-#### validate()
+#### <span style="color:#3e6a6e;">validate()</span>
 	
 Validates that the value looks like a proper param
 			
@@ -87,7 +88,7 @@ Validates that the value looks like a proper param
 </table>
 
 	
-#### parse()
+#### <span style="color:#3e6a6e;">parse()</span>
 	
 Parses the value into an information array
 			

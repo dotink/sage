@@ -1,5 +1,5 @@
 <?php foreach ($properties as $property) { ?>
-#### $<?= $property->getReflection()->getName() ?>
+#### <span style="color:#6a6e3d;">$<?= $property->getReflection()->getName() ?></span>
 
 <?php if ($property->getDescription()) { ?>
 <?= $property->getDescription() ?>

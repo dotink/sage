@@ -1,8 +1,8 @@
 # `Author`
 ##Responsible for parsing author tokens in a docblock.
 
-_Copyright (c) 2013, Matthew J. Sahagian_
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Copyright (c) 2013, Matthew J. Sahagian_.
+  _Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Details
 
@@ -42,7 +42,8 @@ available with missing pieces represented as an empty string.
 
 ### Static Properties
 
-#### $matches
+#### <span style="color:#6a6e3d;">$matches</span>
+
 Matches of our validation test which we can use for actual parsing
 
 
@@ -52,7 +53,7 @@ Matches of our validation test which we can use for actual parsing
 ### Static Methods
 
 
-#### validate()
+#### <span style="color:#3e6a6e;">validate()</span>
 	
 Validates that the value looks like a proper param
 			
@@ -82,7 +83,7 @@ Validates that the value looks like a proper param
 </table>
 
 	
-#### parse()
+#### <span style="color:#3e6a6e;">parse()</span>
 	
 Parses the value into an information array
 			

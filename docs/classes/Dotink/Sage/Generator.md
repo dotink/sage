@@ -11,19 +11,24 @@
 
 
 ### Instance Properties
-#### $broker
+#### <span style="color:#6a6e3d;">$broker</span>
+
 The token reflection broker of the generator
 
-#### $documents
+#### <span style="color:#6a6e3d;">$documents</span>
+
 A collection of documents
 
-#### $reflections
+#### <span style="color:#6a6e3d;">$reflections</span>
+
 The reflections we will be generating documentation for
 
-#### $inputPath
+#### <span style="color:#6a6e3d;">$inputPath</span>
+
 The input path we will be scanning for source code
 
-#### $options
+#### <span style="color:#6a6e3d;">$options</span>
+
 Options and values for the generator
 
 
@@ -34,7 +39,7 @@ Options and values for the generator
 ### Instance Methods
 
 
-#### __construct()
+#### <span style="color:#3e6a6e;">__construct()</span>
 	
 Creates a new generator
 			
@@ -64,7 +69,7 @@ Creates a new generator
 </table>
 
 	
-#### getTokenParser()
+#### <span style="color:#3e6a6e;">getTokenParser()</span>
 	
 Gets the token parser class for a given token
 			
@@ -94,7 +99,7 @@ Gets the token parser class for a given token
 </table>
 
 	
-#### run()
+#### <span style="color:#3e6a6e;">run()</span>
 	
 Runs the documentation generator
 			
@@ -136,7 +141,7 @@ Runs the documentation generator
 </table>
 
 	
-#### makeDocumentCollection()
+#### <span style="color:#3e6a6e;">makeDocumentCollection()</span>
 	
 Makes a document collection
 		
@@ -190,7 +195,7 @@ Which without sorting by type would normally be in:
 </table>
 
 	
-#### configTokenParsers()
+#### <span style="color:#3e6a6e;">configTokenParsers()</span>
 	
 Configures token parsers from an array, filtering out bad ones
 			
@@ -220,7 +225,7 @@ Configures token parsers from an array, filtering out bad ones
 </table>
 
 	
-#### setInputPath()
+#### <span style="color:#3e6a6e;">setInputPath()</span>
 	
 Sets the input path with validation
 			

@@ -14,7 +14,7 @@
 ### Instance Methods
 
 
-#### __construct()
+#### <span style="color:#3e6a6e;">__construct()</span>
 	
 Creates a new writer
 			
@@ -56,7 +56,7 @@ Creates a new writer
 </table>
 
 	
-#### buildDocumentation()
+#### <span style="color:#3e6a6e;">buildDocumentation()</span>
 	
 Builds documentation from an array of documents
 			
@@ -86,7 +86,7 @@ Builds documentation from an array of documents
 </table>
 
 	
-#### buildDocumentationInFile()
+#### <span style="color:#3e6a6e;">buildDocumentationInFile()</span>
 	
 Builds our documentation for a single document in a particular file
 			
@@ -128,7 +128,7 @@ Builds our documentation for a single document in a particular file
 </table>
 
 	
-#### buildDocumentationInPath()
+#### <span style="color:#3e6a6e;">buildDocumentationInPath()</span>
 	
 Builds our documentation in a particular directory
 			
@@ -170,7 +170,7 @@ Builds our documentation in a particular directory
 </table>
 
 	
-#### setOutputPath()
+#### <span style="color:#3e6a6e;">setOutputPath()</span>
 	
 Sets the output path with validation
 			
@@ -200,7 +200,7 @@ Sets the output path with validation
 </table>
 
 	
-#### setTemplateDirectory()
+#### <span style="color:#3e6a6e;">setTemplateDirectory()</span>
 	
 Sets the template directory with validation
 			

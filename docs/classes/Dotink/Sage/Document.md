@@ -11,13 +11,20 @@
 
 
 ### Instance Properties
-#### $description
-#### $details
-#### $info
-#### $keys
-#### $reflection
-#### $type
-#### $documents
+#### <span style="color:#6a6e3d;">$description</span>
+
+#### <span style="color:#6a6e3d;">$details</span>
+
+#### <span style="color:#6a6e3d;">$info</span>
+
+#### <span style="color:#6a6e3d;">$keys</span>
+
+#### <span style="color:#6a6e3d;">$reflection</span>
+
+#### <span style="color:#6a6e3d;">$type</span>
+
+#### <span style="color:#6a6e3d;">$documents</span>
+
 The internal documents collection
 
 
@@ -28,7 +35,7 @@ The internal documents collection
 ### Instance Methods
 
 
-#### __construct()
+#### <span style="color:#3e6a6e;">__construct()</span>
 	
 Creates a new document
 			
@@ -70,49 +77,49 @@ Creates a new document
 </table>
 
 	
-#### getDescription()
+#### <span style="color:#3e6a6e;">getDescription()</span>
 			
-#### getDetails()
+#### <span style="color:#3e6a6e;">getDetails()</span>
 			
-#### getInfo()
+#### <span style="color:#3e6a6e;">getInfo()</span>
 			
-#### getReflection()
+#### <span style="color:#3e6a6e;">getReflection()</span>
 	
 Allows for getting the reflection for basic information
 			
-#### getKeys()
+#### <span style="color:#3e6a6e;">getKeys()</span>
 	
 Allows for getting the keys of the document
 			
-#### getType()
+#### <span style="color:#3e6a6e;">getType()</span>
 	
 Allows for getting the type of document
 			
-#### hasInfo()
+#### <span style="color:#3e6a6e;">hasInfo()</span>
 			
-#### parseDocComment()
+#### <span style="color:#3e6a6e;">parseDocComment()</span>
 			
-#### parseToken()
+#### <span style="color:#3e6a6e;">parseToken()</span>
 	
 Parses a token and adds it's value to the info array
 			
-#### count()
+#### <span style="color:#3e6a6e;">count()</span>
 	
 Allows the document query to be counted
 			
-#### current()
+#### <span style="color:#3e6a6e;">current()</span>
 	
 Gets the current value of the internal documents collection
 			
-#### key()
+#### <span style="color:#3e6a6e;">key()</span>
 	
 Gets the current key of the internal documents collection
 			
-#### next()
+#### <span style="color:#3e6a6e;">next()</span>
 	
 Moves the current element of the internal documents collection forward one
 			
-#### query()
+#### <span style="color:#3e6a6e;">query()</span>
 	
 Creates a new document query from the existing internal document collection
 			
@@ -142,11 +149,11 @@ Creates a new document query from the existing internal document collection
 </table>
 
 	
-#### rewind()
+#### <span style="color:#3e6a6e;">rewind()</span>
 	
 Moved the current element of the internal documents collection back to the beginning
 			
-#### valid()
+#### <span style="color:#3e6a6e;">valid()</span>
 	
 Determine if the current key of an array is Valid
 			
