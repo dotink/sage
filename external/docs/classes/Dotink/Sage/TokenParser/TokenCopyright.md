@@ -1,5 +1,5 @@
 # `TokenCopyright`
-##Responsible for parsing copyright tokens in a docblock.
+##Responsible for parsing @copyright tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
   _Please reference the LICENSE.txt file at the root of this distribution_
@@ -40,7 +40,7 @@ independently parse the year or names or anything like that.
 
 #### <span style="color:#3e6a6e;">validate()</span>
 
-Validates that the copyright value looks OK
+Validates that the value for the token looks OK
 
 ###### Parameters
 
@@ -71,7 +71,8 @@ Validates that the copyright value looks OK
 
 <dl>
 	<dt>
-		boolean	</dt>
+		boolean
+	</dt>
 	<dd>
 		TRUE if the value validates, FALSE otherwise
 	</dd>
@@ -80,7 +81,7 @@ Validates that the copyright value looks OK
 
 #### <span style="color:#3e6a6e;">parse()</span>
 
-Parses the value into an information array
+Parses the value into usable information
 
 ###### Parameters
 
@@ -111,9 +112,10 @@ Parses the value into an information array
 
 <dl>
 	<dt>
-		array	</dt>
+		string
+	</dt>
 	<dd>
-		The information array
+		The value for the token
 	</dd>
 </dl>
 

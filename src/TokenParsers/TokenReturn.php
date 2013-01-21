@@ -1,7 +1,7 @@
 <?php namespace Dotink\Sage\TokenParser {
 
 	/**
-	 * Responsible for parsing return tokens in a docblock.
+	 * Responsible for parsing @return tokens in a docblock.
 	 *
 	 * The validation and parsing will work against standard return formats, such as:
 	 *
@@ -22,7 +22,7 @@
 	class TokenReturn
 	{
 		const REGEX_VALID = '/
-			void\s*$|[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s+.*
+			(void\s*$|[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s+.+)
 		/xi';
 
 
@@ -46,7 +46,7 @@
 		 * @static
 		 * @access public
 		 * @param string $value The value for the token
-		 * @return array An list of parsed information, keyed by information type
+		 * @return array A list of parsed information, keyed by information type
 		 */
 		static public function parse($value)
 		{

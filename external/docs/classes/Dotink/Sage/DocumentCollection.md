@@ -67,7 +67,8 @@ Creates a new document query, a progressively filterable collection of documents
 
 <dl>
 	<dt>
-			</dt>
+		
+	</dt>
 	<dd>
 		
 	</dd>
@@ -82,7 +83,8 @@ Allows the document query to be counted
 
 <dl>
 	<dt>
-		int	</dt>
+		int
+	</dt>
 	<dd>
 		The count of the internal documents collection
 	</dd>
@@ -97,7 +99,8 @@ Gets the current value
 
 <dl>
 	<dt>
-		mixed	</dt>
+		mixed
+	</dt>
 	<dd>
 		The currently pointed to value of the internal documents collection
 	</dd>
@@ -112,7 +115,8 @@ Get the current key
 
 <dl>
 	<dt>
-		mixed	</dt>
+		mixed
+	</dt>
 	<dd>
 		The currently pointed to key of the internal documents collection
 	</dd>
@@ -127,7 +131,8 @@ Moves the current element of the internal documents collection forward one
 
 <dl>
 	<dt>
-			</dt>
+		
+	</dt>
 	<dd>
 		
 	</dd>
@@ -167,7 +172,8 @@ Creates a new document query from the existing internal document collection
 
 <dl>
 	<dt>
-		DocumentCollection	</dt>
+		DocumentCollection
+	</dt>
 	<dd>
 		The new traversable document query
 	</dd>
@@ -182,7 +188,8 @@ Moved the current element of the internal documents collection back to the begin
 
 <dl>
 	<dt>
-			</dt>
+		
+	</dt>
 	<dd>
 		
 	</dd>
@@ -197,7 +204,8 @@ Determine if the current key of an array is Valid
 
 <dl>
 	<dt>
-		boolean	</dt>
+		boolean
+	</dt>
 	<dd>
 		TRUE if the current key is valid, FALSE otherwise
 	</dd>

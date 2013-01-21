@@ -1,5 +1,5 @@
 # `TokenParam`
-##Responsible for parsing parameter tokens in a docblock.
+##Responsible for parsing @param tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
   _Please reference the LICENSE.txt file at the root of this distribution_
@@ -59,7 +59,7 @@ The previous definition used for reference in the event of `...`
 
 #### <span style="color:#3e6a6e;">validate()</span>
 
-Validates that the value looks like a proper param
+Validates that the value for the token looks OK
 
 ###### Parameters
 
@@ -90,7 +90,8 @@ Validates that the value looks like a proper param
 
 <dl>
 	<dt>
-		boolean	</dt>
+		boolean
+	</dt>
 	<dd>
 		TRUE if the value validates, FALSE otherwise
 	</dd>
@@ -99,7 +100,7 @@ Validates that the value looks like a proper param
 
 #### <span style="color:#3e6a6e;">parse()</span>
 
-Parses the value into an information array
+Parses the value into usable information
 
 ###### Parameters
 
@@ -130,9 +131,10 @@ Parses the value into an information array
 
 <dl>
 	<dt>
-		array	</dt>
+		array
+	</dt>
 	<dd>
-		The information array
+		A list of parsed information, keyed by information type
 	</dd>
 </dl>
 

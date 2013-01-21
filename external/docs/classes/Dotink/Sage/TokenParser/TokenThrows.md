@@ -1,19 +1,15 @@
-# `TokenReturn`
-##Responsible for parsing @return tokens in a docblock.
+# `TokenThrows`
+##Responsible for parsing @throws tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
   _Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Details
 
-The validation and parsing will work against standard return formats, such as:
+The validation and parsing will work against standard formats.  Each token should represent
+a single exception type thrown and the conditions under which it is thrown, such as:
 
-- `@return void`
-- `@return boolean TRUE if the logic suceeded, FALSE otherwise`
-
-It will **not** accept an empty return value as equivalent to `void` and it will not accept
-returns with multiple types.  If your function returns multiple types you can specify
-multiple returns, for which the template will decide how to display that.
+- `@throws Exception In the event that the configuration is ill-formatted`
 
 #### Authors
 

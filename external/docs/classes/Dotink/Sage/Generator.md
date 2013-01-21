@@ -71,7 +71,8 @@ Creates a new generator
 
 <dl>
 	<dt>
-			</dt>
+		
+	</dt>
 	<dd>
 		
 	</dd>
@@ -111,7 +112,8 @@ Gets the token parser class for a given token
 
 <dl>
 	<dt>
-		string|NULL	</dt>
+		string|NULL
+	</dt>
 	<dd>
 		The class for parsing the token, or NULL if not available
 	</dd>
@@ -163,7 +165,8 @@ Runs the documentation generator
 
 <dl>
 	<dt>
-			</dt>
+		
+	</dt>
 	<dd>
 		
 	</dd>
@@ -227,7 +230,8 @@ Which without sorting by type would normally be in:
 
 <dl>
 	<dt>
-			</dt>
+		
+	</dt>
 	<dd>
 		
 	</dd>
@@ -267,7 +271,8 @@ Configures token parsers from an array, filtering out bad ones
 
 <dl>
 	<dt>
-			</dt>
+		
+	</dt>
 	<dd>
 		
 	</dd>
@@ -303,11 +308,23 @@ Sets the input path with validation
 	</tbody>
 </table>
 
+###### Throws
+
+<dl>
+	<dt>
+					Dotink\Sage\Exception		
+	</dt>
+	<dd>
+		If the path cannot be used for various reasons
+	</dd>
+</dl>
+
 ###### Returns
 
 <dl>
 	<dt>
-		string	</dt>
+		string
+	</dt>
 	<dd>
 		The absolute real path for input
 	</dd>

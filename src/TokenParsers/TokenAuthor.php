@@ -1,7 +1,7 @@
 <?php namespace Dotink\Sage\TokenParser {
 
 	/**
-	 * Responsible for parsing author tokens in a docblock.
+	 * Responsible for parsing @author tokens in a docblock.
 	 *
 	 * The parser will attempt to parse out `name`, `handle`, and `email` keys from strings which
 	 * look like the following:
@@ -38,7 +38,7 @@
 
 
 		/**
-		 * Validates that the value looks like a proper param
+		 * Validates that the value for the token looks OK
 		 *
 		 * @static
 		 * @access public
@@ -52,12 +52,12 @@
 
 
 		/**
-		 * Parses the value into an information array
+		 * Parses the value into usable information
 		 *
 		 * @static
 		 * @access public
 		 * @param string $value The value for the token
-		 * @return array The information array
+		 * @return array A list of parsed information, keyed by information type
 		 */
 		static public function parse($value)
 		{

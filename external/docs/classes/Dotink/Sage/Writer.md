@@ -26,7 +26,7 @@ Creates a new writer
 		<th>Description</th>
 	</thead>
 	<tbody>
-			
+
 		<tr>
 			<td>
 				$output_path
@@ -38,7 +38,7 @@ Creates a new writer
 				The output path where we will be writing documentation to
 			</td>
 		</tr>
-					
+
 		<tr>
 			<td>
 				$template_directory
@@ -50,7 +50,7 @@ Creates a new writer
 				The directory containing our templates
 			</td>
 		</tr>
-			
+
 	</tbody>
 </table>
 
@@ -58,9 +58,10 @@ Creates a new writer
 
 <dl>
 	<dt>
-			</dt>
+
+	</dt>
 	<dd>
-		
+
 	</dd>
 </dl>
 
@@ -78,7 +79,7 @@ Builds documentation from an array of documents
 		<th>Description</th>
 	</thead>
 	<tbody>
-			
+
 		<tr>
 			<td>
 				$documents
@@ -90,7 +91,7 @@ Builds documentation from an array of documents
 				A document collection keyed by directory structure
 			</td>
 		</tr>
-			
+
 	</tbody>
 </table>
 
@@ -98,9 +99,10 @@ Builds documentation from an array of documents
 
 <dl>
 	<dt>
-			</dt>
+
+	</dt>
 	<dd>
-		
+
 	</dd>
 </dl>
 
@@ -118,7 +120,7 @@ Builds our documentation for a single document in a particular file
 		<th>Description</th>
 	</thead>
 	<tbody>
-			
+
 		<tr>
 			<td>
 				$document
@@ -130,7 +132,7 @@ Builds our documentation for a single document in a particular file
 				A document to build documentation for
 			</td>
 		</tr>
-					
+
 		<tr>
 			<td>
 				$file
@@ -142,7 +144,7 @@ Builds our documentation for a single document in a particular file
 				The file to build the documentation in
 			</td>
 		</tr>
-			
+
 	</tbody>
 </table>
 
@@ -150,7 +152,8 @@ Builds our documentation for a single document in a particular file
 
 <dl>
 	<dt>
-		int|FALSE	</dt>
+		int|FALSE
+	</dt>
 	<dd>
 		Number of bytes written or FALSE on failure
 	</dd>
@@ -170,7 +173,7 @@ Builds our documentation in a particular directory
 		<th>Description</th>
 	</thead>
 	<tbody>
-			
+
 		<tr>
 			<td>
 				$documents
@@ -182,7 +185,7 @@ Builds our documentation in a particular directory
 				A document collection keyed by directory structure
 			</td>
 		</tr>
-					
+
 		<tr>
 			<td>
 				$output_path
@@ -194,7 +197,7 @@ Builds our documentation in a particular directory
 				The output path for the document collection
 			</td>
 		</tr>
-			
+
 	</tbody>
 </table>
 
@@ -202,9 +205,10 @@ Builds our documentation in a particular directory
 
 <dl>
 	<dt>
-			</dt>
+
+	</dt>
 	<dd>
-		
+
 	</dd>
 </dl>
 
@@ -222,7 +226,7 @@ Sets the output path with validation
 		<th>Description</th>
 	</thead>
 	<tbody>
-			
+
 		<tr>
 			<td>
 				$output_path
@@ -234,15 +238,27 @@ Sets the output path with validation
 				A relative or absolute directory to hold output
 			</td>
 		</tr>
-			
+
 	</tbody>
 </table>
+
+###### Throws
+
+<dl>
+	<dt>
+					Dotink\Sage\Exception
+	</dt>
+	<dd>
+		If the path cannot be used for various reasons
+	</dd>
+</dl>
 
 ###### Returns
 
 <dl>
 	<dt>
-		string	</dt>
+		string
+	</dt>
 	<dd>
 		The absolute real path for output
 	</dd>
@@ -262,7 +278,7 @@ Sets the template directory with validation
 		<th>Description</th>
 	</thead>
 	<tbody>
-			
+
 		<tr>
 			<td>
 				$template_directory
@@ -274,17 +290,29 @@ Sets the template directory with validation
 				The directory containing templates to set
 			</td>
 		</tr>
-			
+
 	</tbody>
 </table>
+
+###### Throws
+
+<dl>
+	<dt>
+					Dotink\Sage\Exception
+	</dt>
+	<dd>
+		If the directory cannot be found or is not readable
+	</dd>
+</dl>
 
 ###### Returns
 
 <dl>
 	<dt>
-			</dt>
+
+	</dt>
 	<dd>
-		
+
 	</dd>
 </dl>
 

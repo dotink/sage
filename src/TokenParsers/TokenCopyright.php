@@ -1,7 +1,7 @@
 <?php namespace Dotink\Sage\TokenParser {
 
 	/**
-	 * Responsible for parsing copyright tokens in a docblock.
+	 * Responsible for parsing @copyright tokens in a docblock.
 	 *
 	 * No additional parsing of the string which follows the copyright is done, so it will not
 	 * independently parse the year or names or anything like that.
@@ -16,7 +16,7 @@
 	class TokenCopyright
 	{
 		/**
-		 * Validates that the copyright value looks OK
+		 * Validates that the value for the token looks OK
 		 *
 		 * @static
 		 * @access public
@@ -32,12 +32,12 @@
 
 
 		/**
-		 * Parses the value into an information array
+		 * Parses the value into usable information
 		 *
 		 * @static
 		 * @access public
 		 * @param string $value The value for the token
-		 * @return array The information array
+		 * @return string The value for the token
 		 */
 		static public function parse($value)
 		{
