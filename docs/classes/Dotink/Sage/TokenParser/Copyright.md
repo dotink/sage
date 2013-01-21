@@ -1,21 +1,11 @@
-# Param - The `Param` class is responsible for parsing parameter tokens in a docblock.
+# Copyright - The `Copyright` class is responsible for parsing copyright tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_
 
 ## Details
 
-Each parameter token will be parsed into an array containing a `name`, `types`, and
-`details` key.  The `type` key will be an array as well in the event the parameter can
-be passed as multiple types.
-
-Examples of what is parseable:
-
-- `@param string $name Description of what this parameter is`
-- `@param string|File $input_file The file we want to read from`
-- `@param ...`
-
-If the param token is followed by a simple '...' it will automatically represent a ad
-infinitum number of repetitions of the preceding param.
+No additional parsing of the string which follows the copyright is done, so it will not
+independently parse the year or names or anything like that.
 
 ### Authors
 
@@ -41,14 +31,6 @@ infinitum number of repetitions of the preceding param.
 	</tbody>
 </table>
 
-## Properties
-
-### Static Properties
-
-#### $previousDefinition
-The previous definition used for reference in the event of `...`
-
-
 
 ## Methods
 
@@ -57,7 +39,7 @@ The previous definition used for reference in the event of `...`
 
 #### validate()
 	
-Validates that the value looks like a proper param
+Validates that the copyright value looks OK
 			
 ###### Parameters
 

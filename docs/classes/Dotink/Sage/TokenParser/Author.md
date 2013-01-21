@@ -1,21 +1,16 @@
-# Param - The `Param` class is responsible for parsing parameter tokens in a docblock.
+# Author - The `Author` class is responsible for parsing author tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_
 
 ## Details
 
-Each parameter token will be parsed into an array containing a `name`, `types`, and
-`details` key.  The `type` key will be an array as well in the event the parameter can
-be passed as multiple types.
+The parser will attempt to parse out `name`, `handle`, and `email` keys from strings which
+look like the following:
 
-Examples of what is parseable:
+`Matthew J. Sahagian [mjs] <msahagian@dotink.org>
 
-- `@param string $name Description of what this parameter is`
-- `@param string|File $input_file The file we want to read from`
-- `@param ...`
-
-If the param token is followed by a simple '...' it will automatically represent a ad
-infinitum number of repetitions of the preceding param.
+If any one of these pieces is missing it should still get all the information that is
+available with missing pieces represented as an empty string.
 
 ### Authors
 
@@ -45,8 +40,8 @@ infinitum number of repetitions of the preceding param.
 
 ### Static Properties
 
-#### $previousDefinition
-The previous definition used for reference in the event of `...`
+#### $matches
+Matches of our validation test which we can use for actual parsing
 
 
 

@@ -1,18 +1,24 @@
-# DocumentCollection
+# DocumentCollection - 
+
+## Details
+
+
+
 
 ## Properties
-		
-### Instance Properties
 
+
+### Instance Properties
 #### $documents
-	
 The internal documents collection
-		
-	
+
+
 
 ## Methods
-		
+
+
 ### Instance Methods
+
 
 #### __construct()
 	
@@ -110,5 +116,4 @@ Moved the current element of the internal documents collection back to the begin
 	
 Determine if the current key of an array is Valid
 			
-	
 

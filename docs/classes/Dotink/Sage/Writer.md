@@ -1,9 +1,16 @@
-# Writer
+# Writer - 
+
+## Details
+
+
+
 
 
 ## Methods
-		
+
+
 ### Instance Methods
+
 
 #### __construct()
 	
@@ -220,6 +227,5 @@ Sets the template directory with validation
 	</tbody>
 </table>
 
-	
 	
 

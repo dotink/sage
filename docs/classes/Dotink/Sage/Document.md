@@ -1,30 +1,30 @@
-# Document
+# Document - 
+
+## Details
+
+
+
 
 ## Properties
-		
-### Instance Properties
 
+
+### Instance Properties
 #### $description
-		
 #### $details
-		
 #### $info
-		
 #### $keys
-		
 #### $reflection
-		
 #### $type
-		
 #### $documents
-	
 The internal documents collection
-		
-	
+
+
 
 ## Methods
-		
+
+
 ### Instance Methods
+
 
 #### __construct()
 	
@@ -49,6 +49,18 @@ Creates a new document
 			</td>
 			<td>
 				The reflection to use
+			</td>
+		</tr>
+					
+		<tr>
+			<td>
+				$generator
+			</td>
+			<td>
+				Generator
+			</td>
+			<td>
+				The generator that is creating this document
 			</td>
 		</tr>
 			
@@ -136,5 +148,4 @@ Moved the current element of the internal documents collection back to the begin
 	
 Determine if the current key of an array is Valid
 			
-	
 

@@ -1,5 +1,28 @@
 <?php namespace Dotink\Sage\TokenParser {
 
+	/**
+	 * The `Param` class is responsible for parsing parameter tokens in a docblock.
+	 *
+	 * Each parameter token will be parsed into an array containing a `name`, `types`, and
+	 * `details` key.  The `type` key will be an array as well in the event the parameter can
+	 * be passed as multiple types.
+	 *
+	 * Examples of what is parseable:
+	 *
+	 * - `@param string $name Description of what this parameter is`
+	 * - `@param string|File $input_file The file we want to read from`
+	 * - `@param ...`
+	 *
+	 * If the param token is followed by a simple '...' it will automatically represent a ad
+	 * infinitum number of repetitions of the preceding param.
+	 *
+	 * @copyright Copyright (c) 2013, Matthew J. Sahagian
+	 * @author Matthew J. Sahagian [mjs] <msahagian@dotink.org>
+	 *
+	 * @license Please reference the LICENSE.txt file at the root of this distribution
+	 *
+	 * @package Sage
+	 */
 	class Param
 	{
 		const REGEX_VALID = '/
@@ -9,7 +32,7 @@
 
 
 		/**
-		 * The previous definition used for reference in the event of ...
+		 * The previous definition used for reference in the event of `...`
 		 *
 		 * @static
 		 * @access private

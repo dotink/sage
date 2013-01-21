@@ -1,28 +1,28 @@
-# Exception
+# Exception - 
+
+## Details
+
+
+
 
 ## Properties
-		
-### Instance Properties
 
+
+### Instance Properties
 #### $message
-		
 #### $string
-		
 #### $code
-		
 #### $file
-		
 #### $line
-		
 #### $trace
-		
 #### $previous
-		
-	
+
 
 ## Methods
-		
+
+
 ### Instance Methods
+
 
 #### __construct()
 			
@@ -44,5 +44,4 @@
 			
 #### __toString()
 			
-	
 

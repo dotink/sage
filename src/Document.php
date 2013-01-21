@@ -56,7 +56,7 @@
 		 *
 		 * @access public
 		 * @param TokenReflection\IReflection $reflection The reflection to use
-		 * @param Generator The generator that is creating this document
+		 * @param Generator $generator The generator that is creating this document
 		 * @return Document The document for method chaining
 		 */
 		public function __construct(TokenReflection\IReflection $reflection, $generator)
@@ -253,13 +253,20 @@
 				return;
 			}
 
-			if ($token_parser::validate($value)) {
-				if (!isset($this->info[$token])) {
-					$this->info[$token] = array();
-				}
-
-				$this->info[$token][] = $token_parser::parse($value);
+			if (!$token_parser::validate($value)) {
+				throw new Exception(
+					'Improperly formatted docblock token and value `@%s %s` in document %s',
+					$token,
+					$value,
+					$this->reflection->getFileName()
+				);
 			}
+
+			if (!isset($this->info[$token])) {
+				$this->info[$token] = array();
+			}
+
+			$this->info[$token][] = $token_parser::parse($value);
 		}
 	}
 }

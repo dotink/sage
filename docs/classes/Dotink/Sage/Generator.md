@@ -1,34 +1,36 @@
-# Generator
+# Generator - 
+
+## Details
+
+
+
 
 ## Properties
-		
-### Instance Properties
 
+
+### Instance Properties
 #### $broker
-	
 The token reflection broker of the generator
-		
+
 #### $documents
-	
 A collection of documents
-		
+
 #### $reflections
-	
 The reflections we will be generating documentation for
-		
+
 #### $inputPath
-	
 The input path we will be scanning for source code
-		
+
 #### $options
-	
 Options and values for the generator
-		
-	
+
+
 
 ## Methods
-		
+
+
 ### Instance Methods
+
 
 #### __construct()
 	
@@ -245,6 +247,5 @@ Sets the input path with validation
 	</tbody>
 </table>
 
-	
 	
 
