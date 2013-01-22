@@ -36,9 +36,18 @@
 		 */
 		public function __construct(array $documents, $key)
 		{
-			foreach ($documents as $document) {
-				if (array_search($key, $document->getKeys()) !== FALSE) {
-					$this->documents[] = $document;
+			if ($key[0] == '!') {
+				foreach ($documents as $document) {
+					if (array_search(substr($key, 1), $document->getKeys()) === FALSE) {
+						$this->documents[] = $document;
+					}
+				}
+
+			} else {
+				foreach ($documents as $document) {
+					if (array_search($key, $document->getKeys()) !== FALSE) {
+						$this->documents[] = $document;
+					}
 				}
 			}
 		}
