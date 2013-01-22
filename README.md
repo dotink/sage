@@ -1,5 +1,7 @@
 # Sage
 
+![Travis-CI Status](https://travis-ci.org/dotink/Sage.png?branch=master)
+
 Sage is a documentation generator for PHP code.  Unlike other documentation generators for PHP code, it is easily extended and generally doesn't suck.
 
 ## Installation
