@@ -20,21 +20,11 @@
 	 */
 	class TokenAuthor
 	{
-		const REGEX_VALID = '/
+		const REGEX_VALID_AND_MATCH = '/
 			([\w(?:\.|\s+|\.\s+)?]+(?:\s+|$)?)?  # Name followed by optional space or end of line
-			(?:\[(.*)\](?:\s+|$)?)?              # Handle followed by optional space or end of line
-			(?:\<(.*)\>(?:\s*))?                 # Email address (non-validated)
+			(?:\[(.+)\](?:\s+|$)?)?              # Handle followed by optional space or end of line
+			(?:\<(.+)\>(?:\s*))?                 # Email address (non-validated)
 		/xi';
-
-
-		/**
-		 * Matches of our validation test which we can use for actual parsing
-		 *
-		 * @static
-		 * @access private
-		 * @var array
-		 */
-		static public $matches = array();
 
 
 		/**
@@ -47,7 +37,9 @@
 		 */
 		static public function validate($value)
 		{
-			return preg_match(self::REGEX_VALID, $value, self::$matches);
+			return preg_match(self::REGEX_VALID_AND_MATCH, $value)
+				? TRUE
+				: FALSE;
 		}
 
 
@@ -61,13 +53,20 @@
 		 */
 		static public function parse($value)
 		{
+			preg_match(self::REGEX_VALID_AND_MATCH, $value, $matches);
+
+			if (!isset($matches[1])) { $matches[1] = NULL; }
+			if (!isset($matches[2])) { $matches[2] = NULL; }
+			if (!isset($matches[3])) { $matches[3] = NULL; }
+
 			$info = [
-				'name'   => self::$matches[1],
-				'handle' => self::$matches[2],
-				'email'  => self::$matches[3]
+				'name'   => trim($matches[1]),
+				'handle' => trim($matches[2]),
+				'email'  => trim($matches[3])
 			];
 
-			self::$matches = array();
+			$matches = array();
+
 			return $info;
 		}
 	}

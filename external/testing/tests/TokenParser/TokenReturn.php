@@ -35,8 +35,13 @@
 					-> equals(TRUE)
 
 					-> with('float|int         This should also not validate')
-					-> equals(FALSE);
+					-> equals(FALSE)
 
+					-> with('void')
+					-> equals(TRUE)
+
+					-> with('void     ')
+					-> equals(TRUE);
 			},
 
 			//
@@ -44,21 +49,19 @@
 			//
 
 			'parse()' => function() {
-/*				assert('Dotink\Sage\TokenParser\TokenParam::parse')
+				assert('Dotink\Sage\TokenParser\TokenReturn::parse')
 
-					-> with('int $test This parameter does not do much')
+					-> with('int An integer to be returned')
 					-> equals([
-						'types'   => [0 => 'int'],
-						'name'    => '$test',
-						'details' => 'This parameter does not do much'
+						'type'  => 'int',
+						'note'  => 'An integer to be returned'
 					])
 
-					-> with('boolean|string $test This parameter has multiple types')
+					-> with('void')
 					-> equals([
-						'types'   => [0 => 'boolean', 1 => 'string'],
-						'name'    => '$test',
-						'details' => 'This parameter has multiple types'
-					]); */
+						'type'  => NULL,
+						'note'  => NULL
+					]);
 			}
 		]
 	];
