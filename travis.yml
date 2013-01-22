@@ -1,0 +1,8 @@
+language: php
+php:
+  - 5.4
+before_install:
+  - git submodule update --init --recursive
+  - wget http://getcomposer.org/compser.phar
+  - php composer.phar install
+script: php ./external/testing/lab/lab.php
