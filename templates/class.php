@@ -23,7 +23,7 @@ _<?= $document->getInfo('copyright') ?>_.
 <?php include 'authors.php'; ?>
 <?php } ?>
 
-<?php if (count($class_properties = $document->query('property'))) { ?>
+<?php if (count($class_properties = $document->query('property')->query('!inherited'))) { ?>
 ## Properties
 
 <?php if (count($properties = $class_properties->query('static'))) { ?>
@@ -39,7 +39,7 @@ _<?= $document->getInfo('copyright') ?>_.
 <?php } ?>
 <?php } ?>
 
-<?php if (count($class_methods = $document->query('method'))) { ?>
+<?php if (count($class_methods = $document->query('method')->query('!inherited'))) { ?>
 ## Methods
 
 <?php if (count($methods = $class_methods->query('static'))) { ?>
