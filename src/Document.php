@@ -119,6 +119,16 @@
 					$this->documents[] = $document;
 					$document->keys[]  = 'property';
 
+					if ($declaring_class = $property->getDeclaringClass()) {
+						if ($declaring_class != $reflection) {
+							$document->keys[] = 'inherited';
+						}
+					} elseif ($declaring_trait = $property->getDeclaringTrait()) {
+						if ($declaring_trait != $reflection) {
+							$document->keys[] = 'inherited';
+						}
+					}
+
 					if ($property->isPublic())    { $document->keys[] = 'public';    }
 					if ($property->isPrivate())   { $document->keys[] = 'private';   }
 					if ($property->isProtected()) { $document->keys[] = 'protected'; }
@@ -130,6 +140,16 @@
 					$document          = new self($method, $this->generator);
 					$this->documents[] = $document;
 					$document->keys[]  = 'method';
+
+					if ($declaring_class = $method->getDeclaringClass()) {
+						if ($declaring_class != $reflection) {
+							$document->keys[] = 'inherited';
+						}
+					} elseif ($declaring_trait = $method->getDeclaringTrait()) {
+						if ($declaring_trait != $reflection) {
+							$document->keys[] = 'inherited';
+						}
+					}
 
 					if ($method->isFinal())     { $document->keys[] = 'final';     }
 					if ($method->isAbstract())  { $document->keys[] = 'abstract';  }
