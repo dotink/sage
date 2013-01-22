@@ -1,0 +1,3 @@
+[submodule "external/testing/lab"]
+	path = external/testing/lab
+	url = https://github.com/dotink/Lab.git
