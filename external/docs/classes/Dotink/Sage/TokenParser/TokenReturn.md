@@ -25,7 +25,7 @@ multiple returns, for which the template will decide how to display that.
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian 
+				Matthew J. Sahagian
 			</td>
 			<td>
 				mjs

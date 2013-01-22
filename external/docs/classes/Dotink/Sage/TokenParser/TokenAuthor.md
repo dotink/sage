@@ -24,7 +24,7 @@ available with missing pieces represented as an empty string.
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian 
+				Matthew J. Sahagian
 			</td>
 			<td>
 				mjs
@@ -36,15 +36,6 @@ available with missing pieces represented as an empty string.
 	
 	</tbody>
 </table>
-
-## Properties
-
-### Static Properties
-
-#### <span style="color:#6a6e3d;">$matches</span>
-
-Matches of our validation test which we can use for actual parsing
-
 
 
 ## Methods

@@ -77,7 +77,7 @@
 		 *
 		 * @access public
 		 * @param string $token The token to get a parser for
-		 * @return string|NULL The class for parsing the token, or NULL if not available
+		 * @return string The class for parsing the token, or NULL if not available
 		 */
 		public function getTokenParser($token)
 		{

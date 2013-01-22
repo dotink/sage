@@ -21,7 +21,7 @@ a single exception type thrown and the conditions under which it is thrown, such
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian 
+				Matthew J. Sahagian
 			</td>
 			<td>
 				mjs

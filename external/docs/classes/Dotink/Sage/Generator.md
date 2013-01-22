@@ -14,7 +14,7 @@ _Copyright (c) 2013, Matthew J. Sahagian_.
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian 
+				Matthew J. Sahagian
 			</td>
 			<td>
 				mjs
@@ -137,7 +137,7 @@ Gets the token parser class for a given token
 <dl>
 	
 		<dt>
-			string|NULL
+			string
 		</dt>
 		<dd>
 			The class for parsing the token, or NULL if not available

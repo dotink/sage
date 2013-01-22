@@ -29,7 +29,7 @@ infinitum number of repetitions of the preceding param.
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian 
+				Matthew J. Sahagian
 			</td>
 			<td>
 				mjs

@@ -14,7 +14,7 @@ _Copyright (c) 2013, Matthew J. Sahagian_.
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian 
+				Matthew J. Sahagian
 			</td>
 			<td>
 				mjs
@@ -180,7 +180,7 @@ Builds our documentation for a single document in a particular file
 <dl>
 	
 		<dt>
-			int|FALSE
+			int
 		</dt>
 		<dd>
 			Number of bytes written or FALSE on failure

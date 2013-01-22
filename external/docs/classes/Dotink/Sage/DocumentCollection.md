@@ -18,7 +18,7 @@ This class is countable as well as traversable so that it can be used in templat
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian 
+				Matthew J. Sahagian
 			</td>
 			<td>
 				mjs

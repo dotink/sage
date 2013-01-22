@@ -19,7 +19,7 @@ independently parse the year or names or anything like that.
 	<tbody>
 			<tr>
 			<td>
-				Matthew J. Sahagian 
+				Matthew J. Sahagian
 			</td>
 			<td>
 				mjs

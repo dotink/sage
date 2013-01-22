@@ -53,7 +53,7 @@
 		 * @access private
 		 * @param array $document A document to build documentation for
 		 * @param string $file The file to build the documentation in
-		 * @return int|FALSE Number of bytes written or FALSE on failure
+		 * @return int Number of bytes written or FALSE on failure
 		 */
 		private function buildDocumentationInFile($document, $file)
 		{

@@ -215,7 +215,7 @@
 		 * Allows for getting the reflection for additional information about the `Document`
 		 *
 		 * @access public
-		 * @return TokenReflection\IReflection The reflection that the document represents
+		 * @return IReflection The reflection that the document represents
 		 */
 		public function getReflection()
 		{
