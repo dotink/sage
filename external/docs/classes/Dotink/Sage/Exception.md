@@ -6,7 +6,7 @@ _Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Extends
 
-Exception
+`\Exception`
 ### Details
 
 This exception class supports using sprintf style arguments to construct a message.
