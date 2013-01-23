@@ -1,4 +1,4 @@
-# `Exception`extends `[Exception]()`
+# `Exception`extends [`Exception`]()
 ## A custom exception class to differentiate Sage exceptions from other types.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.

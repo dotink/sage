@@ -1,6 +1,6 @@
 # <?= '`' . $document->getReflection()->getShortName() . '`' ?>
 <?php if ($parent = $document->getReflection()->getParentClass()) { ?>
-<?= sprintf('extends `[%s](%s)`', $parent->getShortName(), $this->getLink($parent->getName())) ?>
+<?= sprintf('extends [`%s`](%s)', $parent->getShortName(), $this->getLink($parent->getName())) ?>
 <?php } ?>
 
 <?= $document->getDescription() ? '## ' . $document->getDescription() : NULL ?>
