@@ -113,6 +113,8 @@
 						: implode(DIRECTORY_SEPARATOR, $path);
 				}
 			}
+
+			return NULL;
 		}
 
 

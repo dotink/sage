@@ -17,8 +17,11 @@ _<?= $license ?>_
 
 ### Extends
 
-<?= sprintf('[`%s`](%s)', $parent->getName(), $this->getLink($parent->getName())) ?>
-
+<?php if ($link = $this->getLink($parent->getName())) { ?>
+<?= sprintf('[`%s`](%s)', $parent->getName(), $link) ?>
+<?php } else { ?>
+<?= $parent->getName() ?>
+<?php } ?>
 <?php } ?>
 <?php if ($document->getDetails()) { ?>
 

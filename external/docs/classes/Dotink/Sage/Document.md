@@ -7,7 +7,6 @@ _Please reference the LICENSE.txt file at the root of this distribution_
 ### Extends
 
 [`Dotink\Sage\DocumentCollection`](./DocumentCollection.md)
-
 ### Details
 
 Although these are generally thought of as single pages, it is possible for them to be
