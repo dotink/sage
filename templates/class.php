@@ -1,7 +1,4 @@
 # <?= '`' . $document->getReflection()->getShortName() . '`' ?>
-<?php if ($parent = $document->getReflection()->getParentClass()) { ?>
-<?= sprintf('extends [`%s`](%s)', $parent->getShortName(), $this->getLink($parent->getName())) ?>
-<?php } ?>
 
 <?= $document->getDescription() ? '## ' . $document->getDescription() : NULL ?>
 
@@ -15,6 +12,13 @@ _<?= $document->getInfo('copyright') ?>_.
 <?php } else { ?>
 _<?= $license ?>_
 <?php } ?>
+<?php } ?>
+<?php if ($parent = $document->getReflection()->getParentClass()) { ?>
+
+### Extends
+
+<?= sprintf('[`%s`](%s)', $parent->getName(), $this->getLink($parent->getName())) ?>
+
 <?php } ?>
 <?php if ($document->getDetails()) { ?>
 

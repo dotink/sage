@@ -1,8 +1,12 @@
-# `Document`extends [`DocumentCollection`](./DocumentCollection.md)
+# `Document`
 ## A representation of a single document in the documentation.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.txt file at the root of this distribution_
+
+### Extends
+
+[`Dotink\Sage\DocumentCollection`](./DocumentCollection.md)
 
 ### Details
 
