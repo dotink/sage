@@ -195,25 +195,6 @@ Gets a relative link to a particular document
 
 <hr />
 
-#### <span style="color:#3e6a6e;">write()</span>
-
-Writes all the documentation out to a file
-
-###### Returns
-
-<dl>
-	
-		<dt>
-			void
-		</dt>
-		<dd>
-			Provides no return value.
-		</dd>
-	
-</dl>
-
-<hr />
-
 #### <span style="color:#3e6a6e;">compile()</span>
 
 Compiles references of file paths to documents
@@ -368,6 +349,25 @@ Sets the template directory with validation
 	</dd>
 
 </dl>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
+
+<hr />
+
+#### <span style="color:#3e6a6e;">write()</span>
+
+Writes all the documentation out to a file
 
 ###### Returns
 
