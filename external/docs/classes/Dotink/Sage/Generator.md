@@ -1,8 +1,8 @@
 # `Generator`
-##Provides documentation generation service by reading a particular source directory
+## Provides documentation generation service by reading a particular source directory
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-  _Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.txt file at the root of this distribution_
 #### Authors
 
 <table>
@@ -38,10 +38,6 @@ The token reflection broker of the generator
 #### <span style="color:#6a6e3d;">$documents</span>
 
 A collection of documents
-
-#### <span style="color:#6a6e3d;">$reflections</span>
-
-The reflections we will be generating documentation for
 
 #### <span style="color:#6a6e3d;">$inputPath</span>
 

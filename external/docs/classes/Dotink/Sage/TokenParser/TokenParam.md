@@ -1,8 +1,8 @@
 # `TokenParam`
-##Responsible for parsing @param tokens in a docblock.
+## Responsible for parsing @param tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-  _Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Details
 

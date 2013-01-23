@@ -1,5 +1,9 @@
-# `<?= $document->getReflection()->getShortName() ?>`
-<?= $document->getDescription() ? '##' . $document->getDescription() : NULL ?>
+# <?= '`' . $document->getReflection()->getShortName() . '`' ?>
+<?php if ($parent = $document->getReflection()->getParentClass()) { ?>
+<?= sprintf('extends [%s](%s)', $parent->getShortName(), $this->getLink($parent->getName())) ?>
+<?php } ?>
+
+<?= $document->getDescription() ? '## ' . $document->getDescription() : NULL ?>
 
 
 <?php if ($document->hasInfo('copyright')) { ?>
@@ -7,9 +11,9 @@ _<?= $document->getInfo('copyright') ?>_.
 <?php } ?>
 <?php if ($license = $document->getInfo('license')) { ?>
 <?php if (preg_match('#^http([s])?://(.*)#', $license)) { ?>
-  [<?= $license ?>](<?= $license ?>)
+[<?= $license ?>](<?= $license ?>)
 <?php } else { ?>
-  _<?= $license ?>_
+_<?= $license ?>_
 <?php } ?>
 <?php } ?>
 <?php if ($document->getDetails()) { ?>

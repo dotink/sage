@@ -1,8 +1,8 @@
 # `DocumentCollection`
-##A collection of documents which can be progressively filtered via simple queries
+## A collection of documents which can be progressively filtered via simple queries
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-  _Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Details
 

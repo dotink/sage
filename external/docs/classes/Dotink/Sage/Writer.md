@@ -1,8 +1,8 @@
 # `Writer`
-##Provides documentation writing services by outputting to a particular directory
+## Provides documentation writing services by outputting to a particular directory
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-  _Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.txt file at the root of this distribution_
 #### Authors
 
 <table>
@@ -26,6 +26,23 @@ _Copyright (c) 2013, Matthew J. Sahagian_.
 	
 	</tbody>
 </table>
+
+## Properties
+
+
+### Instance Properties
+#### <span style="color:#6a6e3d;">$currentWriteDocument</span>
+
+The current document being written to.
+
+#### <span style="color:#6a6e3d;">$outputPath</span>
+
+The output path for this writer
+
+#### <span style="color:#6a6e3d;">$references</span>
+
+Compiled references list [file => document]
+
 
 
 ## Methods
@@ -134,9 +151,9 @@ Builds documentation from an array of documents
 
 <hr />
 
-#### <span style="color:#3e6a6e;">buildDocumentationInFile()</span>
+#### <span style="color:#3e6a6e;">getLink()</span>
 
-Builds our documentation for a single document in a particular file
+Gets a relative link to a particular document
 
 ###### Parameters
 
@@ -153,22 +170,10 @@ Builds our documentation for a single document in a particular file
 				$document
 			</td>
 			<td>
-				array
-			</td>
-			<td>
-				A document to build documentation for
-			</td>
-		</tr>
-					
-		<tr>
-			<td>
-				$file
-			</td>
-			<td>
 				string
 			</td>
 			<td>
-				The file to build the documentation in
+				The document to get a link to
 			</td>
 		</tr>
 			
@@ -180,19 +185,38 @@ Builds our documentation for a single document in a particular file
 <dl>
 	
 		<dt>
-			int
+			string
 		</dt>
 		<dd>
-			Number of bytes written or FALSE on failure
+			The relative link to the documentation
 		</dd>
 	
 </dl>
 
 <hr />
 
-#### <span style="color:#3e6a6e;">buildDocumentationInPath()</span>
+#### <span style="color:#3e6a6e;">write()</span>
 
-Builds our documentation in a particular directory
+Writes all the documentation out to a file
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
+
+<hr />
+
+#### <span style="color:#3e6a6e;">compile()</span>
+
+Compiles references of file paths to documents
 
 ###### Parameters
 
@@ -236,10 +260,10 @@ Builds our documentation in a particular directory
 <dl>
 	
 		<dt>
-			void
+			array
 		</dt>
 		<dd>
-			Provides no return value.
+			The array of file => document references
 		</dd>
 	
 </dl>

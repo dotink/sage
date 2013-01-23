@@ -1,8 +1,8 @@
-# `Exception`
-##A custom exception class to differentiate Sage exceptions from other types.
+# `Exception`extends [Exception]()
+## A custom exception class to differentiate Sage exceptions from other types.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-  _Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.txt file at the root of this distribution_
 
 ### Details
 

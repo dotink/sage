@@ -33,15 +33,6 @@
 
 
 		/**
-		 * The reflections we will be generating documentation for
-		 *
-		 * @access private
-		 * @var array
-		 */
-		private $reflections = array();
-
-
-		/**
 		 * The input path we will be scanning for source code
 		 *
 		 * @access private

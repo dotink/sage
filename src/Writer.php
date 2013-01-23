@@ -14,6 +14,32 @@
 	{
 		const DEFAULT_OUTPUT_PATH = 'sage_output';
 
+		/**
+		 * The current document being written to.
+		 *
+		 * @access private
+		 * @var string
+		 */
+		private $currentWriteDocument = NULL;
+
+
+		/**
+		 * The output path for this writer
+		 *
+		 * @access private
+		 * @var string
+		 */
+		private $outputPath = NULL;
+
+
+		/**
+		 * Compiled references list [file => document]
+		 *
+		 * @access private
+		 * @var array
+		 */
+		private $references = array();
+
 
 		/**
 		 * Creates a new writer
@@ -43,46 +69,93 @@
 		 */
 		public function buildDocumentation($documents)
 		{
-			$this->buildDocumentationInPath($documents, NULL);
+			$this->write($this->compile($documents, NULL));
 		}
 
 
 		/**
-		 * Builds our documentation for a single document in a particular file
+		 * Gets a relative link to a particular document
+		 *
+		 * @access public
+		 * @param string $document The document to get a link to
+		 * @return string The relative link to the documentation
+		 */
+		public function getLink($document)
+		{
+			foreach ($this->references as $reference_path => $reference) {
+				if ($reference->getReflection()->getName() == $document) {
+					$source_parts = explode(DIRECTORY_SEPARATOR, str_replace(
+						$this->outputPath . DIRECTORY_SEPARATOR,
+						'',
+						$this->currentWriteDocument
+					));
+
+					$target_parts = explode(DIRECTORY_SEPARATOR, str_replace(
+						$this->outputPath . DIRECTORY_SEPARATOR,
+						'',
+						$reference_path
+					));
+
+					for ($x = 0; $front = array_shift($source_parts); $x++) {
+						if ($front != $target_parts[$x]) {
+							break;
+						}
+					}
+
+					$path = array_slice($target_parts, $x);
+
+					for ($y = count($source_parts); $y > 0; $y--) {
+						array_unshift($path, '..');
+					}
+
+					return $path[0] != '..'
+						? '.' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $path)
+						: implode(DIRECTORY_SEPARATOR, $path);
+				}
+			}
+		}
+
+
+		/**
+		 * Writes all the documentation out to a file
 		 *
 		 * @access private
-		 * @param array $document A document to build documentation for
-		 * @param string $file The file to build the documentation in
-		 * @return int Number of bytes written or FALSE on failure
+		 * @return void
 		 */
-		private function buildDocumentationInFile($document, $file)
+		private function write()
 		{
-			$type     = $document->getType();
-			$template = $this->templateDirectory . DIRECTORY_SEPARATOR . $type . '.php';
+			foreach ($this->references as $file => $document) {
+				$type     = $document->getType();
+				$template = $this->templateDirectory . DIRECTORY_SEPARATOR . $type . '.php';
 
-			if (!is_file($template)) {
-				throw new Exception(
-					'Cannot write documentation, template for type %s at %s is missing',
-					$type,
-					$template
-				);
+				if (!is_file($template)) {
+					throw new Exception(
+						'Cannot write documentation, template for type %s at %s is missing',
+						$type,
+						$template
+					);
+				}
+
+
+				ob_start();
+				$this->currentWriteDocument = $file;
+				include $template;
+				$this->currentWriteDocument = NULL;
+
+				file_put_contents($file, ob_get_clean());
 			}
-
-			ob_start();
-			include $template;
-			return  file_put_contents($file, ob_get_clean());
 		}
 
 
 		/**
-		 * Builds our documentation in a particular directory
+		 * Compiles references of file paths to documents
 		 *
 		 * @access private
 		 * @param array $documents A document collection keyed by directory structure
 		 * @param string $output_path The output path for the document collection
-		 * @return void
+		 * @return array The array of file => document references
 		 */
-		private function buildDocumentationInPath($documents, $output_path)
+		private function compile($documents, $output_path)
 		{
 			if (!$output_path) {
 				$output_path = $this->outputPath;
@@ -91,7 +164,7 @@
 			foreach ($documents as $path => $child) {
 				if (is_array($child)) {
 					if ($path == 'no-namespace') {
-						$this->buildDocumentationInPath($documents[$path], $output_path);
+						$this->compile($documents[$path], $output_path);
 
 					} else {
 						$child_output_path = $output_path . DIRECTORY_SEPARATOR . $path;
@@ -111,7 +184,7 @@
 							);
 						}
 
-						$this->buildDocumentationInPath(
+						$this->compile(
 							$documents[$path],
 							$child_output_path
 						);
@@ -121,9 +194,11 @@
 					$name = $child->getReflection()->getShortName();
 					$file = $output_path . DIRECTORY_SEPARATOR . $name . '.md';
 
-					$this->buildDocumentationInFile($child, $file);
+					$this->references[$file] = $child;
 				}
 			}
+
+			return $this->references;
 		}
 
 
