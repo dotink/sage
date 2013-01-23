@@ -117,37 +117,6 @@
 
 
 		/**
-		 * Writes all the documentation out to a file
-		 *
-		 * @access private
-		 * @return void
-		 */
-		private function write()
-		{
-			foreach ($this->references as $file => $document) {
-				$type     = $document->getType();
-				$template = $this->templateDirectory . DIRECTORY_SEPARATOR . $type . '.php';
-
-				if (!is_file($template)) {
-					throw new Exception(
-						'Cannot write documentation, template for type %s at %s is missing',
-						$type,
-						$template
-					);
-				}
-
-
-				ob_start();
-				$this->currentWriteDocument = $file;
-				include $template;
-				$this->currentWriteDocument = NULL;
-
-				file_put_contents($file, ob_get_clean());
-			}
-		}
-
-
-		/**
 		 * Compiles references of file paths to documents
 		 *
 		 * @access private
@@ -253,6 +222,37 @@
 					'Cannot use %s as template directory, does not exist or cannot be read',
 					$template_directory
 				);
+			}
+		}
+
+
+		/**
+		 * Writes all the documentation out to a file
+		 *
+		 * @access private
+		 * @return void
+		 */
+		private function write()
+		{
+			foreach ($this->references as $file => $document) {
+				$type     = $document->getType();
+				$template = $this->templateDirectory . DIRECTORY_SEPARATOR . $type . '.php';
+
+				if (!is_file($template)) {
+					throw new Exception(
+						'Cannot write documentation, template for type %s at %s is missing',
+						$type,
+						$template
+					);
+				}
+
+
+				ob_start();
+				$this->currentWriteDocument = $file;
+				include $template;
+				$this->currentWriteDocument = NULL;
+
+				file_put_contents($file, ob_get_clean());
 			}
 		}
 	}
