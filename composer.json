@@ -1,5 +1,5 @@
 {
-	"name": "dotink/sager",
+	"name": "dotink/sage",
 	"description": "Library emulating the PHP internal reflection using just the tokenized source code.",
 	"keywords": ["documentation"],
 	"license": "AGPL",
