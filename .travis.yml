@@ -2,7 +2,7 @@ language: php
 php:
   - 5.4
 before_install:
-  - git submodule update --init --recursive
+  - git clone git://github.com/dotink/Lab.git lab
 before_script:
   - composer install
-script: php ./external/testing/lab/lab.php
+script: php ./lab/lab.php
