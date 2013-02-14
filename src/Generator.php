@@ -98,9 +98,17 @@
 		{
 			$this->setInputPath($input_path);
 
-			$config  = $this->inputPath . DIRECTORY_SEPARATOR . 'sage.config.php';
-			$options = file_exists($config)
-				? include $config
+			for (
+				$config_path  = realpath($this->inputPath);
+
+				$config_path != realpath($config_path . DIRECTORY_SEPARATOR . '..')
+				&& !is_readable($config_path . DIRECTORY_SEPARATOR . 'sage.config');
+
+				$config_path  = realpath($config_path . DIRECTORY_SEPARATOR . '..')
+			);
+
+			$options = file_exists($config_path . DIRECTORY_SEPARATOR . 'sage.config')
+				? include $config_path . DIRECTORY_SEPARATOR . 'sage.config'
 				: array();
 
 			$reflections   = $this->broker->processDirectory($this->inputPath, [], TRUE);
