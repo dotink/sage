@@ -1,12 +1,13 @@
 {
 	"name": "dotink/sage",
-	"description": "Library emulating the PHP internal reflection using just the tokenized source code.",
-	"keywords": ["documentation"],
+	"description": "A PHP documentation generator which produces markdown API docs.",
+	"keywords": ["documentation","markdown"],
 	"license": "AGPL",
-
 	"authors": [
 		{
-			"name": "Matthew J. Sahagian"
+			"name": "Matthew J. Sahagian",
+			"email": "msahagian@dotink.org",
+			"role": "Developer"
 		}
 	],
 	"require": {
