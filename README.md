@@ -49,7 +49,7 @@ The `.` at the top representing your provided output directory in the original c
 
 There are a few configuration options available for Sage, but for now we will just cover how to create a config and use the most common option.
 
-You can set any options by placing a file called `sage.config.php` at the root of your input directory or source code tree.  This allows you to create custom configuration per source tree and not have to worry about changing config options or specifying loads of parameters.
+You can set any options by placing a file called `sage.config` in your input directory or optionally any preceding directory.  Sage will seek parent directories until it finds one.
 
 An example of what this file looks like is found below.  It also shows the most common configuration option which is the `'sort_by_type'` key.  If set to `TRUE` this will force sage to re-organize your documentation output by various structure types.  That is to say that despite Sage using namespaces for directory structure, prior to building the namespaced directory structure it will create directories such as `classes`, `functions`, etc... at the root of your output directory.  Then, within each of these will be only the documentation of those types (still within a namespace folder structure).
 
