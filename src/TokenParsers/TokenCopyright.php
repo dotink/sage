@@ -9,7 +9,7 @@
 	 * @copyright Copyright (c) 2013, Matthew J. Sahagian
 	 * @author Matthew J. Sahagian [mjs] <msahagian@dotink.org>
 	 *
-	 * @license Please reference the LICENSE.txt file at the root of this distribution
+	 * @license Please reference the LICENSE.md file at the root of this distribution
 	 *
 	 * @package Sage
 	 */
