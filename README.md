@@ -45,22 +45,6 @@ The `input` and `output` arguments should point to directories which represent w
 
 The `.` at the top representing your provided output directory in the original command.  If you do not supply an output directory sage will create all documentation in `sage_output` by default in the current working directory.
 
-## Configuration
-
-There are a few configuration options available for Sage, but for now we will just cover how to create a config and use the most common option.
-
-You can set any options by placing a file called `sage.config` in your input directory or optionally any preceding directory.  Sage will seek parent directories until it finds one.
-
-An example of what this file looks like is found below.  It also shows the most common configuration option which is the `'sort_by_type'` key.  If set to `TRUE` this will force sage to re-organize your documentation output by various structure types.  That is to say that despite Sage using namespaces for directory structure, prior to building the namespaced directory structure it will create directories such as `classes`, `functions`, etc... at the root of your output directory.  Then, within each of these will be only the documentation of those types (still within a namespace folder structure).
-
-```php
-<?php return [
-    'sort_by_type' => TRUE,
-];
-```
-
-We will be adding more configuration options, more templates, and more token parsers as time goes on, but currently we primarily only support the key aspects of class documentation.
-
 ## Contributing
 
 If you'd like to contribute please contact info@dotink.org with any questions you might have on how to get started.
