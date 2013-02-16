@@ -5,6 +5,7 @@
 <?= $return['type'] ?>
 
 :    <?= $return['note'] ?>
+
 <?php } else { ?>
 void
 :    Provides no return value.

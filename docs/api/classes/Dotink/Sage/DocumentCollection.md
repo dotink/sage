@@ -107,6 +107,7 @@ Allows the document query to be counted
 
 int
 :    The count of the internal documents collection
+
 <hr />
 
 #### <span style="color:#3e6a6e;">current()</span>
@@ -117,6 +118,7 @@ Gets the current value
 
 mixed
 :    The currently pointed to value of the internal documents collection
+
 <hr />
 
 #### <span style="color:#3e6a6e;">key()</span>
@@ -127,6 +129,7 @@ Get the current key
 
 mixed
 :    The currently pointed to key of the internal documents collection
+
 <hr />
 
 #### <span style="color:#3e6a6e;">next()</span>
@@ -173,6 +176,7 @@ Creates a new document query from the existing internal document collection
 
 DocumentCollection
 :    The new traversable document query
+
 <hr />
 
 #### <span style="color:#3e6a6e;">rewind()</span>
@@ -194,6 +198,7 @@ Determine if the current key of an array is Valid
 
 boolean
 :    TRUE if the current key is valid, FALSE otherwise
+
 
 
 

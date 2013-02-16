@@ -123,6 +123,7 @@ Gets the token parser class for a given token
 
 string
 :    The class for parsing the token, or NULL if not available
+
 <hr />
 
 #### <span style="color:#3e6a6e;">run()</span>
@@ -315,6 +316,7 @@ Sets the input path with validation
 
 string
 :    The absolute real path for input
+
 
 
 

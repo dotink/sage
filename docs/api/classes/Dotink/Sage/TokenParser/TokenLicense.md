@@ -71,6 +71,7 @@ Validates that the value for the token looks OK
 
 boolean
 :    TRUE if the value validates, FALSE otherwise
+
 <hr />
 
 #### <span style="color:#3e6a6e;">parse()</span>
@@ -106,6 +107,7 @@ Parses the value into usable information
 
 string
 :    The value for the token
+
 
 
 

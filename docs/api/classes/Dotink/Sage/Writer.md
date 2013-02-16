@@ -167,6 +167,7 @@ Gets a relative link to a particular document
 
 string
 :    The relative link to the documentation
+
 <hr />
 
 #### <span style="color:#3e6a6e;">compile()</span>
@@ -214,6 +215,7 @@ Compiles references of file paths to documents
 
 array
 :    The array of file => document references
+
 <hr />
 
 #### <span style="color:#3e6a6e;">setOutputPath()</span>
@@ -262,6 +264,7 @@ Sets the output path with validation
 
 string
 :    The absolute real path for output
+
 <hr />
 
 #### <span style="color:#3e6a6e;">setTemplateDirectory()</span>

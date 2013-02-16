@@ -119,6 +119,7 @@ Creates a new document
 
 Document
 :    The document for method chaining
+
 <hr />
 
 #### <span style="color:#3e6a6e;">getDescription()</span>
@@ -129,6 +130,7 @@ Gets the description of the document
 
 string
 :    The description of the document
+
 <hr />
 
 #### <span style="color:#3e6a6e;">getDetails()</span>
@@ -139,6 +141,7 @@ Gets the details of the document
 
 string
 :    The details of the document
+
 <hr />
 
 #### <span style="color:#3e6a6e;">getInfo()</span>
@@ -179,6 +182,7 @@ This allows you to iterate with this method to extract all values in templating.
 
 mixed
 :    An array or string containing the parsed information
+
 <hr />
 
 #### <span style="color:#3e6a6e;">getReflection()</span>
@@ -189,6 +193,7 @@ Allows for getting the reflection for additional information about the `Document
 
 IReflection
 :    The reflection that the document represents
+
 <hr />
 
 #### <span style="color:#3e6a6e;">getKeys()</span>
@@ -199,6 +204,7 @@ Allows for getting the keys of the document
 
 array
 :    The keys assigned to the document
+
 <hr />
 
 #### <span style="color:#3e6a6e;">getType()</span>
@@ -209,6 +215,7 @@ Allows for getting the type of document
 
 string
 :    The type of the document
+
 <hr />
 
 #### <span style="color:#3e6a6e;">hasInfo()</span>
@@ -219,6 +226,7 @@ Determines if token information is available in the information array
 
 boolean
 :    TRUE if there is information for that token, FALSE otherwise
+
 <hr />
 
 #### <span style="color:#3e6a6e;">keyModifiers()</span>
