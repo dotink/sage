@@ -120,8 +120,9 @@
 			$reduction = $reference;
 
 			if (!self::isStandardType($reference)) {
-				$parts   = explode('\\', $reduction);
-				$aliases = array_merge(
+				$parts     = explode('\\', $reduction);
+				$reduction = '\\' . $reduction;
+				$aliases   = array_merge(
 					['' => $context->getName()],
 					$context->getNamespaceAliases()
 				);
@@ -144,11 +145,6 @@
 
 						break;
 					}
-				}
-
-
-				if ($reduction == $reference) {
-					$reduction = '\\' . $reduction;
 				}
 			}
 
