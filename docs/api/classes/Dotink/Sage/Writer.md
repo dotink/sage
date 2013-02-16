@@ -234,7 +234,8 @@ Expands a reference in a given context
 				$context
 			</td>
 			<td>
-									IReflection				
+									<a href="http://andrewsville.github.com/PHP-Token-Reflection/class-TokenReflection.IReflection.html">IReflection</a>
+				
 			</td>
 			<td>
 				The reflection context for expansion

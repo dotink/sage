@@ -77,7 +77,8 @@ Creates a new Sage exception
 				$compontent
 			</td>
 			<td>
-									mixed				
+									<a href="http://www.php.net/language.pseudo-types.php">mixed</a>
+				
 			</td>
 			<td>
 				A component for any placeholders in the message
@@ -89,7 +90,8 @@ Creates a new Sage exception
 				$...
 			</td>
 			<td>
-									mixed				
+									<a href="http://www.php.net/language.pseudo-types.php">mixed</a>
+				
 			</td>
 			<td>
 				ad infinitum

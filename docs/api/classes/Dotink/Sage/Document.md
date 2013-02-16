@@ -97,7 +97,8 @@ Creates a new document
 				$reflection
 			</td>
 			<td>
-									IReflection				
+									<a href="http://andrewsville.github.com/PHP-Token-Reflection/class-TokenReflection.IReflection.html">IReflection</a>
+				
 			</td>
 			<td>
 				The reflection to use
@@ -122,7 +123,8 @@ Creates a new document
 				$context
 			</td>
 			<td>
-									IReflection				
+									<a href="http://andrewsville.github.com/PHP-Token-Reflection/class-TokenReflection.IReflection.html">IReflection</a>
+				
 			</td>
 			<td>
 				The context where the reflection was found
@@ -349,7 +351,8 @@ Keys any modifier information we can glean from our reflection
 				$context
 			</td>
 			<td>
-									IReflection				
+									<a href="http://andrewsville.github.com/PHP-Token-Reflection/class-TokenReflection.IReflection.html">IReflection</a>
+				
 			</td>
 			<td>
 				The context with which we want to analyze the reflection
