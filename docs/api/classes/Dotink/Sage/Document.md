@@ -2,7 +2,7 @@
 ## A representation of a single document in the documentation.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.md file at the root of this distribution_
 
 ### Extends
 
@@ -38,7 +38,6 @@ it may contain additional sub-documents.  Classes for example will contain Metho
 
 ## Properties
 
-
 ### Instance Properties
 #### <span style="color:#6a6e3d;">$description</span>
 
@@ -66,8 +65,11 @@ The type of this document (class, method, property, trait, etc)
 
 
 
-## Methods
+### Inherited Properties
 
+`[Dotink\Sage\DocumentCollection::$documents](./DocumentCollection.md#$documents)` 
+
+## Methods
 
 ### Instance Methods
 <hr />
@@ -91,7 +93,7 @@ Creates a new document
 				$reflection
 			</td>
 			<td>
-				TokenReflection\IReflection
+				IReflection
 			</td>
 			<td>
 				The reflection to use
@@ -291,6 +293,50 @@ Determines if token information is available in the information array
 
 <hr />
 
+#### <span style="color:#3e6a6e;">keyModifiers()</span>
+
+Keys any modifier information we can glean from our reflection
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$context
+			</td>
+			<td>
+				IReflection
+			</td>
+			<td>
+				The context with which we want to analyze the reflection
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
+
+<hr />
+
 #### <span style="color:#3e6a6e;">parseDocComment()</span>
 
 Parses a doc comment (intelligently)
@@ -388,5 +434,10 @@ a value using that token parser.
 	
 </dl>
 
+
+
+### Inherited Methods
+
+`[Dotink\Sage\DocumentCollection::count()](./DocumentCollection.md#count())` `[Dotink\Sage\DocumentCollection::current()](./DocumentCollection.md#current())` `[Dotink\Sage\DocumentCollection::key()](./DocumentCollection.md#key())` `[Dotink\Sage\DocumentCollection::next()](./DocumentCollection.md#next())` `[Dotink\Sage\DocumentCollection::query()](./DocumentCollection.md#query())` `[Dotink\Sage\DocumentCollection::rewind()](./DocumentCollection.md#rewind())` `[Dotink\Sage\DocumentCollection::valid()](./DocumentCollection.md#valid())` 
 
 

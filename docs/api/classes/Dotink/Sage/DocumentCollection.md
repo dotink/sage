@@ -2,7 +2,7 @@
 ## A collection of documents which can be progressively filtered via simple queries
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.md file at the root of this distribution_
 
 ### Details
 
@@ -33,7 +33,6 @@ This class is countable as well as traversable so that it can be used in templat
 
 ## Properties
 
-
 ### Instance Properties
 #### <span style="color:#6a6e3d;">$documents</span>
 
@@ -46,15 +45,15 @@ of any parent document collection
 
 
 
-## Methods
 
+## Methods
 
 ### Instance Methods
 <hr />
 
 #### <span style="color:#3e6a6e;">__construct()</span>
 
-Creates a new document query, a progressively filterable collection of documents
+Creates a new document collection
 
 ###### Parameters
 
@@ -74,7 +73,7 @@ Creates a new document query, a progressively filterable collection of documents
 				array
 			</td>
 			<td>
-				An array of documents to filter
+				The documents to be contained in the collection
 			</td>
 		</tr>
 					
@@ -86,7 +85,7 @@ Creates a new document query, a progressively filterable collection of documents
 				string
 			</td>
 			<td>
-				The key to ensure the document has
+				A key to filter the documents by
 			</td>
 		</tr>
 			
@@ -263,6 +262,8 @@ Determine if the current key of an array is Valid
 		</dd>
 	
 </dl>
+
+
 
 
 

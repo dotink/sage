@@ -2,7 +2,7 @@
 ## Responsible for parsing @return tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.md file at the root of this distribution_
 
 ### Details
 
@@ -40,7 +40,6 @@ multiple returns, for which the template will decide how to display that.
 
 
 ## Methods
-
 ### Static Methods
 <hr />
 
@@ -129,6 +128,8 @@ Parses the value into usable information
 		</dd>
 	
 </dl>
+
+
 
 
 

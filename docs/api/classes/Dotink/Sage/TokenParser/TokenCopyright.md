@@ -2,7 +2,7 @@
 ## Responsible for parsing @copyright tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.md file at the root of this distribution_
 
 ### Details
 
@@ -34,7 +34,6 @@ independently parse the year or names or anything like that.
 
 
 ## Methods
-
 ### Static Methods
 <hr />
 
@@ -123,6 +122,8 @@ Parses the value into usable information
 		</dd>
 	
 </dl>
+
+
 
 
 

@@ -2,7 +2,7 @@
 ## Provides documentation writing services by outputting to a particular directory
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.md file at the root of this distribution_
 #### Authors
 
 <table>
@@ -29,7 +29,6 @@ _Please reference the LICENSE.txt file at the root of this distribution_
 
 ## Properties
 
-
 ### Instance Properties
 #### <span style="color:#6a6e3d;">$currentWriteDocument</span>
 
@@ -45,8 +44,8 @@ Compiled references list [file => document]
 
 
 
-## Methods
 
+## Methods
 
 ### Instance Methods
 <hr />
@@ -381,6 +380,8 @@ Writes all the documentation out to a file
 		</dd>
 	
 </dl>
+
+
 
 
 

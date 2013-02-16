@@ -2,7 +2,7 @@
 ## Provides documentation generation service by reading a particular source directory
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.md file at the root of this distribution_
 #### Authors
 
 <table>
@@ -29,7 +29,6 @@ _Please reference the LICENSE.txt file at the root of this distribution_
 
 ## Properties
 
-
 ### Instance Properties
 #### <span style="color:#6a6e3d;">$broker</span>
 
@@ -49,8 +48,8 @@ Options and values for the generator
 
 
 
-## Methods
 
+## Methods
 
 ### Instance Methods
 <hr />
@@ -365,6 +364,8 @@ Sets the input path with validation
 		</dd>
 	
 </dl>
+
+
 
 
 

@@ -2,7 +2,7 @@
 ## Responsible for parsing @throws tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.md file at the root of this distribution_
 
 ### Details
 
@@ -36,7 +36,6 @@ a single exception type thrown and the conditions under which it is thrown, such
 
 
 ## Methods
-
 ### Static Methods
 <hr />
 
@@ -125,6 +124,8 @@ Parses the value into usable information
 		</dd>
 	
 </dl>
+
+
 
 
 

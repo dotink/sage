@@ -2,7 +2,7 @@
 ## A custom exception class to differentiate Sage exceptions from other types.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
-_Please reference the LICENSE.txt file at the root of this distribution_
+_Please reference the LICENSE.md file at the root of this distribution_
 
 ### Extends
 
@@ -34,9 +34,13 @@ This exception class supports using sprintf style arguments to construct a messa
 	</tbody>
 </table>
 
+## Properties
+
+### Inherited Properties
+
+`Exception::$message` `Exception::$string` `Exception::$code` `Exception::$file` `Exception::$line` `Exception::$trace` `Exception::$previous` 
 
 ## Methods
-
 
 ### Instance Methods
 <hr />
@@ -94,5 +98,10 @@ Creates a new Sage exception
 	</tbody>
 </table>
 
+
+
+### Inherited Methods
+
+`Exception::__clone()` `Exception::getMessage()` `Exception::getCode()` `Exception::getFile()` `Exception::getLine()` `Exception::getTrace()` `Exception::getPrevious()` `Exception::getTraceAsString()` `Exception::__toString()` 
 
 

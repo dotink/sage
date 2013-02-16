@@ -82,6 +82,14 @@
 		 */
 		public function getLink($document)
 		{
+			$position = NULL;
+
+			if (strpos($document, '::') !== FALSE) {
+				$parts    = explode('::', $document, 2);
+				$document = $parts[0];
+				$position = '#' . $parts[1];
+			}
+
 			foreach ($this->references as $reference_path => $reference) {
 				if ($reference->getReflection()->getName() == $document) {
 					$source_parts = explode(DIRECTORY_SEPARATOR, str_replace(
@@ -108,9 +116,11 @@
 						array_unshift($path, '..');
 					}
 
-					return $path[0] != '..'
+					$url = $path[0] != '..'
 						? '.' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $path)
 						: implode(DIRECTORY_SEPARATOR, $path);
+
+					return $url . $position;
 				}
 			}
 

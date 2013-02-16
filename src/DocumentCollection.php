@@ -27,11 +27,11 @@
 
 
 		/**
-		 * Creates a new document query, a progressively filterable collection of documents
+		 * Creates a new document collection
 		 *
 		 * @access public
-		 * @param array $documents An array of documents to filter
-		 * @param string $key The key to ensure the document has
+		 * @param array $documents The documents to be contained in the collection
+		 * @param string $key A key to filter the documents by
 		 * @return void
 		 */
 		public function __construct(array $documents, $key)

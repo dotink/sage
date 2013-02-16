@@ -1,6 +1,7 @@
 <?php namespace Dotink\Sage {
 
 	use TokenReflection;
+	use TokenReflection\IReflection;
 
 	/**
 	 * A representation of a single document in the documentation.
@@ -69,7 +70,7 @@
 		 * The token reflection for the document
 		 *
 		 * @access private
-		 * @var TokenReflection\IReflection
+		 * @var IReflection
 		 */
 		private $reflection = NULL;
 
@@ -87,11 +88,11 @@
 		 * Creates a new document
 		 *
 		 * @access public
-		 * @param TokenReflection\IReflection $reflection The reflection to use
+		 * @param IReflection $reflection The reflection to use
 		 * @param Generator $generator The generator that is creating this document
 		 * @return Document The document for method chaining
 		 */
-		public function __construct(TokenReflection\IReflection $reflection, $generator)
+		public function __construct(IReflection $reflection, $generator, IReflection $context = NULL)
 		{
 			$this->reflection = $reflection;
 			$this->generator  = $generator;
@@ -103,10 +104,16 @@
 				$this->type = self::TYPE_FUNCTION;
 
 			} elseif ($reflection instanceof TokenReflection\IReflectionProperty) {
-				$this->type = self::TYPE_PROPERTY;
+				$this->type   = self::TYPE_PROPERTY;
+				$this->keys[] = 'property';
+
+				$this->keyModifiers($context);
 
 			} elseif ($reflection instanceof TokenReflection\IReflectionMethod) {
-				$this->type = self::TYPE_METHOD;
+				$this->type   = self::TYPE_METHOD;
+				$this->keys[] = 'method';
+
+				$this->keyModifiers($context);
 
 			} elseif ($reflection instanceof TokenReflection\IReflectionClass) {
 				$this->type = $reflection->isTrait() ? self::TYPE_TRAIT     : (
@@ -115,51 +122,13 @@
 				);
 
 				foreach ($reflection->getProperties() as $property) {
-					$document          = new self($property, $this->generator);
+					$document          = new self($property, $this->generator, $reflection);
 					$this->documents[] = $document;
-					$document->keys[]  = 'property';
-
-					if ($declaring_class = $property->getDeclaringClass()) {
-						if ($declaring_class != $reflection) {
-							$document->keys[] = 'inherited';
-						}
-					} elseif ($declaring_trait = $property->getDeclaringTrait()) {
-						if ($declaring_trait != $reflection) {
-							$document->keys[] = 'inherited';
-						}
-					}
-
-					if ($property->isPublic())    { $document->keys[] = 'public';    }
-					if ($property->isPrivate())   { $document->keys[] = 'private';   }
-					if ($property->isProtected()) { $document->keys[] = 'protected'; }
-					if ($property->isStatic())    { $document->keys[] = 'static';    }
-					else                          { $document->keys[] = 'instance';  }
 				}
 
 				foreach ($reflection->getMethods() as $method) {
-					$document          = new self($method, $this->generator);
+					$document          = new self($method, $this->generator, $reflection);
 					$this->documents[] = $document;
-					$document->keys[]  = 'method';
-
-					if ($declaring_class = $method->getDeclaringClass()) {
-						if ($declaring_class != $reflection) {
-							$document->keys[] = 'inherited';
-						}
-					} elseif ($declaring_trait = $method->getDeclaringTrait()) {
-						if ($declaring_trait != $reflection) {
-							$document->keys[] = 'inherited';
-						}
-					}
-
-					if ($method->isFinal())     { $document->keys[] = 'final';     }
-					if ($method->isAbstract())  { $document->keys[] = 'abstract';  }
-
-					if ($method->isPublic())    { $document->keys[] = 'public';    }
-					if ($method->isPrivate())   { $document->keys[] = 'private';   }
-					if ($method->isProtected()) { $document->keys[] = 'protected'; }
-
-					if ($method->isStatic())    { $document->keys[] = 'static';    }
-					else                        { $document->keys[] = 'instance';  }
 				}
 			}
 
@@ -260,6 +229,42 @@
 
 
 		/**
+		 * Keys any modifier information we can glean from our reflection
+		 *
+		 * @access private
+		 * @param IReflection $context The context with which we want to analyze the reflection
+		 * @return void
+		 */
+		private function keyModifiers($context)
+		{
+			if ($declaring_class = $this->reflection->getDeclaringClass()) {
+				if ($declaring_class != $context) {
+					$this->keys[] = 'inherited';
+					$this->keys[] = 'external';
+				}
+
+			} elseif ($declaring_trait = $this->reflection->getDeclaringTrait()) {
+				if ($declaring_trait != $context) {
+					$this->keys[] = 'included';
+					$this->keys[] = 'external';
+				}
+			}
+
+			if ($this->type == self::TYPE_METHOD) {
+				if ($this->reflection->isFinal())    { $this->keys[] = 'final';     }
+				if ($this->reflection->isAbstract()) { $this->keys[] = 'abstract';  }
+			}
+
+			if ($this->reflection->isPublic())       { $this->keys[] = 'public';    }
+			if ($this->reflection->isPrivate())      { $this->keys[] = 'private';   }
+			if ($this->reflection->isProtected())    { $this->keys[] = 'protected'; }
+
+			if ($this->reflection->isStatic())       { $this->keys[] = 'static';    }
+			else                                     { $this->keys[] = 'instance';  }
+		}
+
+
+		/**
 		 * Parses a doc comment (intelligently)
 		 *
 		 * Unlike other docblock parsers, we do not require the "short description" to be a single
@@ -271,10 +276,31 @@
 		 */
 		private function parseDocComment()
 		{
-			$lines        = explode("\n", $this->reflection->getDocComment());
-			$description  = array();
-			$details      = array();
-			$info         = array();
+			$doc_comment = trim($this->reflection->getDocComment());
+			$description = array();
+			$details     = array();
+			$info        = array();
+
+			if (!$doc_comment) {
+
+				//
+				// These can use the file doc comment instead of their own as we assume
+				// there is only one per file.
+				//
+
+				$file_compatible_types = [
+					self::TYPE_CLASS,
+					self::TYPE_TRAIT,
+					self::TYPE_INTERFACE
+				];
+
+				if (in_array($this->type, $file_compatible_types)) {
+					$doc_comment = $this->reflection->getFileReflection()->getDocComment();
+				}
+
+			}
+
+			$lines = explode("\n", $doc_comment);
 
 			foreach ($lines as $i => $line) {
 				$line = ltrim($line, "/* \t");

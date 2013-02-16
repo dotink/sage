@@ -1,6 +1,6 @@
 <?php namespace Dotink\Sage {
 
-	include 'vendor/autoload.php';
+	include __DIR__ . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
 	use TokenReflection;
 
