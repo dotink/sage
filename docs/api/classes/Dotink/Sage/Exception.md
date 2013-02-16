@@ -38,7 +38,7 @@ This exception class supports using sprintf style arguments to construct a messa
 
 ### Inherited Properties
 
-[`Exception::$message`](http://www.php.net/class.exception.php#message Namespace: \) [`Exception::$string`](http://www.php.net/class.exception.php#string Namespace: \) [`Exception::$code`](http://www.php.net/class.exception.php#code Namespace: \) [`Exception::$file`](http://www.php.net/class.exception.php#file Namespace: \) [`Exception::$line`](http://www.php.net/class.exception.php#line Namespace: \) [`Exception::$trace`](http://www.php.net/class.exception.php#trace Namespace: \) [`Exception::$previous`](http://www.php.net/class.exception.php#previous Namespace: \) 
+[`Exception::$message`](http://www.php.net/class.exception.php#message Namespace: \\) [`Exception::$string`](http://www.php.net/class.exception.php#string Namespace: \\) [`Exception::$code`](http://www.php.net/class.exception.php#code Namespace: \\) [`Exception::$file`](http://www.php.net/class.exception.php#file Namespace: \\) [`Exception::$line`](http://www.php.net/class.exception.php#line Namespace: \\) [`Exception::$trace`](http://www.php.net/class.exception.php#trace Namespace: \\) [`Exception::$previous`](http://www.php.net/class.exception.php#previous Namespace: \\) 
 
 ## Methods
 
@@ -105,7 +105,7 @@ Creates a new Sage exception
 
 ### Inherited Methods
 
-[`Exception::__clone()`](http://www.php.net/class.exception.php#__clone Namespace: \) [`Exception::getMessage()`](http://www.php.net/class.exception.php#getMessage Namespace: \) [`Exception::getCode()`](http://www.php.net/class.exception.php#getCode Namespace: \) [`Exception::getFile()`](http://www.php.net/class.exception.php#getFile Namespace: \) [`Exception::getLine()`](http://www.php.net/class.exception.php#getLine Namespace: \) [`Exception::getTrace()`](http://www.php.net/class.exception.php#getTrace Namespace: \) [`Exception::getPrevious()`](http://www.php.net/class.exception.php#getPrevious Namespace: \) [`Exception::getTraceAsString()`](http://www.php.net/class.exception.php#getTraceAsString Namespace: \) [`Exception::__toString()`](http://www.php.net/class.exception.php#__toString Namespace: \) 
+[`Exception::__clone()`](http://www.php.net/class.exception.php#__clone Namespace: \\) [`Exception::getMessage()`](http://www.php.net/class.exception.php#getMessage Namespace: \\) [`Exception::getCode()`](http://www.php.net/class.exception.php#getCode Namespace: \\) [`Exception::getFile()`](http://www.php.net/class.exception.php#getFile Namespace: \\) [`Exception::getLine()`](http://www.php.net/class.exception.php#getLine Namespace: \\) [`Exception::getTrace()`](http://www.php.net/class.exception.php#getTrace Namespace: \\) [`Exception::getPrevious()`](http://www.php.net/class.exception.php#getPrevious Namespace: \\) [`Exception::getTraceAsString()`](http://www.php.net/class.exception.php#getTraceAsString Namespace: \\) [`Exception::__toString()`](http://www.php.net/class.exception.php#__toString Namespace: \\) 
 
 
 
