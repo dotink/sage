@@ -117,8 +117,16 @@ Creates a new document
 
 ###### Returns
 
-Document
-:    The document for method chaining
+<dl>
+	
+		<dt>
+			Document
+		</dt>
+		<dd>
+			The document for method chaining
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -128,8 +136,16 @@ Gets the description of the document
 
 ###### Returns
 
-string
-:    The description of the document
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The description of the document
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -139,8 +155,16 @@ Gets the details of the document
 
 ###### Returns
 
-string
-:    The details of the document
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The details of the document
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -180,8 +204,16 @@ This allows you to iterate with this method to extract all values in templating.
 
 ###### Returns
 
-mixed
-:    An array or string containing the parsed information
+<dl>
+	
+		<dt>
+			mixed
+		</dt>
+		<dd>
+			An array or string containing the parsed information
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -191,8 +223,16 @@ Allows for getting the reflection for additional information about the `Document
 
 ###### Returns
 
-IReflection
-:    The reflection that the document represents
+<dl>
+	
+		<dt>
+			IReflection
+		</dt>
+		<dd>
+			The reflection that the document represents
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -202,8 +242,16 @@ Allows for getting the keys of the document
 
 ###### Returns
 
-array
-:    The keys assigned to the document
+<dl>
+	
+		<dt>
+			array
+		</dt>
+		<dd>
+			The keys assigned to the document
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -213,8 +261,16 @@ Allows for getting the type of document
 
 ###### Returns
 
-string
-:    The type of the document
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The type of the document
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -224,8 +280,16 @@ Determines if token information is available in the information array
 
 ###### Returns
 
-boolean
-:    TRUE if there is information for that token, FALSE otherwise
+<dl>
+	
+		<dt>
+			boolean
+		</dt>
+		<dd>
+			TRUE if there is information for that token, FALSE otherwise
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -260,8 +324,16 @@ Keys any modifier information we can glean from our reflection
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -277,8 +349,16 @@ details which is every line that follows until the first `@`.
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -343,8 +423,16 @@ a value using that token parser.
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 
 

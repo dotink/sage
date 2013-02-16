@@ -1,13 +1,26 @@
 ###### Returns
 
+<dl>
 <?php while ($return = $method->getInfo('return')) { ?>
-<?php if ($return['type']) { ?>
-<?= $return['type'] ?>
+	<?php if ($return['type']) { ?>
 
-:    <?= $return['note'] ?>
+		<dt>
+			<?= $return['type'] ?>
 
-<?php } else { ?>
-void
-:    Provides no return value.
+		</dt>
+		<dd>
+			<?= $return['note'] ?>
+
+		</dd>
+	<?php } else { ?>
+
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	<?php } ?>
 <?php } ?>
-<?php } ?>
+
+</dl>

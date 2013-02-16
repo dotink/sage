@@ -94,8 +94,16 @@ Creates a new document collection
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -105,8 +113,16 @@ Allows the document query to be counted
 
 ###### Returns
 
-int
-:    The count of the internal documents collection
+<dl>
+	
+		<dt>
+			int
+		</dt>
+		<dd>
+			The count of the internal documents collection
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -116,8 +132,16 @@ Gets the current value
 
 ###### Returns
 
-mixed
-:    The currently pointed to value of the internal documents collection
+<dl>
+	
+		<dt>
+			mixed
+		</dt>
+		<dd>
+			The currently pointed to value of the internal documents collection
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -127,8 +151,16 @@ Get the current key
 
 ###### Returns
 
-mixed
-:    The currently pointed to key of the internal documents collection
+<dl>
+	
+		<dt>
+			mixed
+		</dt>
+		<dd>
+			The currently pointed to key of the internal documents collection
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -138,8 +170,16 @@ Moves the current element of the internal documents collection forward one
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -174,8 +214,16 @@ Creates a new document query from the existing internal document collection
 
 ###### Returns
 
-DocumentCollection
-:    The new traversable document query
+<dl>
+	
+		<dt>
+			DocumentCollection
+		</dt>
+		<dd>
+			The new traversable document query
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -185,8 +233,16 @@ Moved the current element of the internal documents collection back to the begin
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -196,8 +252,16 @@ Determine if the current key of an array is Valid
 
 ###### Returns
 
-boolean
-:    TRUE if the current key is valid, FALSE otherwise
+<dl>
+	
+		<dt>
+			boolean
+		</dt>
+		<dd>
+			TRUE if the current key is valid, FALSE otherwise
+		</dd>
+	
+</dl>
 
 
 

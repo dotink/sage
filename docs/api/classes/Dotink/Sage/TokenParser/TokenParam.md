@@ -87,8 +87,16 @@ Validates that the value for the token looks OK
 
 ###### Returns
 
-boolean
-:    TRUE if the value validates, FALSE otherwise
+<dl>
+	
+		<dt>
+			boolean
+		</dt>
+		<dd>
+			TRUE if the value validates, FALSE otherwise
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -123,8 +131,16 @@ Parses the value into usable information
 
 ###### Returns
 
-array
-:    A list of parsed information, keyed by information type
+<dl>
+	
+		<dt>
+			array
+		</dt>
+		<dd>
+			A list of parsed information, keyed by information type
+		</dd>
+	
+</dl>
 
 
 

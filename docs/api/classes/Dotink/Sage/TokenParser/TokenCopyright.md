@@ -68,8 +68,16 @@ Validates that the value for the token looks OK
 
 ###### Returns
 
-boolean
-:    TRUE if the value validates, FALSE otherwise
+<dl>
+	
+		<dt>
+			boolean
+		</dt>
+		<dd>
+			TRUE if the value validates, FALSE otherwise
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -104,8 +112,16 @@ Parses the value into usable information
 
 ###### Returns
 
-string
-:    The value for the token
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The value for the token
+		</dd>
+	
+</dl>
 
 
 

@@ -93,8 +93,16 @@ Creates a new writer
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -129,8 +137,16 @@ Builds documentation from an array of documents
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -165,8 +181,16 @@ Gets a relative link to a particular document
 
 ###### Returns
 
-string
-:    The relative link to the documentation
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The relative link to the documentation
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -213,8 +237,16 @@ Compiles references of file paths to documents
 
 ###### Returns
 
-array
-:    The array of file => document references
+<dl>
+	
+		<dt>
+			array
+		</dt>
+		<dd>
+			The array of file => document references
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -262,8 +294,16 @@ Sets the output path with validation
 
 ###### Returns
 
-string
-:    The absolute real path for output
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The absolute real path for output
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -311,8 +351,16 @@ Sets the template directory with validation
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 <hr />
 
@@ -322,8 +370,16 @@ Writes all the documentation out to a file
 
 ###### Returns
 
-void
-:    Provides no return value.
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
 
 
 
