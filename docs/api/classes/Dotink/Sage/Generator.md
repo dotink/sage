@@ -98,6 +98,51 @@ Creates a new generator
 
 <hr />
 
+#### <span style="color:#3e6a6e;">getConfig()</span>
+
+Get configuration information from the options
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$name
+			</td>
+			<td>
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
+			</td>
+			<td>
+				The config option name to get
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			mixed
+		</dt>
+		<dd>
+			The config option
+		</dd>
+	
+</dl>
+
+<hr />
+
 #### <span style="color:#3e6a6e;">getTokenParser()</span>
 
 Gets the token parser class for a given token
@@ -117,7 +162,8 @@ Gets the token parser class for a given token
 				$token
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The token to get a parser for
@@ -161,22 +207,11 @@ Runs the documentation generator
 				$input_path
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				A relative or absolute directory to scan
-			</td>
-		</tr>
-					
-		<tr>
-			<td>
-				$options
-			</td>
-			<td>
-									array				
-			</td>
-			<td>
-				An array of options and their values
 			</td>
 		</tr>
 			
@@ -229,7 +264,8 @@ Which without sorting by type would normally be in:
 				$reflection
 			</td>
 			<td>
-									array				
+									<a href="http://www.php.net/language.types.array.php">array</a>
+				
 			</td>
 			<td>
 				A list of token reflections
@@ -241,7 +277,8 @@ Which without sorting by type would normally be in:
 				$sort_by_type
 			</td>
 			<td>
-									boolean				
+									<a href="http://www.php.net/language.types.boolean.php">boolean</a>
+				
 			</td>
 			<td>
 				Whether or not we should sort by type
@@ -285,7 +322,8 @@ Configures token parsers from an array, filtering out bad ones
 				$token_parsers
 			</td>
 			<td>
-									array				
+									<a href="http://www.php.net/language.types.array.php">array</a>
+				
 			</td>
 			<td>
 				A list of classes for parsing tokens, keyed by the token
@@ -329,7 +367,8 @@ Sets the input path with validation
 				$input_path
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				A relative or absolute directory to scan

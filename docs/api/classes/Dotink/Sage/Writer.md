@@ -34,6 +34,10 @@ _Please reference the LICENSE.md file at the root of this distribution_
 
 The current document being written to.
 
+#### <span style="color:#6a6e3d;">$externalDocs</span>
+
+The list of external documents and their links
+
 #### <span style="color:#6a6e3d;">$outputPath</span>
 
 The output path for this writer
@@ -69,7 +73,8 @@ Creates a new writer
 				$output_path
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The output path where we will be writing documentation to
@@ -81,7 +86,8 @@ Creates a new writer
 				$template_directory
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The directory containing our templates
@@ -125,7 +131,8 @@ Builds documentation from an array of documents
 				$documents
 			</td>
 			<td>
-									array				
+									<a href="http://www.php.net/language.types.array.php">array</a>
+				
 			</td>
 			<td>
 				A document collection keyed by directory structure
@@ -169,7 +176,8 @@ Chops the namespace off the front of a fully qualified reference
 				$reference
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The reference to chop
@@ -213,7 +221,8 @@ Expands a reference in a given context
 				$reference
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The reference to expand
@@ -269,7 +278,8 @@ Gets a relative link to a particular document
 				$document
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The document to get a link to
@@ -288,6 +298,57 @@ Gets a relative link to a particular document
 		</dt>
 		<dd>
 			The relative link to the documentation
+		</dd>
+	
+</dl>
+
+<hr />
+
+#### <span style="color:#3e6a6e;">setExternalDocs()</span>
+
+Sets external doc links used with `getLink()`
+
+##### Details
+
+The format of the `$links` argument should be an array whose keys match a possible
+reference in the document.  Possible references include things like class, trait, and
+interface names as well as standard PHP types and keywords.
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$links
+			</td>
+			<td>
+									<a href="http://www.php.net/language.types.array.php">array</a>
+				
+			</td>
+			<td>
+				The external links configuration
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			Writer
+		</dt>
+		<dd>
+			The writer for method chaining
 		</dd>
 	
 </dl>
@@ -313,7 +374,8 @@ Compiles references of file paths to documents
 				$documents
 			</td>
 			<td>
-									array				
+									<a href="http://www.php.net/language.types.array.php">array</a>
+				
 			</td>
 			<td>
 				A document collection keyed by directory structure
@@ -325,7 +387,8 @@ Compiles references of file paths to documents
 				$output_path
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The output path for the document collection
@@ -369,7 +432,8 @@ Sets the output path with validation
 				$output_path
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				A relative or absolute directory to hold output
@@ -426,7 +490,8 @@ Sets the template directory with validation
 				$template_directory
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The directory containing templates to set

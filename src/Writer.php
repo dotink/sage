@@ -26,6 +26,15 @@
 
 
 		/**
+		 * The list of external documents and their links
+		 *
+		 * @access private
+		 * @var array
+		 */
+		private $externalDocs = array();
+
+
+		/**
 		 * The output path for this writer
 		 *
 		 * @access private
@@ -100,7 +109,8 @@
 		{
 			$expansion      = $reference;
 			$standard_types = [
-				'string', 'int', 'integer', 'bool', 'boolean', 'array', 'float', 'double', 'void'
+				'string', 'int', 'integer', 'bool', 'boolean', 'array', 'float', 'double',
+				'void', 'mixed', 'reference'
 			];
 
 			if (!in_array($reference, $standard_types)) {
@@ -141,6 +151,10 @@
 		 */
 		public function getLink($document)
 		{
+			if (isset($this->externalDocs[$document])) {
+				return $this->externalDocs[$document];
+			}
+
 			$position = NULL;
 
 			if (strpos($document, '::') !== FALSE) {
@@ -184,6 +198,25 @@
 			}
 
 			return NULL;
+		}
+
+
+		/**
+		 * Sets external doc links used with `getLink()`
+		 *
+		 * The format of the `$links` argument should be an array whose keys match a possible
+		 * reference in the document.  Possible references include things like class, trait, and
+		 * interface names as well as standard PHP types and keywords.
+		 *
+		 * @access public
+		 * @param array $links The external links configuration
+		 * @return Writer The writer for method chaining
+		 */
+		public function setExternalDocs(array $links)
+		{
+			$this->externalDocs = $links;
+
+			return $this;
 		}
 
 

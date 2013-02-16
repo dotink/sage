@@ -64,6 +64,21 @@
 
 
 		/**
+		 * Get configuration information from the options
+		 *
+		 * @access public
+		 * @param string $name The config option name to get
+		 * @return mixed The config option
+		 */
+		public function getConfig($name)
+		{
+			return isset($this->options[$name])
+				? $this->options[$name]
+				: NULL;
+		}
+
+
+		/**
 		 * Gets the token parser class for a given token
 		 *
 		 * @access public
@@ -91,7 +106,6 @@
 		 *
 		 * @access public
 		 * @param string $input_path A relative or absolute directory to scan
-		 * @param array $options An array of options and their values
 		 * @return void
 		 */
 		public function run($input_path)
@@ -107,14 +121,14 @@
 				$config_path  = realpath($config_path . DIRECTORY_SEPARATOR . '..')
 			);
 
-			$options = file_exists($config_path . DIRECTORY_SEPARATOR . 'sage.config')
+			$this->options = file_exists($config_path . DIRECTORY_SEPARATOR . 'sage.config')
 				? include $config_path . DIRECTORY_SEPARATOR . 'sage.config'
 				: array();
 
 			$reflections   = $this->broker->processDirectory($this->inputPath, [], TRUE);
-			$sort_by_type  = !empty($options['sort_by_type']);
-			$token_parsers = !empty($options['token_parsers'])
-				? $options['token_parsers']
+			$sort_by_type  = !empty($this->options['sort_by_type']);
+			$token_parsers = !empty($this->options['token_parsers'])
+				? $this->options['token_parsers']
 				: array();
 
 			$this->configTokenParsers($token_parsers);

@@ -64,7 +64,8 @@ Creates a new Sage exception
 				$message
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				A printf style message

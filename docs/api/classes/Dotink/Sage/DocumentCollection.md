@@ -70,7 +70,8 @@ Creates a new document collection
 				$documents
 			</td>
 			<td>
-									array				
+									<a href="http://www.php.net/language.types.array.php">array</a>
+				
 			</td>
 			<td>
 				The documents to be contained in the collection
@@ -82,7 +83,8 @@ Creates a new document collection
 				$key
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				A key to filter the documents by
@@ -202,7 +204,8 @@ Creates a new document query from the existing internal document collection
 				$key
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The key to filter the document collection by

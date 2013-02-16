@@ -228,7 +228,8 @@ This allows you to iterate with this method to extract all values in templating.
 				$token
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The token to get information for
@@ -422,7 +423,8 @@ a value using that token parser.
 				$token
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The token (type) we're parding
@@ -434,7 +436,8 @@ a value using that token parser.
 				$value
 			</td>
 			<td>
-									string				
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
 			</td>
 			<td>
 				The value (all content after the token itself)
