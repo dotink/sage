@@ -7,6 +7,9 @@ _Please reference the LICENSE.md file at the root of this distribution_
 ### Namespace
 
 `Dotink\Sage`
+
+### Imports
+
 <table>
 
 	<tr>
@@ -25,7 +28,6 @@ _Please reference the LICENSE.md file at the root of this distribution_
 	</tr>
 	
 </table>
-
 
 ### Extends
 

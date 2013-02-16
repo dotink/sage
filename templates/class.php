@@ -19,7 +19,11 @@ _<?= $license ?>_
 
 <?= '`' . $namespace . '`' ?>
 
+<?php } ?>
 <?php if (count($aliases = $document->getContext()->getNamespaceAliases())) { ?>
+
+### Imports
+
 <table>
 
 	<tr>
@@ -35,8 +39,6 @@ _<?= $license ?>_
 	<?php } ?>
 
 </table>
-
-<?php } ?>
 <?php } ?>
 <?php if ($parent = $document->getReflection()->getParentClass()) { ?>
 
