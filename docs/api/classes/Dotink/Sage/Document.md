@@ -71,7 +71,7 @@ The type of this document (class, method, property, trait, etc)
 
 ### Inherited Properties
 
-[`DocumentCollection::$documents`](./DocumentCollection.md#documents) 
+[`DocumentCollection::$documents`](./DocumentCollection.md#documents Namespace: Dotink\Sage) 
 
 ## Methods
 
@@ -480,7 +480,7 @@ a value using that token parser.
 
 ### Inherited Methods
 
-[`DocumentCollection::count()`](./DocumentCollection.md#count) [`DocumentCollection::current()`](./DocumentCollection.md#current) [`DocumentCollection::key()`](./DocumentCollection.md#key) [`DocumentCollection::next()`](./DocumentCollection.md#next) [`DocumentCollection::query()`](./DocumentCollection.md#query) [`DocumentCollection::rewind()`](./DocumentCollection.md#rewind) [`DocumentCollection::valid()`](./DocumentCollection.md#valid) 
+[`DocumentCollection::count()`](./DocumentCollection.md#count Namespace: Dotink\Sage) [`DocumentCollection::current()`](./DocumentCollection.md#current Namespace: Dotink\Sage) [`DocumentCollection::key()`](./DocumentCollection.md#key Namespace: Dotink\Sage) [`DocumentCollection::next()`](./DocumentCollection.md#next Namespace: Dotink\Sage) [`DocumentCollection::query()`](./DocumentCollection.md#query Namespace: Dotink\Sage) [`DocumentCollection::rewind()`](./DocumentCollection.md#rewind Namespace: Dotink\Sage) [`DocumentCollection::valid()`](./DocumentCollection.md#valid Namespace: Dotink\Sage) 
 
 
 
