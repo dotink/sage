@@ -80,7 +80,7 @@
 		 * @param string $document The document to get a link to
 		 * @return string The relative link to the documentation
 		 */
-		public function getLink($document, $escape_markdown = FALSE)
+		public function getLink($document)
 		{
 			$position = NULL;
 
@@ -120,14 +120,7 @@
 						? '.' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $path)
 						: implode(DIRECTORY_SEPARATOR, $path);
 
-					$url = $url . $position;
-
-					if ($escape_markdown) {
-						$url = str_replace('(', '\(', $url);
-						$url = str_replace(')', '\)', $url);
-					}
-
-					return $url;
+					return $url . trim($position, '$()');
 				}
 			}
 

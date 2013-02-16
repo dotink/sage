@@ -438,7 +438,7 @@ a value using that token parser.
 
 ### Inherited Methods
 
-[`Dotink\Sage\DocumentCollection::count()`](./DocumentCollection.md#count\(\)) [`Dotink\Sage\DocumentCollection::current()`](./DocumentCollection.md#current\(\)) [`Dotink\Sage\DocumentCollection::key()`](./DocumentCollection.md#key\(\)) [`Dotink\Sage\DocumentCollection::next()`](./DocumentCollection.md#next\(\)) [`Dotink\Sage\DocumentCollection::query()`](./DocumentCollection.md#query\(\)) [`Dotink\Sage\DocumentCollection::rewind()`](./DocumentCollection.md#rewind\(\)) [`Dotink\Sage\DocumentCollection::valid()`](./DocumentCollection.md#valid\(\)) 
+[`Dotink\Sage\DocumentCollection::count()`](./DocumentCollection.md#count) [`Dotink\Sage\DocumentCollection::current()`](./DocumentCollection.md#current) [`Dotink\Sage\DocumentCollection::key()`](./DocumentCollection.md#key) [`Dotink\Sage\DocumentCollection::next()`](./DocumentCollection.md#next) [`Dotink\Sage\DocumentCollection::query()`](./DocumentCollection.md#query) [`Dotink\Sage\DocumentCollection::rewind()`](./DocumentCollection.md#rewind) [`Dotink\Sage\DocumentCollection::valid()`](./DocumentCollection.md#valid) 
 
 
 
