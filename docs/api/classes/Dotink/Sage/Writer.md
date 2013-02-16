@@ -50,6 +50,53 @@ Compiled references list [file => document]
 
 
 ## Methods
+### Static Methods
+<hr />
+
+#### <span style="color:#3e6a6e;">isStandardType()</span>
+
+Determines whether a reference is a standard type
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$reference
+			</td>
+			<td>
+									<a href="http://www.php.net/language.types.string.php">string</a>
+				
+			</td>
+			<td>
+				The reference to chck
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			boolean
+		</dt>
+		<dd>
+			TRUE if the reference is a stndard type, FALSE otherwise
+		</dd>
+	
+</dl>
+
+
 
 ### Instance Methods
 <hr />
@@ -157,9 +204,9 @@ Builds documentation from an array of documents
 
 <hr />
 
-#### <span style="color:#3e6a6e;">chopNamespace()</span>
+#### <span style="color:#3e6a6e;">reduce()</span>
 
-Chops the namespace off the front of a fully qualified reference
+Reduces a reference in a given context
 
 ###### Parameters
 
@@ -180,7 +227,20 @@ Chops the namespace off the front of a fully qualified reference
 				
 			</td>
 			<td>
-				The reference to chop
+				The reference to reduce
+			</td>
+		</tr>
+					
+		<tr>
+			<td>
+				$context
+			</td>
+			<td>
+									<a href="http://andrewsville.github.com/PHP-Token-Reflection/class-TokenReflection.IReflection.html">IReflection</a>
+				
+			</td>
+			<td>
+				The reflection context for reduction
 			</td>
 		</tr>
 			
@@ -195,7 +255,7 @@ Chops the namespace off the front of a fully qualified reference
 			string
 		</dt>
 		<dd>
-			The chopped reference
+			The reduced reference
 		</dd>
 	
 </dl>

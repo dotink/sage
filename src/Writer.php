@@ -53,6 +53,23 @@
 
 
 		/**
+		 * Determines whether a reference is a standard type
+		 *
+		 * @static
+		 * @access private
+		 * @param string $reference The reference to chck
+		 * @return boolean TRUE if the reference is a stndard type, FALSE otherwise
+		 */
+		static private function isStandardType($reference)
+		{
+			return in_array($reference, [
+				'string', 'int', 'integer', 'bool', 'boolean', 'array', 'float', 'double',
+				'void', 'mixed', 'reference'
+			]);
+		}
+
+
+		/**
 		 * Creates a new writer
 		 *
 		 * @access public
@@ -85,15 +102,59 @@
 
 
 		/**
-		 * Chops the namespace off the front of a fully qualified reference
+		 * Reduces a reference in a given context
 		 *
 		 * @access public
-		 * @param string $reference The reference to chop
-		 * @return string The chopped reference
+		 * @param string $reference The reference to reduce
+		 * @param IReflection $context The reflection context for reduction
+		 * @return string The reduced reference
 		 */
-		public function chopNamespace($reference)
+		public function reduce($reference, IReflection $context)
 		{
-			return preg_replace('/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\\\\/', '', $reference);
+			$member = NULL;
+
+			if (strpos($reference, '::') !== FALSE) {
+				list($reference, $member) = explode('::', $reference);
+			}
+
+			$reduction = $reference;
+
+			if (!self::isStandardType($reference)) {
+				$parts   = explode('\\', $reduction);
+				$aliases = array_merge(
+					['' => $context->getName()],
+					$context->getNamespaceAliases()
+				);
+
+				foreach ($aliases as $alias => $namespace) {
+					$namespace_parts = explode('\\', $namespace);
+
+					if (count($parts) < count($namespace_parts)) {
+						continue;
+					}
+
+					if ($namespace_parts == array_slice($parts, 0, count($namespace_parts))) {
+						$reduction = implode('\\', !$alias
+							? array_slice($parts, count($namespace_parts))
+							: array_merge(
+								[$alias],
+								array_slice($parts, count($namespace_parts))
+							)
+						);
+
+						break;
+					}
+				}
+
+
+				if ($reduction == $reference) {
+					$reduction = '\\' . $reduction;
+				}
+			}
+
+			return $member
+				? implode('::', [$reduction, $member])
+				: $reduction;
 		}
 
 
@@ -107,38 +168,32 @@
 		 */
 		public function expand($reference, IReflection $context)
 		{
-			$expansion      = $reference;
-			$standard_types = [
-				'string', 'int', 'integer', 'bool', 'boolean', 'array', 'float', 'double',
-				'void', 'mixed', 'reference'
-			];
+			$member = NULL;
 
-			if (!in_array($reference, $standard_types)) {
-				$aliases = $context->getNamespaceAliases();
+			if (strpos($reference, '::') !== FALSE) {
+				list($reference, $member) = explode('::', $reference);
+			}
 
-				foreach ($aliases as $alias) {
-					$alias_parts = explode('\\', $alias);
+			$expansion = $reference;
 
-					if (end($alias_parts) == $reference) {
-						$expansion = implode('\\', $alias_parts);
+			if (!self::isStandardType($reference)) {
+				$parts     = explode('\\', $expansion);
+				$expansion = $context->getName() . '\\' . $expansion;
+
+				foreach ($context->getNamespaceAliases() as $alias => $namespace) {
+					if ($parts[0] == $alias) {
+						$expansion = implode('\\', array_merge(
+							[$namespace],
+							array_slice($parts, 1)
+						));
 						break;
-
-					} else {
-						$reference_parts = explode('\\', $reference);
-						$first_part      = array_shift($reference_parts);
-
-						if ($first_part == end($alias_parts)) {
-							$expansion = $alias . '\\' . implode('\\', $reference_parts);
-							break;
-
-						} else {
-							$expansion = $context->getName() . '\\' . $reference;
-						}
 					}
 				}
 			}
 
-			return $expansion;
+			return $member
+				? implode('::', [$expansion, $member])
+				: $expansion;
 		}
 
 
