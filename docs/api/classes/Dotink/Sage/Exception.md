@@ -105,3 +105,4 @@ Creates a new Sage exception
 `Exception::__clone()` `Exception::getMessage()` `Exception::getCode()` `Exception::getFile()` `Exception::getLine()` `Exception::getTrace()` `Exception::getPrevious()` `Exception::getTraceAsString()` `Exception::__toString()` 
 
 
+
