@@ -67,7 +67,7 @@ The type of this document (class, method, property, trait, etc)
 
 ### Inherited Properties
 
-[`Dotink\Sage\DocumentCollection::$documents`](./DocumentCollection.md#$documents) 
+[`Dotink\Sage\DocumentCollection::$documents`](./DocumentCollection.md#documents) 
 
 ## Methods
 

@@ -87,7 +87,7 @@
 			if (strpos($document, '::') !== FALSE) {
 				$parts    = explode('::', $document, 2);
 				$document = $parts[0];
-				$position = '#' . $parts[1];
+				$position = '#' . trim($parts[1], '$()');
 			}
 
 			foreach ($this->references as $reference_path => $reference) {
@@ -120,7 +120,7 @@
 						? '.' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $path)
 						: implode(DIRECTORY_SEPARATOR, $path);
 
-					return $url . trim($position, '$()');
+					return $url . $position;
 				}
 			}
 
