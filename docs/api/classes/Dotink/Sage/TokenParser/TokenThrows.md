@@ -70,17 +70,8 @@ Validates that the value for the token looks OK
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			boolean
-		</dt>
-		<dd>
-			TRUE if the value validates, FALSE otherwise
-		</dd>
-	
-</dl>
-
+boolean
+:    TRUE if the value validates, FALSE otherwise
 <hr />
 
 #### <span style="color:#3e6a6e;">parse()</span>
@@ -114,17 +105,8 @@ Parses the value into usable information
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			array
-		</dt>
-		<dd>
-			A list of parsed information, keyed by information type
-		</dd>
-	
-</dl>
-
+array
+:    A list of parsed information, keyed by information type
 
 
 

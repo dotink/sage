@@ -94,16 +94,8 @@ Creates a new document collection
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			void
-		</dt>
-		<dd>
-			Provides no return value.
-		</dd>
-	
-</dl>
+void
+:    Provides no return value.
 
 <hr />
 
@@ -113,17 +105,8 @@ Allows the document query to be counted
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			int
-		</dt>
-		<dd>
-			The count of the internal documents collection
-		</dd>
-	
-</dl>
-
+int
+:    The count of the internal documents collection
 <hr />
 
 #### <span style="color:#3e6a6e;">current()</span>
@@ -132,17 +115,8 @@ Gets the current value
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			mixed
-		</dt>
-		<dd>
-			The currently pointed to value of the internal documents collection
-		</dd>
-	
-</dl>
-
+mixed
+:    The currently pointed to value of the internal documents collection
 <hr />
 
 #### <span style="color:#3e6a6e;">key()</span>
@@ -151,17 +125,8 @@ Get the current key
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			mixed
-		</dt>
-		<dd>
-			The currently pointed to key of the internal documents collection
-		</dd>
-	
-</dl>
-
+mixed
+:    The currently pointed to key of the internal documents collection
 <hr />
 
 #### <span style="color:#3e6a6e;">next()</span>
@@ -170,16 +135,8 @@ Moves the current element of the internal documents collection forward one
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			void
-		</dt>
-		<dd>
-			Provides no return value.
-		</dd>
-	
-</dl>
+void
+:    Provides no return value.
 
 <hr />
 
@@ -214,17 +171,8 @@ Creates a new document query from the existing internal document collection
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			DocumentCollection
-		</dt>
-		<dd>
-			The new traversable document query
-		</dd>
-	
-</dl>
-
+DocumentCollection
+:    The new traversable document query
 <hr />
 
 #### <span style="color:#3e6a6e;">rewind()</span>
@@ -233,16 +181,8 @@ Moved the current element of the internal documents collection back to the begin
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			void
-		</dt>
-		<dd>
-			Provides no return value.
-		</dd>
-	
-</dl>
+void
+:    Provides no return value.
 
 <hr />
 
@@ -252,17 +192,8 @@ Determine if the current key of an array is Valid
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			boolean
-		</dt>
-		<dd>
-			TRUE if the current key is valid, FALSE otherwise
-		</dd>
-	
-</dl>
-
+boolean
+:    TRUE if the current key is valid, FALSE otherwise
 
 
 

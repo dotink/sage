@@ -117,17 +117,8 @@ Creates a new document
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			Document
-		</dt>
-		<dd>
-			The document for method chaining
-		</dd>
-	
-</dl>
-
+Document
+:    The document for method chaining
 <hr />
 
 #### <span style="color:#3e6a6e;">getDescription()</span>
@@ -136,17 +127,8 @@ Gets the description of the document
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			string
-		</dt>
-		<dd>
-			The description of the document
-		</dd>
-	
-</dl>
-
+string
+:    The description of the document
 <hr />
 
 #### <span style="color:#3e6a6e;">getDetails()</span>
@@ -155,17 +137,8 @@ Gets the details of the document
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			string
-		</dt>
-		<dd>
-			The details of the document
-		</dd>
-	
-</dl>
-
+string
+:    The details of the document
 <hr />
 
 #### <span style="color:#3e6a6e;">getInfo()</span>
@@ -204,17 +177,8 @@ This allows you to iterate with this method to extract all values in templating.
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			mixed
-		</dt>
-		<dd>
-			An array or string containing the parsed information
-		</dd>
-	
-</dl>
-
+mixed
+:    An array or string containing the parsed information
 <hr />
 
 #### <span style="color:#3e6a6e;">getReflection()</span>
@@ -223,17 +187,8 @@ Allows for getting the reflection for additional information about the `Document
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			IReflection
-		</dt>
-		<dd>
-			The reflection that the document represents
-		</dd>
-	
-</dl>
-
+IReflection
+:    The reflection that the document represents
 <hr />
 
 #### <span style="color:#3e6a6e;">getKeys()</span>
@@ -242,17 +197,8 @@ Allows for getting the keys of the document
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			array
-		</dt>
-		<dd>
-			The keys assigned to the document
-		</dd>
-	
-</dl>
-
+array
+:    The keys assigned to the document
 <hr />
 
 #### <span style="color:#3e6a6e;">getType()</span>
@@ -261,17 +207,8 @@ Allows for getting the type of document
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			string
-		</dt>
-		<dd>
-			The type of the document
-		</dd>
-	
-</dl>
-
+string
+:    The type of the document
 <hr />
 
 #### <span style="color:#3e6a6e;">hasInfo()</span>
@@ -280,17 +217,8 @@ Determines if token information is available in the information array
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			boolean
-		</dt>
-		<dd>
-			TRUE if there is information for that token, FALSE otherwise
-		</dd>
-	
-</dl>
-
+boolean
+:    TRUE if there is information for that token, FALSE otherwise
 <hr />
 
 #### <span style="color:#3e6a6e;">keyModifiers()</span>
@@ -324,16 +252,8 @@ Keys any modifier information we can glean from our reflection
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			void
-		</dt>
-		<dd>
-			Provides no return value.
-		</dd>
-	
-</dl>
+void
+:    Provides no return value.
 
 <hr />
 
@@ -349,16 +269,8 @@ details which is every line that follows until the first `@`.
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			void
-		</dt>
-		<dd>
-			Provides no return value.
-		</dd>
-	
-</dl>
+void
+:    Provides no return value.
 
 <hr />
 
@@ -423,16 +335,8 @@ a value using that token parser.
 
 ###### Returns
 
-<dl>
-	
-		<dt>
-			void
-		</dt>
-		<dd>
-			Provides no return value.
-		</dd>
-	
-</dl>
+void
+:    Provides no return value.
 
 
 
