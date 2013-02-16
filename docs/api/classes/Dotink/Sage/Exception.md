@@ -1,15 +1,21 @@
-# `Exception`
+# Exception
 ## A custom exception class to differentiate Sage exceptions from other types.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
+### Namespace
+
+`Dotink\Sage`
+
 ### Extends
 
 [`\Exception`](http://www.php.net/class.exception.php)
+
 ### Details
 
 This exception class supports using sprintf style arguments to construct a message.
+
 #### Authors
 
 <table>
@@ -19,7 +25,8 @@ This exception class supports using sprintf style arguments to construct a messa
 		<th>Email</th>
 	</thead>
 	<tbody>
-			<tr>
+	
+		<tr>
 			<td>
 				Matthew J. Sahagian
 			</td>

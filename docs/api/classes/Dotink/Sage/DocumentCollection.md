@@ -1,12 +1,17 @@
-# `DocumentCollection`
+# DocumentCollection
 ## A collection of documents which can be progressively filtered via simple queries
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
+### Namespace
+
+`Dotink\Sage`
+
 ### Details
 
 This class is countable as well as traversable so that it can be used in templating.
+
 #### Authors
 
 <table>
@@ -16,7 +21,8 @@ This class is countable as well as traversable so that it can be used in templat
 		<th>Email</th>
 	</thead>
 	<tbody>
-			<tr>
+	
+		<tr>
 			<td>
 				Matthew J. Sahagian
 			</td>

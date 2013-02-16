@@ -1,4 +1,4 @@
-# <?= '`' . $document->getReflection()->getShortName() . '`' ?>
+# <?= $document->getReflection()->getShortName() ?>
 
 <?= $document->getDescription() ? '## ' . $document->getDescription() : NULL ?>
 
@@ -13,21 +13,48 @@ _<?= $document->getInfo('copyright') ?>_.
 _<?= $license ?>_
 <?php } ?>
 <?php } ?>
+<?php if ($namespace = $document->getReflection()->getNamespaceName()) { ?>
+
+### Namespace
+
+<?= '`' . $namespace . '`' ?>
+
+<?php if (count($aliases = $document->getContext()->getNamespaceAliases())) { ?>
+<table>
+
+	<tr>
+		<th>Alias</th>
+		<th>Namespace / Class</th>
+	</tr>
+	<?php foreach ($aliases as $alias => $namespace) { ?>
+
+	<tr>
+		<td><?= $alias ?></td>
+		<td><?= $namespace ?></td>
+	</tr>
+	<?php } ?>
+
+</table>
+
+<?php } ?>
+<?php } ?>
 <?php if ($parent = $document->getReflection()->getParentClass()) { ?>
 
 ### Extends
 
 <?php if ($link = $this->getLink($parent->getName())) { ?>
-<?= sprintf('[`\\%s`](%s)', $parent->getName(), $link) ?>
+<?= sprintf('[`%s`](%s)', $this->reduce($parent->getName(), $document->getContext()), $link) ?>
 <?php } else { ?>
-<?= '`\\' . $parent->getName() . '`' ?>
+<?= '`' . $this->reduce($parent->getName(), $document->getContext()) . '`' ?>
 <?php } ?>
+
 <?php } ?>
 <?php if ($document->getDetails()) { ?>
 
 ### Details
 
 <?= $document->getDetails() ?>
+
 
 <?php } ?>
 <?php if ($document->hasInfo('author')) { ?>

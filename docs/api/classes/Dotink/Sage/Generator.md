@@ -1,8 +1,26 @@
-# `Generator`
+# Generator
 ## Provides documentation generation service by reading a particular source directory
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
+
+### Namespace
+
+`Dotink\Sage`
+<table>
+
+	<tr>
+		<th>Alias</th>
+		<th>Namespace / Class</th>
+	</tr>
+	
+	<tr>
+		<td>TokenReflection</td>
+		<td>TokenReflection</td>
+	</tr>
+	
+</table>
+
 #### Authors
 
 <table>
@@ -12,7 +30,8 @@ _Please reference the LICENSE.md file at the root of this distribution_
 		<th>Email</th>
 	</thead>
 	<tbody>
-			<tr>
+	
+		<tr>
 			<td>
 				Matthew J. Sahagian
 			</td>

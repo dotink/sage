@@ -1,17 +1,42 @@
-# `Document`
+# Document
 ## A representation of a single document in the documentation.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
+### Namespace
+
+`Dotink\Sage`
+<table>
+
+	<tr>
+		<th>Alias</th>
+		<th>Namespace / Class</th>
+	</tr>
+	
+	<tr>
+		<td>TokenReflection</td>
+		<td>TokenReflection</td>
+	</tr>
+	
+	<tr>
+		<td>IReflection</td>
+		<td>TokenReflection\IReflection</td>
+	</tr>
+	
+</table>
+
+
 ### Extends
 
-[`\Dotink\Sage\DocumentCollection`](./DocumentCollection.md)
+[`DocumentCollection`](./DocumentCollection.md)
+
 ### Details
 
 Although these are generally thought of as single pages, it is possible for them to be
 nested in one another.  That is to say, because a `Document` is also a `DocumentCollection`
 it may contain additional sub-documents.  Classes for example will contain Methods.
+
 #### Authors
 
 <table>
@@ -21,7 +46,8 @@ it may contain additional sub-documents.  Classes for example will contain Metho
 		<th>Email</th>
 	</thead>
 	<tbody>
-			<tr>
+	
+		<tr>
 			<td>
 				Matthew J. Sahagian
 			</td>

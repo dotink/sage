@@ -1,8 +1,12 @@
-# `TokenAuthor`
+# TokenAuthor
 ## Responsible for parsing @author tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
+
+### Namespace
+
+`Dotink\Sage\TokenParser`
 
 ### Details
 
@@ -13,6 +17,7 @@ look like the following:
 
 If any one of these pieces is missing it should still get all the information that is
 available with missing pieces represented as an empty string.
+
 #### Authors
 
 <table>
@@ -22,7 +27,8 @@ available with missing pieces represented as an empty string.
 		<th>Email</th>
 	</thead>
 	<tbody>
-			<tr>
+	
+		<tr>
 			<td>
 				Matthew J. Sahagian
 			</td>

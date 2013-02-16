@@ -8,6 +8,7 @@
 	</thead>
 	<tbody>
 	<?php while($author = $document->getInfo('author')) { ?>
+
 		<tr>
 			<td>
 				<?= $author['name'] ?>

@@ -1,8 +1,12 @@
-# `TokenParam`
+# TokenParam
 ## Responsible for parsing @param tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
+
+### Namespace
+
+`Dotink\Sage\TokenParser`
 
 ### Details
 
@@ -18,6 +22,7 @@ Examples of what is parseable:
 
 If the param token is followed by a simple '...' it will automatically represent a ad
 infinitum number of repetitions of the preceding param.
+
 #### Authors
 
 <table>
@@ -27,7 +32,8 @@ infinitum number of repetitions of the preceding param.
 		<th>Email</th>
 	</thead>
 	<tbody>
-			<tr>
+	
+		<tr>
 			<td>
 				Matthew J. Sahagian
 			</td>

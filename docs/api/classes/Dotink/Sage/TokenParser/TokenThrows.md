@@ -1,8 +1,12 @@
-# `TokenThrows`
+# TokenThrows
 ## Responsible for parsing @throws tokens in a docblock.
 
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
+
+### Namespace
+
+`Dotink\Sage\TokenParser`
 
 ### Details
 
@@ -10,6 +14,7 @@ The validation and parsing will work against standard formats.  Each token shoul
 a single exception type thrown and the conditions under which it is thrown, such as:
 
 - `@throws Exception In the event that the configuration is ill-formatted`
+
 #### Authors
 
 <table>
@@ -19,7 +24,8 @@ a single exception type thrown and the conditions under which it is thrown, such
 		<th>Email</th>
 	</thead>
 	<tbody>
-			<tr>
+	
+		<tr>
 			<td>
 				Matthew J. Sahagian
 			</td>
