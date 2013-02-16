@@ -3,9 +3,10 @@
 
 <?= $document->getDetails() ?>
 
+
 <?php } ?>
 <?php if ($namespace = $document->getReflection()->getNamespaceName()) { ?>
-<?= PHP_EOL ?><?php include 'namespace.php'; ?><?= PHP_EOL ?>
+<?php include 'namespace.php'; ?><?= PHP_EOL ?>
 <?php } ?>
 <?php if (count($aliases = $document->getContext()->getNamespaceAliases())) { ?>
 <?= PHP_EOL ?><?php include 'imports.php'; ?>
