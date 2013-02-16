@@ -29,6 +29,14 @@
 		const TYPE_PROPERTY  = 'property';
 		const TYPE_METHOD    = 'method';
 
+		/**
+		 * The context for the document's reflection
+		 *
+		 * @access private
+		 * @var IReflection
+		 */
+		private $context = NULL;
+
 
 		/**
 		 * The description of the document as parsed from the docblock
@@ -90,12 +98,14 @@
 		 * @access public
 		 * @param IReflection $reflection The reflection to use
 		 * @param Generator $generator The generator that is creating this document
+		 * @param IReflection $context The context where the reflection was found
 		 * @return Document The document for method chaining
 		 */
-		public function __construct(IReflection $reflection, $generator, IReflection $context = NULL)
+		public function __construct(IReflection $reflection, $generator, IReflection $context)
 		{
 			$this->reflection = $reflection;
 			$this->generator  = $generator;
+			$this->context    = $context;
 
 			if ($reflection instanceof TokenReflection\IReflectionConstant) {
 				$this->type = self::TYPE_CONSTANT;
@@ -135,6 +145,17 @@
 			$this->parseDocComment();
 		}
 
+
+		/**
+		 * Get's the context reflection for this document
+		 *
+		 * @access public
+		 * @return IReflection The reflection for the document's context
+		 */
+		public function getContext()
+		{
+			return $this->context;
+		}
 
 		/**
 		 * Gets the description of the document

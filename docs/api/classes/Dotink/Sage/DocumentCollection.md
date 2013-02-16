@@ -70,7 +70,7 @@ Creates a new document collection
 				$documents
 			</td>
 			<td>
-				array
+									array				
 			</td>
 			<td>
 				The documents to be contained in the collection
@@ -82,7 +82,7 @@ Creates a new document collection
 				$key
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				A key to filter the documents by
@@ -202,7 +202,7 @@ Creates a new document query from the existing internal document collection
 				$key
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The key to filter the document collection by

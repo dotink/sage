@@ -62,7 +62,7 @@ Validates that the value for the token looks OK
 				$value
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The value for the token
@@ -106,7 +106,7 @@ Parses the value into usable information
 				$value
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The value for the token

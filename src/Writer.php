@@ -1,5 +1,7 @@
 <?php namespace Dotink\Sage {
 
+	use TokenReflection\IReflection;
+
 	/**
 	 * Provides documentation writing services by outputting to a particular directory
 	 *
@@ -63,13 +65,70 @@
 		/**
 		 * Builds documentation from an array of documents
 		 *
-		 * @access private
+		 * @access public
 		 * @param array $documents A document collection keyed by directory structure
 		 * @return void
 		 */
 		public function buildDocumentation($documents)
 		{
 			$this->write($this->compile($documents, NULL));
+		}
+
+
+		/**
+		 * Chops the namespace off the front of a fully qualified reference
+		 *
+		 * @access public
+		 * @param string $reference The reference to chop
+		 * @return string The chopped reference
+		 */
+		public function chopNamespace($reference)
+		{
+			return preg_replace('/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\\\\/', '', $reference);
+		}
+
+
+		/**
+		 * Expands a reference in a given context
+		 *
+		 * @access public
+		 * @param string $reference The reference to expand
+		 * @param IReflection $context The reflection context for expansion
+		 * @return string The expanded reference
+		 */
+		public function expand($reference, IReflection $context)
+		{
+			$expansion      = $reference;
+			$standard_types = [
+				'string', 'int', 'integer', 'bool', 'boolean', 'array', 'float', 'double', 'void'
+			];
+
+			if (!in_array($reference, $standard_types)) {
+				$aliases = $context->getNamespaceAliases();
+
+				foreach ($aliases as $alias) {
+					$alias_parts = explode('\\', $alias);
+
+					if (end($alias_parts) == $reference) {
+						$expansion = implode('\\', $alias_parts);
+						break;
+
+					} else {
+						$reference_parts = explode('\\', $reference);
+						$first_part      = array_shift($reference_parts);
+
+						if ($first_part == end($alias_parts)) {
+							$expansion = $alias . '\\' . implode('\\', $reference_parts);
+							break;
+
+						} else {
+							$expansion = $context->getName() . '\\' . $reference;
+						}
+					}
+				}
+			}
+
+			return $expansion;
 		}
 
 

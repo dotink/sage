@@ -69,7 +69,7 @@ Creates a new writer
 				$output_path
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The output path where we will be writing documentation to
@@ -81,7 +81,7 @@ Creates a new writer
 				$template_directory
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The directory containing our templates
@@ -125,7 +125,7 @@ Builds documentation from an array of documents
 				$documents
 			</td>
 			<td>
-				array
+									array				
 			</td>
 			<td>
 				A document collection keyed by directory structure
@@ -144,6 +144,106 @@ Builds documentation from an array of documents
 		</dt>
 		<dd>
 			Provides no return value.
+		</dd>
+	
+</dl>
+
+<hr />
+
+#### <span style="color:#3e6a6e;">chopNamespace()</span>
+
+Chops the namespace off the front of a fully qualified reference
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$reference
+			</td>
+			<td>
+									string				
+			</td>
+			<td>
+				The reference to chop
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The chopped reference
+		</dd>
+	
+</dl>
+
+<hr />
+
+#### <span style="color:#3e6a6e;">expand()</span>
+
+Expands a reference in a given context
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$reference
+			</td>
+			<td>
+									string				
+			</td>
+			<td>
+				The reference to expand
+			</td>
+		</tr>
+					
+		<tr>
+			<td>
+				$context
+			</td>
+			<td>
+									IReflection				
+			</td>
+			<td>
+				The reflection context for expansion
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The expanded reference
 		</dd>
 	
 </dl>
@@ -169,7 +269,7 @@ Gets a relative link to a particular document
 				$document
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The document to get a link to
@@ -213,7 +313,7 @@ Compiles references of file paths to documents
 				$documents
 			</td>
 			<td>
-				array
+									array				
 			</td>
 			<td>
 				A document collection keyed by directory structure
@@ -225,7 +325,7 @@ Compiles references of file paths to documents
 				$output_path
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The output path for the document collection
@@ -269,7 +369,7 @@ Sets the output path with validation
 				$output_path
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				A relative or absolute directory to hold output
@@ -326,7 +426,7 @@ Sets the template directory with validation
 				$template_directory
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The directory containing templates to set

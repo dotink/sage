@@ -64,7 +64,7 @@ Creates a new Sage exception
 				$message
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				A printf style message
@@ -76,7 +76,7 @@ Creates a new Sage exception
 				$compontent
 			</td>
 			<td>
-				mixed
+									mixed				
 			</td>
 			<td>
 				A component for any placeholders in the message
@@ -88,7 +88,7 @@ Creates a new Sage exception
 				$...
 			</td>
 			<td>
-				mixed
+									mixed				
 			</td>
 			<td>
 				ad infinitum

@@ -73,7 +73,7 @@ Creates a new generator
 				$broker
 			</td>
 			<td>
-				TokenReflection\Broker
+									TokenReflection\Broker				
 			</td>
 			<td>
 				The token reflection broker to use for reflection
@@ -117,7 +117,7 @@ Gets the token parser class for a given token
 				$token
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The token to get a parser for
@@ -161,7 +161,7 @@ Runs the documentation generator
 				$input_path
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				A relative or absolute directory to scan
@@ -173,7 +173,7 @@ Runs the documentation generator
 				$options
 			</td>
 			<td>
-				array
+									array				
 			</td>
 			<td>
 				An array of options and their values
@@ -229,7 +229,7 @@ Which without sorting by type would normally be in:
 				$reflection
 			</td>
 			<td>
-				array
+									array				
 			</td>
 			<td>
 				A list of token reflections
@@ -241,7 +241,7 @@ Which without sorting by type would normally be in:
 				$sort_by_type
 			</td>
 			<td>
-				boolean
+									boolean				
 			</td>
 			<td>
 				Whether or not we should sort by type
@@ -285,7 +285,7 @@ Configures token parsers from an array, filtering out bad ones
 				$token_parsers
 			</td>
 			<td>
-				array
+									array				
 			</td>
 			<td>
 				A list of classes for parsing tokens, keyed by the token
@@ -329,7 +329,7 @@ Sets the input path with validation
 				$input_path
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				A relative or absolute directory to scan

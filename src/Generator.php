@@ -146,7 +146,7 @@
 							$root =& $root[$segment];
 						}
 
-						$root[] = new Document($structure, $this);
+						$root[] = new Document($structure, $this, $namespace);
 					}
 
 					//

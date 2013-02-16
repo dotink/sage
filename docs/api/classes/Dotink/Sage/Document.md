@@ -39,6 +39,10 @@ it may contain additional sub-documents.  Classes for example will contain Metho
 ## Properties
 
 ### Instance Properties
+#### <span style="color:#6a6e3d;">$context</span>
+
+The context for the document's reflection
+
 #### <span style="color:#6a6e3d;">$description</span>
 
 The description of the document as parsed from the docblock
@@ -67,7 +71,7 @@ The type of this document (class, method, property, trait, etc)
 
 ### Inherited Properties
 
-[`Dotink\Sage\DocumentCollection::$documents`](./DocumentCollection.md#documents) 
+[`DocumentCollection::$documents`](./DocumentCollection.md#documents) 
 
 ## Methods
 
@@ -93,7 +97,7 @@ Creates a new document
 				$reflection
 			</td>
 			<td>
-				IReflection
+									IReflection				
 			</td>
 			<td>
 				The reflection to use
@@ -105,10 +109,22 @@ Creates a new document
 				$generator
 			</td>
 			<td>
-				Generator
+									[`Generator`](./Generator.md) 				
 			</td>
 			<td>
 				The generator that is creating this document
+			</td>
+		</tr>
+					
+		<tr>
+			<td>
+				$context
+			</td>
+			<td>
+									IReflection				
+			</td>
+			<td>
+				The context where the reflection was found
 			</td>
 		</tr>
 			
@@ -124,6 +140,25 @@ Creates a new document
 		</dt>
 		<dd>
 			The document for method chaining
+		</dd>
+	
+</dl>
+
+<hr />
+
+#### <span style="color:#3e6a6e;">getContext()</span>
+
+Get's the context reflection for this document
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			IReflection
+		</dt>
+		<dd>
+			The reflection for the document's context
 		</dd>
 	
 </dl>
@@ -192,7 +227,7 @@ This allows you to iterate with this method to extract all values in templating.
 				$token
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The token to get information for
@@ -312,7 +347,7 @@ Keys any modifier information we can glean from our reflection
 				$context
 			</td>
 			<td>
-				IReflection
+									IReflection				
 			</td>
 			<td>
 				The context with which we want to analyze the reflection
@@ -386,7 +421,7 @@ a value using that token parser.
 				$token
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The token (type) we're parding
@@ -398,7 +433,7 @@ a value using that token parser.
 				$value
 			</td>
 			<td>
-				string
+									string				
 			</td>
 			<td>
 				The value (all content after the token itself)
@@ -438,7 +473,7 @@ a value using that token parser.
 
 ### Inherited Methods
 
-[`Dotink\Sage\DocumentCollection::count()`](./DocumentCollection.md#count) [`Dotink\Sage\DocumentCollection::current()`](./DocumentCollection.md#current) [`Dotink\Sage\DocumentCollection::key()`](./DocumentCollection.md#key) [`Dotink\Sage\DocumentCollection::next()`](./DocumentCollection.md#next) [`Dotink\Sage\DocumentCollection::query()`](./DocumentCollection.md#query) [`Dotink\Sage\DocumentCollection::rewind()`](./DocumentCollection.md#rewind) [`Dotink\Sage\DocumentCollection::valid()`](./DocumentCollection.md#valid) 
+[`DocumentCollection::count()`](./DocumentCollection.md#count) [`DocumentCollection::current()`](./DocumentCollection.md#current) [`DocumentCollection::key()`](./DocumentCollection.md#key) [`DocumentCollection::next()`](./DocumentCollection.md#next) [`DocumentCollection::query()`](./DocumentCollection.md#query) [`DocumentCollection::rewind()`](./DocumentCollection.md#rewind) [`DocumentCollection::valid()`](./DocumentCollection.md#valid) 
 
 
 

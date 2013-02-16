@@ -16,7 +16,11 @@
 
 			</td>
 			<td>
-				<?= array_shift($details['types']) ?>
+				<?php if ($link = $this->getLink($this->expand($details['types'][0], $document->getContext()))) { ?>
+					<?= '[`' . $details['types'][0] . '`]' ?><?= '('  . $link . ') ' ?>
+				<?php } else { ?>
+					<?= $details['types'][0] ?>
+				<?php } ?>
 
 			</td>
 			<td rowspan="<?= $span ?>">
@@ -24,11 +28,15 @@
 
 			</td>
 		</tr>
-			<?php foreach($details['types'] as $type) { ?>
+			<?php foreach(array_slice($details['types'], 1) as $type) { ?>
 
 		<tr>
 			<td>
-				<?= $type ?>
+				<?php if ($link = $this->getLink($this->expand($type, $document->getContext()))) { ?>
+					<?= '[`' . $details['types'][0] . '`]' ?><?= '('  . $link . ') ' ?>
+				<?php } else { ?>
+					<?= $type ?>
+				<?php } ?>
 
 			</td>
 		</tr>
@@ -41,7 +49,11 @@
 
 			</td>
 			<td>
-				<?= $details['types'][0] ?>
+				<?php if ($link = $this->getLink($this->expand($details['types'][0], $document->getContext()))) { ?>
+					<?= '[`' . $details['types'][0] . '`]' ?><?= '('  . $link . ') ' ?>
+				<?php } else { ?>
+					<?= $details['types'][0] ?>
+				<?php } ?>
 
 			</td>
 			<td>
