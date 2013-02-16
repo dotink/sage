@@ -4,11 +4,12 @@
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
-### Namespace
+
+#### Namespace
 
 `Dotink\Sage`
 
-### Imports
+#### Imports
 
 <table>
 
@@ -23,6 +24,7 @@ _Please reference the LICENSE.md file at the root of this distribution_
 	</tr>
 	
 </table>
+
 #### Authors
 
 <table>

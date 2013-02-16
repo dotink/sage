@@ -1,67 +1,9 @@
-# <?= $document->getReflection()->getShortName() ?>
-
-<?= $document->getDescription() ? '## ' . $document->getDescription() : NULL ?>
-
-
-<?php if ($document->hasInfo('copyright')) { ?>
-_<?= $document->getInfo('copyright') ?>_.
-<?php } ?>
-<?php if ($license = $document->getInfo('license')) { ?>
-<?php if (preg_match('#^http([s])?://(.*)#', $license)) { ?>
-[<?= $license ?>](<?= $license ?>)
-<?php } else { ?>
-_<?= $license ?>_
-<?php } ?>
-<?php } ?>
-<?php if ($namespace = $document->getReflection()->getNamespaceName()) { ?>
-
-### Namespace
-
-<?= '`' . $namespace . '`' ?>
-
-<?php } ?>
-<?php if (count($aliases = $document->getContext()->getNamespaceAliases())) { ?>
-
-### Imports
-
-<table>
-
-	<tr>
-		<th>Alias</th>
-		<th>Namespace / Class</th>
-	</tr>
-	<?php foreach ($aliases as $alias => $namespace) { ?>
-
-	<tr>
-		<td><?= $alias ?></td>
-		<td><?= $namespace ?></td>
-	</tr>
-	<?php } ?>
-
-</table>
-<?php } ?>
+<?php include 'header.php'; ?>
 <?php if ($parent = $document->getReflection()->getParentClass()) { ?>
-
-### Extends
-
-<?php if ($link = $this->getLink($parent->getName())) { ?>
-<?= sprintf('[`%s`](%s)', $this->reduce($parent->getName(), $document->getContext()), $link) ?>
-<?php } else { ?>
-<?= '`' . $this->reduce($parent->getName(), $document->getContext()) . '`' ?>
+<?= PHP_EOL ?><?php include 'extends.php'; ?><?= PHP_EOL ?>
 <?php } ?>
 
-<?php } ?>
-<?php if ($document->getDetails()) { ?>
-
-### Details
-
-<?= $document->getDetails() ?>
-
-
-<?php } ?>
-<?php if ($document->hasInfo('author')) { ?>
-<?php include 'authors.php'; ?>
-<?php } ?>
+<?php include 'details.php'; ?>
 
 <?php if (count($class_properties = $document->query('property'))) { ?>
 ## Properties

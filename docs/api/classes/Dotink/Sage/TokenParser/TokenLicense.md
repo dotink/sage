@@ -4,15 +4,15 @@
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
-### Namespace
-
-`Dotink\Sage\TokenParser`
-
 ### Details
 
 No additional parsing of the license string is done, however, in some documentation
 templates it may be the case that if the string begins with 'http://' it could auto-link
 assuming it's a URL to the license.
+
+#### Namespace
+
+`Dotink\Sage\TokenParser`
 
 #### Authors
 

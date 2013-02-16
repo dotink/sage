@@ -4,10 +4,6 @@
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
-### Namespace
-
-`Dotink\Sage`
-
 ### Extends
 
 [`\Exception`](http://www.php.net/class.exception.php)
@@ -15,6 +11,10 @@ _Please reference the LICENSE.md file at the root of this distribution_
 ### Details
 
 This exception class supports using sprintf style arguments to construct a message.
+
+#### Namespace
+
+`Dotink\Sage`
 
 #### Authors
 

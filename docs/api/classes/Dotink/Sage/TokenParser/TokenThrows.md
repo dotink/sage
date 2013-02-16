@@ -4,16 +4,16 @@
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
-### Namespace
-
-`Dotink\Sage\TokenParser`
-
 ### Details
 
 The validation and parsing will work against standard formats.  Each token should represent
 a single exception type thrown and the conditions under which it is thrown, such as:
 
 - `@throws Exception In the event that the configuration is ill-formatted`
+
+#### Namespace
+
+`Dotink\Sage\TokenParser`
 
 #### Authors
 

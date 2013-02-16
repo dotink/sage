@@ -4,10 +4,6 @@
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
-### Namespace
-
-`Dotink\Sage\TokenParser`
-
 ### Details
 
 The parser will attempt to parse out `name`, `handle`, and `email` keys from strings which
@@ -17,6 +13,10 @@ look like the following:
 
 If any one of these pieces is missing it should still get all the information that is
 available with missing pieces represented as an empty string.
+
+#### Namespace
+
+`Dotink\Sage\TokenParser`
 
 #### Authors
 

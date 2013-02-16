@@ -4,11 +4,21 @@
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
-### Namespace
+### Extends
+
+[`DocumentCollection`](./DocumentCollection.md)
+
+### Details
+
+Although these are generally thought of as single pages, it is possible for them to be
+nested in one another.  That is to say, because a `Document` is also a `DocumentCollection`
+it may contain additional sub-documents.  Classes for example will contain Methods.
+
+#### Namespace
 
 `Dotink\Sage`
 
-### Imports
+#### Imports
 
 <table>
 
@@ -28,16 +38,6 @@ _Please reference the LICENSE.md file at the root of this distribution_
 	</tr>
 	
 </table>
-
-### Extends
-
-[`DocumentCollection`](./DocumentCollection.md)
-
-### Details
-
-Although these are generally thought of as single pages, it is possible for them to be
-nested in one another.  That is to say, because a `Document` is also a `DocumentCollection`
-it may contain additional sub-documents.  Classes for example will contain Methods.
 
 #### Authors
 

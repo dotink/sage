@@ -4,13 +4,13 @@
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
-### Namespace
-
-`Dotink\Sage`
-
 ### Details
 
 This class is countable as well as traversable so that it can be used in templating.
+
+#### Namespace
+
+`Dotink\Sage`
 
 #### Authors
 

@@ -4,10 +4,6 @@
 _Copyright (c) 2013, Matthew J. Sahagian_.
 _Please reference the LICENSE.md file at the root of this distribution_
 
-### Namespace
-
-`Dotink\Sage\TokenParser`
-
 ### Details
 
 Each parameter token will be parsed into an array containing a `name`, `types`, and
@@ -22,6 +18,10 @@ Examples of what is parseable:
 
 If the param token is followed by a simple '...' it will automatically represent a ad
 infinitum number of repetitions of the preceding param.
+
+#### Namespace
+
+`Dotink\Sage\TokenParser`
 
 #### Authors
 
