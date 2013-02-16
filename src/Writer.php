@@ -151,10 +151,7 @@
 		 */
 		public function getLink($document)
 		{
-			if (isset($this->externalDocs[$document])) {
-				return $this->externalDocs[$document];
-			}
-
+			$url      = NULL;
 			$position = NULL;
 
 			if (strpos($document, '::') !== FALSE) {
@@ -163,41 +160,44 @@
 				$position = '#' . trim($parts[1], '$()');
 			}
 
-			foreach ($this->references as $reference_path => $reference) {
-				if ($reference->getReflection()->getName() == $document) {
-					$source_parts = explode(DIRECTORY_SEPARATOR, str_replace(
-						$this->outputPath . DIRECTORY_SEPARATOR,
-						'',
-						$this->currentWriteDocument
-					));
+			if (isset($this->externalDocs[$document])) {
+				$url = $this->externalDocs[$document];
 
-					$target_parts = explode(DIRECTORY_SEPARATOR, str_replace(
-						$this->outputPath . DIRECTORY_SEPARATOR,
-						'',
-						$reference_path
-					));
+			} else {
+				foreach ($this->references as $reference_path => $reference) {
+					if ($reference->getReflection()->getName() == $document) {
+						$source_parts = explode(DIRECTORY_SEPARATOR, str_replace(
+							$this->outputPath . DIRECTORY_SEPARATOR,
+							'',
+							$this->currentWriteDocument
+						));
 
-					for ($x = 0; $front = array_shift($source_parts); $x++) {
-						if ($front != $target_parts[$x]) {
-							break;
+						$target_parts = explode(DIRECTORY_SEPARATOR, str_replace(
+							$this->outputPath . DIRECTORY_SEPARATOR,
+							'',
+							$reference_path
+						));
+
+						for ($x = 0; $front = array_shift($source_parts); $x++) {
+							if ($front != $target_parts[$x]) {
+								break;
+							}
 						}
+
+						$path = array_slice($target_parts, $x);
+
+						for ($y = count($source_parts); $y > 0; $y--) {
+							array_unshift($path, '..');
+						}
+
+						$url = $path[0] != '..'
+							? '.' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $path)
+							: implode(DIRECTORY_SEPARATOR, $path);
 					}
-
-					$path = array_slice($target_parts, $x);
-
-					for ($y = count($source_parts); $y > 0; $y--) {
-						array_unshift($path, '..');
-					}
-
-					$url = $path[0] != '..'
-						? '.' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $path)
-						: implode(DIRECTORY_SEPARATOR, $path);
-
-					return $url . $position;
 				}
 			}
 
-			return NULL;
+			return $url . $position;
 		}
 
 
