@@ -109,7 +109,7 @@ Creates a new document
 				$generator
 			</td>
 			<td>
-									<a href="./Generator.md"><code>Generator</code></a>
+									<a href="./Generator.md">Generator</a>
 				
 			</td>
 			<td>

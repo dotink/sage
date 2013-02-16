@@ -17,7 +17,7 @@
 			</td>
 			<td>
 				<?php if ($link = $this->getLink($this->expand($details['types'][0], $document->getContext()))) { ?>
-					<a href="<?= $link ?>"><code><?= $details['types'][0] ?></code></a>
+					<a href="<?= $link ?>"><?= $details['types'][0] ?></a>
 				<?php } else { ?>
 					<?= $details['types'][0] ?>
 				<?php } ?>
@@ -33,7 +33,7 @@
 		<tr>
 			<td>
 				<?php if ($link = $this->getLink($this->expand($type, $document->getContext()))) { ?>
-					<a href="<?= $link ?>"><code><?= $type ?></code></a>
+					<a href="<?= $link ?>"><?= $type ?></a>
 				<?php } else { ?>
 					<?= $type ?>
 				<?php } ?>
@@ -50,7 +50,7 @@
 			</td>
 			<td>
 				<?php if ($link = $this->getLink($this->expand($details['types'][0], $document->getContext()))) { ?>
-					<a href="<?= $link ?>"><code><?= $details['types'][0] ?></code></a>
+					<a href="<?= $link ?>"><?= $details['types'][0] ?></a>
 				<?php } else { ?>
 					<?= $details['types'][0] ?>
 				<?php } ?>
