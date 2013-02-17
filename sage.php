@@ -17,6 +17,7 @@
 
 	(new Writer(isset($argv[2]) ? $argv[2] : NULL, $template_directory))
 		-> setExternalDocs($sage->getConfig('external_docs'))
+		-> setTemplateData($sage->getConfig('template_data'))
 		-> buildDocumentation($document_collection);
 
 	exit(0);

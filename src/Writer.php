@@ -44,6 +44,15 @@
 
 
 		/**
+		 * Template data
+		 *
+		 * @access private
+		 * @var array
+		 */
+		private $templateData = array();
+
+
+		/**
 		 * Compiled references list [file => document]
 		 *
 		 * @access private
@@ -102,59 +111,6 @@
 
 
 		/**
-		 * Reduces a reference in a given context
-		 *
-		 * @access public
-		 * @param string $reference The reference to reduce
-		 * @param IReflection $context The reflection context for reduction
-		 * @return string The reduced reference
-		 */
-		public function reduce($reference, IReflection $context)
-		{
-			$member = NULL;
-
-			if (strpos($reference, '::') !== FALSE) {
-				list($reference, $member) = explode('::', $reference);
-			}
-
-			$reduction = $reference;
-
-			if (!self::isStandardType($reference)) {
-				$parts     = explode('\\', $reduction);
-				$reduction = '\\' . $reduction;
-				$aliases   = array_merge(
-					['' => $context->getName()],
-					$context->getNamespaceAliases()
-				);
-
-				foreach ($aliases as $alias => $namespace) {
-					$namespace_parts = explode('\\', $namespace);
-
-					if (count($parts) < count($namespace_parts)) {
-						continue;
-					}
-
-					if ($namespace_parts == array_slice($parts, 0, count($namespace_parts))) {
-						$reduction = implode('\\', !$alias
-							? array_slice($parts, count($namespace_parts))
-							: array_merge(
-								[$alias],
-								array_slice($parts, count($namespace_parts))
-							)
-						);
-
-						break;
-					}
-				}
-			}
-
-			return $member
-				? implode('::', [$reduction, $member])
-				: $reduction;
-		}
-
-
-		/**
 		 * Expands a reference in a given context
 		 *
 		 * @access public
@@ -190,6 +146,21 @@
 			return $member
 				? implode('::', [$expansion, $member])
 				: $expansion;
+		}
+
+
+		/**
+		 * Gets a piece of template data
+		 *
+		 * @access public
+		 * @param string $name The name of the data to get
+		 * @return mixed The data, NULL if not available
+		 */
+		public function get($name)
+		{
+			return isset($this->templateData[$name])
+				? $this->templateData[$name]
+				: NULL;
 		}
 
 
@@ -253,6 +224,59 @@
 
 
 		/**
+		 * Reduces a reference in a given context
+		 *
+		 * @access public
+		 * @param string $reference The reference to reduce
+		 * @param IReflection $context The reflection context for reduction
+		 * @return string The reduced reference
+		 */
+		public function reduce($reference, IReflection $context)
+		{
+			$member = NULL;
+
+			if (strpos($reference, '::') !== FALSE) {
+				list($reference, $member) = explode('::', $reference);
+			}
+
+			$reduction = $reference;
+
+			if (!self::isStandardType($reference)) {
+				$parts     = explode('\\', $reduction);
+				$reduction = '\\' . $reduction;
+				$aliases   = array_merge(
+					['' => $context->getName()],
+					$context->getNamespaceAliases()
+				);
+
+				foreach ($aliases as $alias => $namespace) {
+					$namespace_parts = explode('\\', $namespace);
+
+					if (count($parts) < count($namespace_parts)) {
+						continue;
+					}
+
+					if ($namespace_parts == array_slice($parts, 0, count($namespace_parts))) {
+						$reduction = implode('\\', !$alias
+							? array_slice($parts, count($namespace_parts))
+							: array_merge(
+								[$alias],
+								array_slice($parts, count($namespace_parts))
+							)
+						);
+
+						break;
+					}
+				}
+			}
+
+			return $member
+				? implode('::', [$reduction, $member])
+				: $reduction;
+		}
+
+
+		/**
 		 * Sets external doc links used with `getLink()`
 		 *
 		 * The format of the `$links` argument should be an array whose keys match a possible
@@ -266,6 +290,21 @@
 		public function setExternalDocs(array $links)
 		{
 			$this->externalDocs = $links;
+
+			return $this;
+		}
+
+
+		/**
+		 * Sets template data
+		 *
+		 * @access public
+		 * @param array $data The data to set
+		 * @return Writer The writer for method chaining
+		 */
+		public function setTemplateData(array $data)
+		{
+			$this->templateData = $data;
 
 			return $this;
 		}

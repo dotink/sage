@@ -1,10 +1,11 @@
 <?php namespace Dotink\Sage\TokenParser {
 
 	/**
-	 * Responsible for parsing @copyright tokens in a docblock.
+	 * Responsible for parsing @example tokens in a docblock.
 	 *
-	 * No additional parsing of the string which follows the copyright is done, so it will not
-	 * independently parse the year or names or anything like that.
+	 * No additional parsing of the string will be done using this class, however, views may
+	 * check to see if strings begin with http:// or something to use links vs. including local
+	 * files, etc.
 	 *
 	 * @copyright Copyright (c) 2013, Matthew J. Sahagian
 	 * @author Matthew J. Sahagian [mjs] <msahagian@dotink.org>
@@ -13,7 +14,7 @@
 	 *
 	 * @package Sage
 	 */
-	class TokenCopyright
+	class TokenExample
 	{
 		/**
 		 * Validates that the value for the token looks OK

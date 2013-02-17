@@ -27,4 +27,9 @@
 <?php include 'class_method_returns.php'; ?>
 
 <?php } ?>
+
+<?php if ($method->hasInfo('example')) { ?>
+<?php include 'class_method_examples.php'; ?>
+
+<?php } ?>
 <?php } ?>

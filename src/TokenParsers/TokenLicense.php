@@ -42,7 +42,7 @@
 		 */
 		static public function parse($value)
 		{
-			return $value;
+			return trim($value);
 		}
 	}
 }
