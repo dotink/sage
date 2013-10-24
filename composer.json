@@ -2,7 +2,7 @@
 	"name": "dotink/sage",
 	"description": "A PHP documentation generator which produces markdown API docs.",
 	"keywords": ["documentation","markdown"],
-	"license": "AGPL",
+	"license": "AGPL-3.0",
 	"authors": [
 		{
 			"name": "Matthew J. Sahagian",
