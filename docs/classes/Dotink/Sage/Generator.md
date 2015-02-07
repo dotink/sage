@@ -1,0 +1,439 @@
+# Generator
+## Provides documentation generation service by reading a particular source directory
+
+_Copyright (c) 2013, Matthew J. Sahagian_.
+_Please reference the LICENSE.md file at the root of this distribution_
+
+#### Namespace
+
+`Dotink\Sage`
+
+#### Imports
+
+<table>
+
+	<tr>
+		<th>Alias</th>
+		<th>Namespace / Class</th>
+	</tr>
+	
+	<tr>
+		<td>TokenReflection</td>
+		<td>TokenReflection</td>
+	</tr>
+	
+</table>
+
+#### Authors
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Handle</th>
+		<th>Email</th>
+	</thead>
+	<tbody>
+	
+		<tr>
+			<td>
+				Matthew J. Sahagian
+			</td>
+			<td>
+				mjs
+			</td>
+			<td>
+				msahagian@dotink.org
+			</td>
+		</tr>
+	
+	</tbody>
+</table>
+
+## Properties
+
+### Instance Properties
+#### <span style="color:#6a6e3d;">$broker</span>
+
+The token reflection broker of the generator
+
+#### <span style="color:#6a6e3d;">$documents</span>
+
+A collection of documents
+
+#### <span style="color:#6a6e3d;">$inputPath</span>
+
+The input path we will be scanning for source code
+
+#### <span style="color:#6a6e3d;">$options</span>
+
+Options and values for the generator
+
+
+
+
+## Methods
+
+### Instance Methods
+<hr />
+
+#### <span style="color:#3e6a6e;">__construct()</span>
+
+Creates a new generator
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$broker
+			</td>
+			<td>
+									TokenReflection\Broker				
+			</td>
+			<td>
+				The token reflection broker to use for reflection
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
+
+
+<hr />
+
+#### <span style="color:#3e6a6e;">getConfig()</span>
+
+Get configuration information from the options
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$name
+			</td>
+			<td>
+									<a href="http://php.net/language.types.string">string</a>
+				
+			</td>
+			<td>
+				The config option name to get
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			mixed
+		</dt>
+		<dd>
+			The config option
+		</dd>
+	
+</dl>
+
+
+<hr />
+
+#### <span style="color:#3e6a6e;">getTokenParser()</span>
+
+Gets the token parser class for a given token
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$token
+			</td>
+			<td>
+									<a href="http://php.net/language.types.string">string</a>
+				
+			</td>
+			<td>
+				The token to get a parser for
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The class for parsing the token, or NULL if not available
+		</dd>
+	
+</dl>
+
+
+<hr />
+
+#### <span style="color:#3e6a6e;">run()</span>
+
+Runs the documentation generator
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$input_path
+			</td>
+			<td>
+									<a href="http://php.net/language.types.string">string</a>
+				
+			</td>
+			<td>
+				A relative or absolute directory to scan
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
+
+
+<hr />
+
+#### <span style="color:#3e6a6e;">makeDocumentCollection()</span>
+
+Makes a document collection
+
+##### Details
+
+If the document collection is sorted by type then then the various documents will still
+be in separate directories per namespace, however, they will be rooted based on the
+type of structure.  So, for example:
+
+`/classes/Dotink/Sage/Generator.md`
+
+Which without sorting by type would normally be in:
+
+`/Dotink/Sage/Generator.md`
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$reflection
+			</td>
+			<td>
+									<a href="http://php.net/language.types.array">array</a>
+				
+			</td>
+			<td>
+				A list of token reflections
+			</td>
+		</tr>
+					
+		<tr>
+			<td>
+				$sort_by_type
+			</td>
+			<td>
+									<a href="http://php.net/language.types.boolean">boolean</a>
+				
+			</td>
+			<td>
+				Whether or not we should sort by type
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
+
+
+<hr />
+
+#### <span style="color:#3e6a6e;">configTokenParsers()</span>
+
+Configures token parsers from an array, filtering out bad ones
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$token_parsers
+			</td>
+			<td>
+									<a href="http://php.net/language.types.array">array</a>
+				
+			</td>
+			<td>
+				A list of classes for parsing tokens, keyed by the token
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			void
+		</dt>
+		<dd>
+			Provides no return value.
+		</dd>
+	
+</dl>
+
+
+<hr />
+
+#### <span style="color:#3e6a6e;">setInputPath()</span>
+
+Sets the input path with validation
+
+###### Parameters
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+			
+		<tr>
+			<td>
+				$input_path
+			</td>
+			<td>
+									<a href="http://php.net/language.types.string">string</a>
+				
+			</td>
+			<td>
+				A relative or absolute directory to scan
+			</td>
+		</tr>
+			
+	</tbody>
+</table>
+
+###### Throws
+
+<dl>
+
+	<dt>
+					Dotink\Sage\Exception		
+	</dt>
+	<dd>
+		If the path cannot be used for various reasons
+	</dd>
+
+</dl>
+
+###### Returns
+
+<dl>
+	
+		<dt>
+			string
+		</dt>
+		<dd>
+			The absolute real path for input
+		</dd>
+	
+</dl>
+
+
+
+
+
+
