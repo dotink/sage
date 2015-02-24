@@ -212,7 +212,7 @@
 							array_unshift($path, '..');
 						}
 
-						$url = $path[0] != '..'
+						$url = isset($path[0]) && $path[0] != '..'
 							? '.' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $path)
 							: implode(DIRECTORY_SEPARATOR, $path);
 					}
