@@ -352,7 +352,14 @@
 					: NULL;
 
 				if ($token) {
-					$this->parseToken($token, $value);
+					try {
+						$this->parseToken($token, $value);
+					} catch (Exception $e) {
+						echo PHP_EOL;
+						echo $e->getMessage();
+						echo PHP_EOL;
+						exit(-1);
+					}
 				}
 			}
 
@@ -384,10 +391,14 @@
 
 			if (!$token_parser::validate($value)) {
 				throw new Exception(
-					'Improperly formatted docblock token and value `@%s %s` in document %s',
+					'Document:  %s'     . PHP_EOL .
+					'Error:     Improperly formatted docblock token and value' . PHP_EOL .
+					'Token:     @%s %s' . PHP_EOL .
+					'Line (~):  %s'     . PHP_EOL,
+					$this->reflection->getFileName(),
 					$token,
 					$value,
-					$this->reflection->getFileName()
+					$this->reflection->getStartLine()
 				);
 			}
 

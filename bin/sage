@@ -1,11 +1,22 @@
+#!/usr/bin/env php
 <?php namespace Dotink\Sage {
-
-	include __DIR__ . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
 	use TokenReflection;
 
+	$autoloaders = [
+		__DIR__ . '/../../autoload.php',
+		__DIR__ . '/../vendor/autoload.php',
+		__DIR__ . '/vendor/autoload.php'
+	];
+
+	foreach ($autoloaders as $autoloader) {
+		if (file_exists($autoloader)) {
+			include $autoloader;
+		}
+	}
+
 	if (!isset($argv[1])) {
-		echo 'Usage: php sage.php <input_path> [<output_path>]' . PHP_EOL;
+		echo 'Usage: sage <input_path> [<output_path>]' . PHP_EOL;
 		exit(1);
 	}
 
@@ -13,7 +24,7 @@
 	$broker              = new TokenReflection\Broker($backend);
 	$sage                = new Generator($broker);
 	$document_collection = $sage->run($argv[1]);
-	$template_directory  = __DIR__ . DIRECTORY_SEPARATOR . 'templates';
+	$template_directory  = __DIR__ . '/../templates';
 
 	(new Writer(isset($argv[2]) ? $argv[2] : NULL, $template_directory))
 		-> setExternalDocs($sage->getConfig('external_docs'))

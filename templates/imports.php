@@ -4,13 +4,13 @@
 
 	<tr>
 		<th>Alias</th>
-		<th>Namespace / Class</th>
+		<th>Namespace / Target</th>
 	</tr>
-	<?php foreach ($aliases as $alias => $namespace) { ?>
+	<?php foreach ($aliases as $alias => $target) { ?>
 
 	<tr>
 		<td><?= $alias ?></td>
-		<td><?= $namespace ?></td>
+		<td><?= $target ?></td>
 	</tr>
 	<?php } ?>
 

@@ -24,7 +24,7 @@ it may contain additional sub-documents.  Classes for example will contain Metho
 
 	<tr>
 		<th>Alias</th>
-		<th>Namespace / Class</th>
+		<th>Namespace / Target</th>
 	</tr>
 	
 	<tr>
@@ -521,6 +521,4 @@ a value using that token parser.
 ### Inherited Methods
 
 [`DocumentCollection::count()`](./DocumentCollection.md#count) [`DocumentCollection::current()`](./DocumentCollection.md#current) [`DocumentCollection::key()`](./DocumentCollection.md#key) [`DocumentCollection::next()`](./DocumentCollection.md#next) [`DocumentCollection::query()`](./DocumentCollection.md#query) [`DocumentCollection::rewind()`](./DocumentCollection.md#rewind) [`DocumentCollection::valid()`](./DocumentCollection.md#valid) 
-
-
 

@@ -115,5 +115,3 @@ Creates a new Sage exception
 
 [`\Exception::__clone()`](http://php.net/class.exception#__clone) [`\Exception::getMessage()`](http://php.net/class.exception#getMessage) [`\Exception::getCode()`](http://php.net/class.exception#getCode) [`\Exception::getFile()`](http://php.net/class.exception#getFile) [`\Exception::getLine()`](http://php.net/class.exception#getLine) [`\Exception::getTrace()`](http://php.net/class.exception#getTrace) [`\Exception::getPrevious()`](http://php.net/class.exception#getPrevious) [`\Exception::getTraceAsString()`](http://php.net/class.exception#getTraceAsString) [`\Exception::__toString()`](http://php.net/class.exception#__toString) 
 
-
-

@@ -14,7 +14,7 @@ _Please reference the LICENSE.md file at the root of this distribution_
 
 	<tr>
 		<th>Alias</th>
-		<th>Namespace / Class</th>
+		<th>Namespace / Target</th>
 	</tr>
 	
 	<tr>
@@ -431,8 +431,6 @@ Sets the input path with validation
 		</dd>
 	
 </dl>
-
-
 
 
 

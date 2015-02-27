@@ -16,20 +16,20 @@
 
 <?php } ?>
 <?php if ($method->hasInfo('param')) { ?>
-<?php include 'class_method_parameters.php'; ?>
+<?php include 'method_parameters.php'; ?>
 
 <?php } ?>
 <?php if ($method->hasInfo('throws')) { ?>
-<?php include 'class_method_throws.php'; ?>
+<?php include 'method_throws.php'; ?>
 
 <?php } ?>
 <?php if ($method->hasInfo('return')) { ?>
-<?php include 'class_method_returns.php'; ?>
+<?php include 'method_returns.php'; ?>
 
 <?php } ?>
 
 <?php if ($method->hasInfo('example')) { ?>
-<?php include 'class_method_examples.php'; ?>
+<?php include 'method_examples.php'; ?>
 
 <?php } ?>
 <?php } ?>
