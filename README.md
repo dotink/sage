@@ -1,10 +1,9 @@
 # Sage
 
 [![Join the chat at https://gitter.im/dotink/sage](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dotink/sage?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/dotink/sage.svg?branch=master)](https://travis-ci.org/dotink/sage)
 
 Sage is a documentation generator for PHP code.  Unlike other documentation generators for PHP code, it is easily extended and generally doesn't suck.
-
-[![Build Status](https://travis-ci.org/dotink/Sage.png?branch=master)](https://travis-ci.org/dotink/Sage)
 
 ## Installation
 
