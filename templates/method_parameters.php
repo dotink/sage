@@ -57,7 +57,7 @@
 
 			</td>
 			<td>
-				<?= $details['details'] ?>
+				<?= $details['details'] ?: '<em>none</em>' ?>
 
 			</td>
 		</tr>
