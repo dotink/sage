@@ -18,7 +18,8 @@
 	class TokenThrows
 	{
 		const REGEX_VALID = '/
-			[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s+.+
+			[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s+(.+) | # with description
+			[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s* |     # no description
 		/xi';
 
 
@@ -47,6 +48,13 @@
 		static public function parse($value)
 		{
 			$parts = preg_split('/\s+/', $value, 2);
+
+			if (count($parts) == 1) {
+				return [
+					'type' => trim($parts[0]),
+					'note' => NULL
+				];
+			}
 
 			return [
 				'type' => trim($parts[0]),

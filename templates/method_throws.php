@@ -12,7 +12,7 @@
 
 	</dt>
 	<dd>
-		<?= $return['note'] ?>
+		<?= $return['note'] ?: '<em>no description</em>' ?>
 
 	</dd>
 <?php } ?>
