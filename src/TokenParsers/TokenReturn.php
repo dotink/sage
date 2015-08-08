@@ -22,7 +22,11 @@
 	class TokenReturn
 	{
 		const REGEX_VALID = '/
-			^void\s*$|^(?:(?:\\\\)?[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)+\s+.+$
+			^(?:(?:\\\\)?[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)+\s+.+$ | # type with note
+			^(?:(?:\\\\)?[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)+\s*$   | # type with no note
+			^\$this\s*$ |                                                   # chaining
+			^void\s*$ |                                                     # no value
+
 		/xi';
 
 
@@ -54,11 +58,20 @@
 		{
 			$parts = preg_split('/\s+/', $value, 2);
 
-			if (count($parts) == 1 && $parts[0] == 'void') {
-				return [
-					'type' => NULL,
-					'note' => NULL
-				];
+			if (count($parts) == 1) {
+				if ($parts[0] == 'void') {
+					return [
+						'type' => NULL,
+						'note' => NULL
+					];
+
+				} else {
+					return [
+						'type' => 'self',
+						'note' => 'The object instance for method chaining'
+					];
+				}
+
 			} else {
 				return [
 					'type' => trim($parts[0]),

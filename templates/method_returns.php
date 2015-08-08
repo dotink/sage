@@ -2,7 +2,17 @@
 
 <dl>
 <?php while ($return = $method->getInfo('return')) { ?>
-	<?php if ($return['type']) { ?>
+	<?php if ($return['type'] == 'self') { ?>
+
+		<dt>
+			<?= $document->getReflection()->getShortName() ?>
+
+		</dt>
+		<dd>
+			<?= $return['note'] ?>
+
+		</dd>
+	<?php } elseif ($return['type']) { ?>
 
 		<dt>
 			<?= $return['type'] ?>
