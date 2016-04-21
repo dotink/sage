@@ -26,10 +26,10 @@
 	class TokenParam
 	{
 		const REGEX_VALID = '/
-			(.*)\s+\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s+(.*)| # with description
-			(.*)\s+\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s*|     # no description
-			\.\.\.\s*                                                 # implying variable params
-		/x';
+			(.+)\s+(?:\&)?\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s+(.+) | # with description
+			(.+)\s+(?:\&)?\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\s*     | # no description
+			\.\.\.\s*     		                                              # implying variable params
+		/xi';
 
 
 		/**

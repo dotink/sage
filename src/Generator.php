@@ -178,7 +178,7 @@
 							$root =& $root[$segment];
 						}
 
-						$root[] = new Document($function, $this);
+						$root[] = new Document($function, $this, $namespace);
 					}
 				}
 			}
