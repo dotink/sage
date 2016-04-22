@@ -179,7 +179,7 @@
 			if (strpos($document, '::') !== FALSE) {
 				$parts    = explode('::', $document, 2);
 				$document = $parts[0];
-				$position = '#' . trim($parts[1], '$()');
+				$position = '#' . strtolower(trim($parts[1], '$()'));
 			}
 
 			if (isset($this->externalDocs[$document])) {
@@ -212,9 +212,7 @@
 							array_unshift($path, '..');
 						}
 
-						$url = isset($path[0]) && $path[0] != '..'
-							? '.' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $path)
-							: implode(DIRECTORY_SEPARATOR, $path);
+						$url = implode(DIRECTORY_SEPARATOR, $path);
 					}
 				}
 			}
