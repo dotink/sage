@@ -24,8 +24,8 @@
 		const REGEX_VALID = '/
 			^(?:(?:\\\\)?[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*(?:\\|)?)+\s+.+$ | # type with note
 			^(?:(?:\\\\)?[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*(?:\\|)?)+\s*$   | # type with no note
-			^\$this\s*$ |                                                        # chaining
-			^void\s*$                                                            # no value
+			^\$this\s*$ |                                                           # chaining
+			^void\s*$ |                                                             # no value
 		/xi';
 
 
